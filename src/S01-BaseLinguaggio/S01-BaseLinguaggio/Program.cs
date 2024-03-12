@@ -16,7 +16,7 @@ Console.ReadKey();
 // Both Console and Error are objects; in this case, we say that Console uses Error 
 Console.Error.WriteLine("\nWriting message on syserr\n");
 
-Console.WriteLine("This is a very simple exercise");
+Console.WriteLine("Drawing *'s");
 Console.WriteLine("*********");
 Console.WriteLine("*       *");
 Console.WriteLine("*       *");
@@ -34,7 +34,7 @@ Console.WriteLine(40 + "20");
 // This is an assignment operation
 int sum = 10 + 32;
 
-Console.WriteLine("This is another very simple exercise");
+Console.WriteLine("Using ReadLine");
 string inputA = Console.ReadLine();
 string inputB = inputA;
 Console.WriteLine(inputB);
@@ -86,10 +86,20 @@ Console.WriteLine("\nWe can also apply Trim() directly on the string literal (no
 Console.WriteLine("'   Voilà   ' after trimming becomes: " + "START-" + "   Voilà   ".Trim() + "-END");
 
 // Interpolation
-string	strC = "Hmpf";
-int	lenB = strC.Length;
+string strC = "Hmpf";
+int lenB = strC.Length;
 Console.WriteLine($"The string is \\{strC}\\, of length {lenB}");
-// Interpretation "As is"
+// Interpretation verbatim (as is)
 Console.WriteLine(@"The string is \" + strC + @"\, of length " + lenB);
-// Interpolation + Intepretation "As is"
+// Interpolation + Verbatim (as is)
 Console.WriteLine(@$"The string is \{strC}\, of length {lenB}");
+
+Console.WriteLine("Drawing *'s using interpolation and verbatim (as is)");
+string	drawing = @"*********
+*       *
+*       *
+*  ***  *
+*       *
+*       *
+*********";
+Console.WriteLine($"{drawing}");
