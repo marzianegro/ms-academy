@@ -104,3 +104,137 @@ else
 {
 	Console.WriteLine(s2.Substring(0, 5));
 }
+
+int semaphore = 2;
+switch (semaphore)
+{
+	case 1: 
+		Console.WriteLine("Green light");
+		break;
+	case 2:
+		Console.WriteLine("Yellow light");
+		break;
+	case 3:
+		Console.WriteLine("Red light");
+		break;
+	default:
+		Console.WriteLine("Wrong value");
+		break;
+}
+
+bool choice = len < 10;
+Console.WriteLine($"\nChoice is: {choice}");
+if (choice)
+{
+	// do something
+} else if (!choice)
+{
+	// do something
+}
+
+if (a == 100 && b < 200 && len == 200)
+{
+	// do something
+}
+if (a == 100 || b < 200 || len == 100)
+{
+	// do something
+}
+if (a == 100 && b < 200 || len == 100)
+{
+	// do something
+}
+
+// Part 1 - Basic functioning behind a for loop
+Console.WriteLine();
+int toSum = 10;
+int repeat = 0;
+for (; ; )
+{
+	toSum = toSum + 1;
+	repeat = repeat + 1;
+	Console.WriteLine($"toSum + 1 is: {toSum}");
+	if (repeat > 4)
+	{
+		break;
+	}
+}
+Console.WriteLine($"final toSum is: {toSum}");
+
+// Part 2
+for (repeat = 0; repeat <= 5; repeat = repeat + 1)
+{
+	toSum = toSum + 1;
+}
+Console.WriteLine($"\nfinal toSum is: {toSum}");
+
+// Part 3
+for (int i = 0; i <= 5; i = i + 1)
+{
+	toSum = toSum + 1;
+}
+Console.WriteLine($"\nfinal toSum is: {toSum}");
+
+// Part 4
+for (int i = 0; i < 100; i += 1)
+{
+	if (i % 2 != 0) // i is odd
+	{
+		continue; // goes back to line 179
+	}
+	if (i < 15)
+	{
+		break; // exits the loop immediately
+	}
+	Console.WriteLine($"i is: {i}");
+	toSum += 1;
+}
+Console.WriteLine($"\nfinal toSum is: {toSum}");
+
+// Personal solution #1
+Console.WriteLine();
+toSum = 10;
+for (int i = 0; i < 5; i++)
+{
+	toSum += 1;
+	Console.WriteLine($"toSum + 1 is: {toSum}");
+}
+Console.WriteLine($"final toSum is: {toSum}");
+
+// Personal solution #2
+Console.WriteLine();
+for (int i = 10; i != 5; i--) {
+	Console.WriteLine($"i ({i}) + 1 is: {i + 1}");
+}
+
+int index = 0;
+while (index < 50)
+{
+	toSum++;
+	index++;
+}
+
+// Focus is on the logic operation
+int k = 0;
+for (bool kCondition = true; kCondition; )
+{
+	k++;
+	if (k > 10)
+	{
+		kCondition = false;
+	}
+}
+Console.WriteLine($"\nfinal k is: {k}");
+
+// Focus is on the condition (here jCondition)
+int j = 0;
+bool jCondition = true;
+while (jCondition)
+{
+	j++;
+	if (j > 10)
+	{
+		jCondition = false;
+	}
+}
+Console.WriteLine($"\nfinal j is: {j}");
