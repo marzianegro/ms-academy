@@ -1,23 +1,22 @@
 ﻿<Properties StartupConfiguration="{0841FE43-55D5-4095-B43D-E00F1413A7BE}|Default">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="S01-BaseLinguaggio/Program03.cs">
-    <Files>
-      <File FileName="S01-BaseLinguaggio/Program03.cs" Line="43" Column="12" />
-    </Files>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="S01-BaseLinguaggio" expanded="True">
-            <Node name="S01-BaseLinguaggio" expanded="True" />
+            <Node name="S01-BaseLinguaggio" expanded="True">
+              <Node name="Program02.cs" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.S01-BaseLinguaggio PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
 </Properties>

@@ -87,3 +87,14 @@ for (float i = 1000; i > 149; i--)
 	}
 }
 Console.WriteLine($"Result is: {res}");
+
+int sum = 0;
+for (int i = 0; i < 101; i++)
+{
+	int num = Random.Shared.Next(7890, 9999);
+	if (num % 3 == 0)
+	{
+		sum += num;
+	}
+}
+Console.WriteLine($"Sum is: {sum}");
