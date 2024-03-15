@@ -1,0 +1,15 @@
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S02-Arrays/S02-Arrays/bin/Debug/net8.0/S02-Arrays
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S02-Arrays/S02-Arrays/bin/Debug/net8.0/S02-Arrays.deps.json
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S02-Arrays/S02-Arrays/bin/Debug/net8.0/S02-Arrays.runtimeconfig.json
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S02-Arrays/S02-Arrays/bin/Debug/net8.0/S02-Arrays.dll
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S02-Arrays/S02-Arrays/bin/Debug/net8.0/S02-Arrays.pdb
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S02-Arrays/S02-Arrays/obj/Debug/net8.0/S02-Arrays.GeneratedMSBuildEditorConfig.editorconfig
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S02-Arrays/S02-Arrays/obj/Debug/net8.0/S02-Arrays.AssemblyInfoInputs.cache
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S02-Arrays/S02-Arrays/obj/Debug/net8.0/S02-Arrays.AssemblyInfo.cs
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S02-Arrays/S02-Arrays/obj/Debug/net8.0/S02-Arrays.csproj.CoreCompileInputs.cache
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S02-Arrays/S02-Arrays/obj/Debug/net8.0/S02-Arrays.sourcelink.json
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S02-Arrays/S02-Arrays/obj/Debug/net8.0/S02-Arrays.dll
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S02-Arrays/S02-Arrays/obj/Debug/net8.0/refint/S02-Arrays.dll
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S02-Arrays/S02-Arrays/obj/Debug/net8.0/S02-Arrays.pdb
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S02-Arrays/S02-Arrays/obj/Debug/net8.0/S02-Arrays.genruntimeconfig.cache
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S02-Arrays/S02-Arrays/obj/Debug/net8.0/ref/S02-Arrays.dll
