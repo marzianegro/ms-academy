@@ -91,10 +91,16 @@ Console.WriteLine($"Result is: {res}");
 int sum = 0;
 for (int i = 0; i < 101; i++)
 {
-	int num = Random.Shared.Next(7890, 9999);
+	int num = Random.Shared.Next(7890, 9999); // 7890 and 9999 are excluded from the range
 	if (num % 3 == 0)
 	{
 		sum += num;
 	}
 }
 Console.WriteLine($"Sum is: {sum}");
+
+for (int i = 0; i < 100; i++)
+{
+	float num = Random.Shared.NextSingle();
+	Console.WriteLine(num);
+}
