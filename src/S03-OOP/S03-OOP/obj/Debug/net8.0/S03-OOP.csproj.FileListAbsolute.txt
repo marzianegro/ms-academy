@@ -1,0 +1,15 @@
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S03-OOP/S03-OOP/bin/Debug/net8.0/S03-OOP
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S03-OOP/S03-OOP/bin/Debug/net8.0/S03-OOP.deps.json
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S03-OOP/S03-OOP/bin/Debug/net8.0/S03-OOP.runtimeconfig.json
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S03-OOP/S03-OOP/bin/Debug/net8.0/S03-OOP.dll
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S03-OOP/S03-OOP/bin/Debug/net8.0/S03-OOP.pdb
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S03-OOP/S03-OOP/obj/Debug/net8.0/S03-OOP.GeneratedMSBuildEditorConfig.editorconfig
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S03-OOP/S03-OOP/obj/Debug/net8.0/S03-OOP.AssemblyInfoInputs.cache
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S03-OOP/S03-OOP/obj/Debug/net8.0/S03-OOP.AssemblyInfo.cs
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S03-OOP/S03-OOP/obj/Debug/net8.0/S03-OOP.csproj.CoreCompileInputs.cache
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S03-OOP/S03-OOP/obj/Debug/net8.0/S03-OOP.sourcelink.json
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S03-OOP/S03-OOP/obj/Debug/net8.0/S03-OOP.dll
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S03-OOP/S03-OOP/obj/Debug/net8.0/refint/S03-OOP.dll
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S03-OOP/S03-OOP/obj/Debug/net8.0/S03-OOP.pdb
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S03-OOP/S03-OOP/obj/Debug/net8.0/S03-OOP.genruntimeconfig.cache
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S03-OOP/S03-OOP/obj/Debug/net8.0/ref/S03-OOP.dll

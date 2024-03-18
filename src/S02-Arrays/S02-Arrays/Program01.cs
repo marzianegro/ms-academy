@@ -1,9 +1,9 @@
-﻿////// DAY 5 (15/03) //////////
+﻿////////// DAY 05 (15/03) //////////
 
 using System;
 
 int[] a = { 10, 11, 34, 56, 77 }; // Allocazione + Inizializzazione
-// MA se allocazione e inizializzazione fossero divisi
+								  // MA se allocazione e inizializzazione fossero divisi
 int[] c = new int[5]; // Allocazione
 // Inizializzazione
 c[0] = 10;
