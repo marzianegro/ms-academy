@@ -8,8 +8,7 @@ public class Quadrato : Rettangolo // Quadrato specializes Rettangolo
 	private double _lato; // instance variable, but most importantly state variable
 
 	// The keyword base calls the constructor of Rettangolo
-	public Quadrato(double lato) : base(lato, lato)
-	{
+	public Quadrato(double lato) : base(lato, lato) {
 		this._lato = lato;
 	}
 
@@ -32,8 +31,7 @@ public class Quadrato : Rettangolo // Quadrato specializes Rettangolo
 	//	return this._lato * 2;
 	//}
 
-	public override string? ToString()
-	{
+	public override string? ToString() {
 		return $"L'area di {GetType()} è {Area()} e il perimetro è {Perimetro()}";
 	}
 }

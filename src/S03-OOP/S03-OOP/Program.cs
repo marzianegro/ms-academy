@@ -21,8 +21,7 @@ using Geometria;
 // When you declare a class without any access modifier, it takes the default accessibility level, which is internal for classes defined within a namespace.
 class MyClass
 {
-	static void Main(string[] args)
-	{
+	static void Main(string[] args) {
 		//Console.WriteLine("----------");
 		//SayHello();
 
@@ -124,19 +123,16 @@ class MyClass
 		Console.WriteLine("----------");
 	}
 
-
-	static void SayHello()
-	{
+	static void SayHello() {
 		Console.WriteLine("Hello, World!");
 	}
 
-	static void SayMessage(string message)
-	{
+	static void SayMessage(string message) {
 		Console.WriteLine(message);
 	}
 
-	void PrintMessage(string message) // non-static
-	{
+	// non-static
+	void PrintMessage(string message) {
 		Console.WriteLine(message);
 	}
 }
@@ -146,8 +142,7 @@ class InstanceVariableDemo
 	int x = Random.Shared.Next();
 
 	// When an instance is passed to WriteLine, WriteLine converts it to a string with ToString(), that's why we need to 'override'
-	public override string? ToString()
-	{
+	public override string? ToString() {
 		return $"x is: {x}";
 	}
 }
