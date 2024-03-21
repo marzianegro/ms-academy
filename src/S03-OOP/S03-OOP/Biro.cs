@@ -1,4 +1,5 @@
-﻿////////// DAY 06 (18/03) //////////
+﻿////////// 18 MARZO 2024 //////////
+
 namespace S03_OOP;
 
 class Biro
@@ -7,7 +8,8 @@ class Biro
 	Refill refill = new Refill(); // Binding of type "USE" between objects
 
 	// The method does the work, exectures, it's active 
-	public void WriteText(string text) {
+	public void WriteText(string text)
+	{
 		Console.Write("Passing through Biro/");
 		refill.WriteText(text);
 	}

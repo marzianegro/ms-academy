@@ -1,4 +1,4 @@
-﻿////////// DAY 06 (18/03) //////////
+﻿////////// 18 MARZO 2024 //////////
 
 //// Explicit syntax (allows you to have multiple namespaces throughout the file)
 //namespace S03_OOP
@@ -123,16 +123,19 @@ class MyClass
 		Console.WriteLine("----------");
 	}
 
-	static void SayHello() {
+	static void SayHello()
+	{
 		Console.WriteLine("Hello, World!");
 	}
 
-	static void SayMessage(string message) {
+	static void SayMessage(string message)
+	{
 		Console.WriteLine(message);
 	}
 
 	// non-static
-	void PrintMessage(string message) {
+	void PrintMessage(string message)
+	{
 		Console.WriteLine(message);
 	}
 }
@@ -142,7 +145,8 @@ class InstanceVariableDemo
 	int x = Random.Shared.Next();
 
 	// When an instance is passed to WriteLine, WriteLine converts it to a string with ToString(), that's why we need to 'override'
-	public override string? ToString() {
+	public override string? ToString()
+	{
 		return $"x is: {x}";
 	}
 }

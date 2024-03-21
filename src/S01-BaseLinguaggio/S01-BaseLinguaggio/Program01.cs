@@ -1,4 +1,4 @@
-﻿////////// DAY 02 (12/03) //////////
+﻿////////// 12 MARZO 2024 //////////
 
 // These are top-level statements: the compiler automatically puts them in a main() function
 // BUT only one compilation unit can have top-level statements, otherwise the compiler wouldn't know which one to execute first
