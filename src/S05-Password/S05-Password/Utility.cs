@@ -6,8 +6,8 @@ namespace S05_Password;
 
 public class Utility
 {
-	// Original implementation with explicit temporary variable
-	private static void FisherYatesSwap(char[] arr)
+	// Version #1: from highest index to lowest
+	private static void FisherYatesBackward(char[] arr)
 	{
 		for (int i = arr.Length - 1; i > 0; i--)
 		{
@@ -18,19 +18,31 @@ public class Utility
 		}
 	}
 
-	// Using a tuple (a lightweight data structure in C# that allows you to group multiple values of different types into a single object)
-	private static void FisherYatesTuple(char[] arr)
+	//Version #2: from lowest index to highest
+	private static void FisherYatesForward(char[] arr)
 	{
-		for (int i = arr.Length - 1; i > 0; i--)
+		for (int i = 0; i < arr.Length - 2; i++)
 		{
-			int j = Random.Shared.Next(0, i + 1);
-			(arr[j], arr[i]) = (arr[i], arr[j]);
+			int j = Random.Shared.Next(i, arr.Length);
+			char tmp = arr[i];
+			arr[i] = arr[j];
+			arr[j] = tmp;
 		}
 	}
 
+	// Using a tuple (a lightweight data structure in C# that allows you to group multiple values of different types into a single object), instead of the original implementation with an explicit temporary variable
+	//private static void FisherYates(char[] arr)
+	//{
+	//	for (int i = arr.Length - 1; i > 0; i--)
+	//	{
+	//		int j = Random.Shared.Next(0, i + 1);
+	//		(arr[j], arr[i]) = (arr[i], arr[j]);
+	//	}
+	//}
+
 	public static char[] Shuffle(char[] arr)
 	{
-		FisherYatesSwap(arr);
+		FisherYatesBackward(arr);
 		return arr;
 	}
 
@@ -38,7 +50,7 @@ public class Utility
 	{
 		char[] arr = str.ToCharArray();
 
-		FisherYatesTuple(arr)
+		Shuffle(arr);
 		return new string(arr);
 	}
 }

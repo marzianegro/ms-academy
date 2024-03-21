@@ -10,12 +10,11 @@ class Program
 		Console.WriteLine("PASSWORD GENERATOR");
 		Console.ForegroundColor = ConsoleColor.White;
 
-		Console.WriteLine($"\nPassword generata con char[]: {PasswordGenerator.GeneraConArray(14)}");
-		Console.WriteLine($"Password generata con StringBuilder: {PasswordGenerator.GeneraConBuilder(7)}");
-		Console.WriteLine($"Password generata con Substring: {PasswordGenerator.GeneraConSubstring(11)}");
-		Console.WriteLine($"Password generata con Shuffle: {PasswordGenerator.GeneraConShuffle(9)}");
-
-
+		//Console.WriteLine($"\nPassword generata con char[]: {PasswordGenerator.GeneraConArray(14)}");
+		//Console.WriteLine($"Password generata con StringBuilder: {PasswordGenerator.GeneraConBuilder(7)}");
+		//Console.WriteLine($"Password generata con Substring: {PasswordGenerator.GeneraConSubstring(11)}");
+		//Console.WriteLine($"Password generata con Shuffle: {PasswordGenerator.GeneraConShuffle(9)}");
+		Console.WriteLine($"{PasswordGenerator.GeneraConRegole(14, 0, 1, 1, 1)}");
 
 		Console.ForegroundColor = ConsoleColor.Yellow;
 		Console.WriteLine("\n\n\nFISHER-YATES SHUFFLE ALGORITHM");

@@ -58,4 +58,45 @@ public class PasswordGenerator
 		Random.Shared.Shuffle(pw);
 		return new string(pw.Take(length).ToArray()); // Takes the first length characters from the shuffled array
 	}
+
+	public static string GeneraConRegole(int length, int minLower, int minUpper, int minDigit, int minSpecial)
+	{
+		StringBuilder pw = new(length);
+		Random rand = new();
+		int lowerCount = 0, upperCount = 0, digitCount = 0, specialCount = 0;
+
+		for (int i = 0; i < length; i++)
+		{
+			char randomChar = PasswordGenerator._base[rand.Next(PasswordGenerator._base.Length)];
+			pw.Append(randomChar);
+
+			if (char.IsLower(randomChar))
+			{
+				lowerCount++;
+			}
+			else if (char.IsUpper(randomChar))
+			{
+				upperCount++;
+			}
+			else if (char.IsDigit(randomChar))
+			{
+				// base-10 digit (0-9)
+				digitCount++;
+			}
+			else
+			{
+				specialCount++;
+			}
+		}
+
+		if (lowerCount < minLower || upperCount < minUpper || digitCount < minDigit || specialCount < minSpecial)
+		{
+			Console.Write("Your password is missing some of the required characters: ");
+		}
+		else
+		{
+			Console.Write("Your password contains all the required characters: ");
+		}
+		return pw.ToString();
+	}
 }
