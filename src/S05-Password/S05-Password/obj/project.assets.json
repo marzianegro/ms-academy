@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/marzianegro/Projects/S05-Password/S05-Password/S05-Password.csproj",
+      "projectUniqueName": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S05-Password/S05-Password/S05-Password.csproj",
       "projectName": "S05-Password",
-      "projectPath": "/Users/marzianegro/Projects/S05-Password/S05-Password/S05-Password.csproj",
+      "projectPath": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S05-Password/S05-Password/S05-Password.csproj",
       "packagesPath": "/Users/marzianegro/.nuget/packages/",
-      "outputPath": "/Users/marzianegro/Projects/S05-Password/S05-Password/obj/",
+      "outputPath": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S05-Password/S05-Password/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/marzianegro/.nuget/NuGet/NuGet.Config"

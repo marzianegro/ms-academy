@@ -2,12 +2,11 @@
 
 class Program
 {
-    static void Main(string[] args)
+    static void Main()
     {
-        Password password = new();
-        string pw;
-        
-        pw = password.Genera(14);
-        Console.WriteLine(pw);
-    }
+		Console.WriteLine($"Password generata con char[]: {Password.GeneraConArray(14)}");
+		Console.WriteLine($"Password generata con StringBuilder: {Password.GeneraConBuilder(7)}");
+		Console.WriteLine($"Password generata con Substring: {Password.GeneraConSubstring(11)}");
+		Console.WriteLine($"Password generata con OrderBy e 'lambda expression': {Password.GeneraConShuffle(9)}");
+	}
 }
