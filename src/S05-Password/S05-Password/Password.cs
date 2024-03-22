@@ -9,7 +9,11 @@ namespace S05_Password;
 public class PasswordGenerator
 {
 	// The benefits of using const instead of readonly in this case are: performance and memory efficiency, compile-time checking, and thread safety
-	private const string _base = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789£$%&?@#";
+	private const string _charLower = "abcdefghijklmnopqrstuvwxyz";
+	private const string _charUpper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	private const string _charDigit = "123456789";
+	private const string _charSpecial = "£$%&?@#";
+	private const string _base = _charLower + _charUpper + _charDigit + _charSpecial;
 
 	// The main advantage of using static for these methods in this case is that it allows them to be called without creating an instance of the Password class. This can provide the following benefits: performance improvement, memory efficiency, code clarity and organization, utility/helper method
 	public static string GeneraConArray(int length)
@@ -59,26 +63,71 @@ public class PasswordGenerator
 		return new string(pw.Take(length).ToArray()); // Takes the first length characters from the shuffled array
 	}
 
-	public static string GeneraConRegole(int length, int minLower, int minUpper, int minDigit, int minSpecial)
+	public static string GeneraConRegole(int len, int minLower, int minUpper, int minDigit, int minSpecial)
 	{
-		StringBuilder pw = new(length);
+		Console.WriteLine($"Requirements for password of {len} characters are: {minLower} lowercase, {minUpper} uppercase, {minDigit} digit, and {minSpecial} special");
+
+		StringBuilder pwBuild = new(len);
 		Random rand = new();
+
+		for (int i = 0; i < len; i++)
+		{
+			char randomChar;
+			if (minLower > 0)
+			{
+				randomChar = PasswordGenerator._charLower[rand.Next(PasswordGenerator._charLower.Length)];
+				pwBuild.Append(randomChar);
+				minLower--;
+			}
+			else if (minUpper > 0)
+			{
+				randomChar = PasswordGenerator._charUpper[rand.Next(PasswordGenerator._charUpper.Length)];
+				pwBuild.Append(randomChar);
+				minUpper--;
+			}
+			else if (minDigit > 0)
+			{
+				randomChar = PasswordGenerator._charDigit[rand.Next(PasswordGenerator._charDigit.Length)];
+				pwBuild.Append(randomChar);
+				minDigit--;
+			}
+			else if (minSpecial > 0)
+			{
+				randomChar = PasswordGenerator._charSpecial[rand.Next(PasswordGenerator._charSpecial.Length)];
+				pwBuild.Append(randomChar);
+				minSpecial--;
+			} else
+			{
+				randomChar = PasswordGenerator._base[rand.Next(PasswordGenerator._base.Length)];
+				pwBuild.Append(randomChar);
+			}
+		}
+		return (pwBuild.ToString());
+	}
+
+	public static bool VerifyPassword(string pw, int len, int minLower, int minUpper, int minDigit, int minSpecial)
+	{
+		if (pw.Length != len)
+		{
+			Console.ForegroundColor = ConsoleColor.Red;
+			Console.WriteLine($"Your password '{pw}' does not meet length requirement: {pw.Length} instead of {len} characters");
+			Console.ForegroundColor = ConsoleColor.White;
+			return false;
+		}
+
 		int lowerCount = 0, upperCount = 0, digitCount = 0, specialCount = 0;
 
-		for (int i = 0; i < length; i++)
+		for (int i = 0; i < pw.Length; i++)
 		{
-			char randomChar = PasswordGenerator._base[rand.Next(PasswordGenerator._base.Length)];
-			pw.Append(randomChar);
-
-			if (char.IsLower(randomChar))
+			if (char.IsLower(pw[i]))
 			{
 				lowerCount++;
 			}
-			else if (char.IsUpper(randomChar))
+			else if (char.IsUpper(pw[i]))
 			{
 				upperCount++;
 			}
-			else if (char.IsDigit(randomChar))
+			else if (char.IsDigit(pw[i]))
 			{
 				// base-10 digit (0-9)
 				digitCount++;
@@ -89,14 +138,37 @@ public class PasswordGenerator
 			}
 		}
 
-		if (lowerCount < minLower || upperCount < minUpper || digitCount < minDigit || specialCount < minSpecial)
+		if (lowerCount < minLower)
 		{
-			Console.Write("Your password is missing some of the required characters: ");
+			Console.ForegroundColor = ConsoleColor.Red;
+			Console.WriteLine($"Your password '{pw}' has {lowerCount}/{minLower} lowercase characters");
+			Console.ForegroundColor = ConsoleColor.White;
+			return false;
 		}
-		else
+		if (upperCount < minUpper)
 		{
-			Console.Write("Your password contains all the required characters: ");
+			Console.ForegroundColor = ConsoleColor.Red;
+			Console.WriteLine($"Your password '{pw}' has {upperCount}/{minUpper} uppercase characters");
+			Console.ForegroundColor = ConsoleColor.White;
+			return false;
 		}
-		return pw.ToString();
+		if (digitCount < minDigit)
+		{
+			Console.ForegroundColor = ConsoleColor.Red;
+			Console.WriteLine($"Your password '{pw}' has {digitCount}/{minDigit} digit characters");
+			Console.ForegroundColor = ConsoleColor.White;
+			return false;
+		}
+		if (specialCount < minSpecial)
+		{
+			Console.ForegroundColor = ConsoleColor.Red;
+			Console.WriteLine($"Your password '{pw}' has {specialCount}/{minSpecial} special characters");
+			Console.ForegroundColor = ConsoleColor.White;
+			return false;
+		}
+		Console.ForegroundColor = ConsoleColor.Green;
+		Console.Write($"Your password contains all the required characters");
+		Console.ForegroundColor = ConsoleColor.White;
+		return true;
 	}
 }
