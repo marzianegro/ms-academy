@@ -89,38 +89,59 @@ class MyClass
 		//}
 		//Console.WriteLine("----------");
 
-		Console.WriteLine("EREDITARIETÀ");
-		Quadrato quadrato = new(42);
-		Console.WriteLine("\n----------");
-		Console.WriteLine("Quadrato\n");
-		Console.WriteLine($"Perimetro = {quadrato.Perimetro()}");
-		Console.WriteLine($"Area = {quadrato.Area()}");
-		Console.WriteLine(quadrato);
-		Console.WriteLine("----------");
+		//Console.WriteLine("EREDITARIETÀ");
+		//Quadrato quadrato = new(42);
+		//Console.WriteLine("\n----------");
+		//Console.WriteLine("Quadrato\n");
+		//Console.WriteLine($"Perimetro = {quadrato.Perimetro()}");
+		//Console.WriteLine($"Area = {quadrato.Area()}");
+		//Console.WriteLine(quadrato);
+		//Console.WriteLine("----------");
 
-		Console.WriteLine("\n----------");
-		Console.WriteLine("Rettangolo\n");
-		Rettangolo rettangolo = new(21, 42);
-		Console.WriteLine($"Perimetro = {rettangolo.Perimetro()}");
-		Console.WriteLine($"Area = {rettangolo.Area()}");
-		Console.WriteLine(rettangolo);
-		Console.WriteLine("----------");
+		//Console.WriteLine("\n----------");
+		//Console.WriteLine("Rettangolo\n");
+		//Rettangolo rettangolo = new(21, 42);
+		//Console.WriteLine($"Perimetro = {rettangolo.Perimetro()}");
+		//Console.WriteLine($"Area = {rettangolo.Area()}");
+		//Console.WriteLine(rettangolo);
+		//Console.WriteLine("----------");
 
-		Console.WriteLine("\n----------");
-		Console.WriteLine("Cerchio\n");
-		Cerchio cerchio = new(7);
-		Console.WriteLine($"Perimetro = {cerchio.Perimetro()}");
-		Console.WriteLine($"Area = {cerchio.Area()}");
-		Console.WriteLine(cerchio);
-		Console.WriteLine("----------");
+		//Console.WriteLine("\n----------");
+		//Console.WriteLine("Cerchio\n");
+		//Cerchio cerchio = new(7);
+		//Console.WriteLine($"Perimetro = {cerchio.Perimetro()}");
+		//Console.WriteLine($"Area = {cerchio.Area()}");
+		//Console.WriteLine(cerchio);
+		//Console.WriteLine("----------");
 
-		Console.WriteLine("\n----------");
-		Console.WriteLine("Ellisse\n");
-		Ellisse ellisse = new(21, 42);
-		Console.WriteLine($"Perimetro = {ellisse.Perimetro()}");
-		Console.WriteLine($"Area = {ellisse.Area()}");
-		Console.WriteLine(ellisse);
-		Console.WriteLine("----------");
+		//Console.WriteLine("\n----------");
+		//Console.WriteLine("Ellisse\n");
+		//Ellisse ellisse = new(21, 42);
+		//Console.WriteLine($"Perimetro = {ellisse.Perimetro()}");
+		//Console.WriteLine($"Area = {ellisse.Area()}");
+		//Console.WriteLine(ellisse);
+		//Console.WriteLine("----------");
+
+		Console.WriteLine("INCAPSULAMENTO");
+		Lampadario lamp = new(5);
+		Console.WriteLine("Il lampadario è stato creato");
+		Console.WriteLine(lamp);
+
+		Console.WriteLine();
+		Console.WriteLine("Il lampadario è spento, accendiamolo");
+		lamp.AccendiLuce();
+		Console.Write("Ora la luce è accesa? ");
+		Console.WriteLine(lamp.Stato);
+		Console.WriteLine("Proviamo ad accendere il lampadario");
+		lamp.AccendiLuce();
+
+		Console.WriteLine();
+		Console.WriteLine("Il lampadario è acceso, spegniamolo");
+		lamp.SpegniLuce();
+		Console.Write("Ora la luce è accesa? ");
+		Console.WriteLine(lamp.Stato);
+		Console.WriteLine("Proviamo a spegnere il lampadario");
+		lamp.SpegniLuce();
 	}
 
 	static void SayHello()
