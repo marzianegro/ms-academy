@@ -3,7 +3,7 @@
 using System;
 using Geometria;
 
-namespace _zoneere;
+namespace S08_Giardiniere;
 
 public class Preventivo
 {
@@ -22,10 +22,11 @@ public class Preventivo
 		this._numZone = numZone;
 	}
 
-	public void AggiungiElem(FiguraGeometrica fg) {
+	public void AggiungiZona(FiguraGeometrica fg) {
 		for (int i = 0; i < this._numZone; i++) {
 			if (this._zone[i] == null) {
 				this._zone[i] = fg;
+				break;
 			}
 		}
 	}
