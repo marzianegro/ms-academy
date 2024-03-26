@@ -1,4 +1,5 @@
 ﻿////////// 25/26 MARZO 2024 //////////
+
 using Geometria;
 
 namespace S06_Polimorfismo;
@@ -12,7 +13,7 @@ class Program
 		Rettangolo r = q;
 		FiguraGeometrica fg = q;
 
-        object obj = fg; // object is simplied from Object
+        object obj = fg; // object is simplified from Object
 		fg = (FiguraGeometrica)obj; // This is called "Cast" or "Unboxing"
 		Console.WriteLine(obj.ToString());
 
@@ -34,8 +35,7 @@ class Program
 		ObjRandomizer();
 	}
 
-	class A
-	{
+	class A {
 		public virtual void DoSomething() {
 			Console.WriteLine("A is doing something");
 		}
@@ -45,8 +45,7 @@ class Program
 		}
 	}
 
-	class B : A
-	{
+	class B : A {
 		public override void DoSomething() {
 			Console.WriteLine("B is doing something");
 		}
@@ -56,8 +55,7 @@ class Program
 		}
 	}
 
-	class C : B
-	{
+	class C : B {
 		public override void DoSomething() {
 			Console.WriteLine("C is doing something");
 		}
@@ -67,8 +65,7 @@ class Program
 		}
 	}
 
-	class D : C
-	{
+	class D : C {
 		public override void DoSomething() {
 			Console.WriteLine("D is doing something");
 		}
@@ -78,33 +75,35 @@ class Program
 		}
 	}
 	
-	public static void ObjRandomizer()
-	{
+	public static void ObjRandomizer() {
 		FiguraGeometrica[] fg = new FiguraGeometrica[5];
 
 		for (int i = 0; i < 5; i++) {
 			int figura = Random.Shared.Next(1, 5);
 			switch (figura) {
-				case 1:
+				case 1: {
 					Rettangolo r = new(21, 42);
 					fg[i] = r;
 					Console.WriteLine(r);
 					break;
-				case 2:
+				} case 2: {
 					Quadrato q = new(42);
 					fg[i] = q;
 					Console.WriteLine(q);
 					break;
-				case 3:
+				} case 3: {
 					Ellisse e = new(21, 42);
 					fg[i] = e;
 					Console.WriteLine(e);
 					break;
-				case 4:
+				} case 4: {
 					Cerchio c = new(42);
 					fg[i] = c;
 					Console.WriteLine(c);
 					break;
+				} default: {
+					Console.WriteLine("FiguraGeomtrica di tipo non riconosciuto")
+				}
 			}
 		}
 

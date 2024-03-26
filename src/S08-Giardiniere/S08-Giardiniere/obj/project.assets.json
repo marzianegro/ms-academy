@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/marzianegro/Projects/S08-Giardiniere/S08-Giardiniere/S08-Giardiniere.csproj",
+      "projectUniqueName": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S08-Giardiniere/S08-Giardiniere/S08-Giardiniere.csproj",
       "projectName": "S08-Giardiniere",
-      "projectPath": "/Users/marzianegro/Projects/S08-Giardiniere/S08-Giardiniere/S08-Giardiniere.csproj",
+      "projectPath": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S08-Giardiniere/S08-Giardiniere/S08-Giardiniere.csproj",
       "packagesPath": "/Users/marzianegro/.nuget/packages/",
-      "outputPath": "/Users/marzianegro/Projects/S08-Giardiniere/S08-Giardiniere/obj/",
+      "outputPath": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S08-Giardiniere/S08-Giardiniere/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/marzianegro/.nuget/NuGet/NuGet.Config"

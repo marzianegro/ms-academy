@@ -2,17 +2,16 @@
 
 namespace S05_Password;
 
-class Program
-{
-    static void Main()
-    {
+class Program {
+    static void Main() {
 		Console.WriteLine("PASSWORD GENERATOR");
 		Console.WriteLine("----------");
 
-		//Console.WriteLine($"\nPassword generata con char[]: {PasswordGenerator.GeneraConArray(14)}");
-		//Console.WriteLine($"Password generata con StringBuilder: {PasswordGenerator.GeneraConBuilder(7)}");
-		//Console.WriteLine($"Password generata con Substring: {PasswordGenerator.GeneraConSubstring(11)}");
-		//Console.WriteLine($"Password generata con Shuffle: {PasswordGenerator.GeneraConShuffle(9)}");
+		Console.WriteLine($"\nPassword generata con char[]: {PasswordGenerator.GeneraConArray(14)}");
+		Console.WriteLine($"Password generata con StringBuilder: {PasswordGenerator.GeneraConBuilder(7)}");
+		Console.WriteLine($"Password generata con Substring: {PasswordGenerator.GeneraConSubstring(11)}");
+		Console.WriteLine($"Password generata con Shuffle: {PasswordGenerator.GeneraConShuffle(9)}");
+	
 		string pw_a = PasswordGenerator.GeneraConRegole(11, 0, 1, 1, 1);
 		PasswordGenerator.VerifyPassword(pw_a, pw_a.Length, 0, 1, 1, 1);
 		Console.WriteLine(": " + pw_a + '\n');
@@ -39,24 +38,24 @@ class Program
 		PasswordGenerator.VerifyPassword("a%&ZLM12#", 8, 1, 3, 2, 4);
 
 
-		//Console.ForegroundColor = ConsoleColor.Yellow;
-		//Console.WriteLine("\n\nFISHER-YATES SHUFFLE ALGORITHM");
-		//Console.ForegroundColor = ConsoleColor.White;
+		Console.ForegroundColor = ConsoleColor.Yellow;
+		Console.WriteLine("\n\nFISHER-YATES SHUFFLE ALGORITHM");
+		Console.ForegroundColor = ConsoleColor.White;
 
-		//Console.WriteLine("\nWith char[]");
-		//Console.WriteLine("---");
-		//char[] arr = { 'E', 'l', 'v', 'i', 's' };
-		//Console.Write("Original: ");
-		//Console.WriteLine(arr);
-		//Console.Write($"Shuffled: ");
-		//Console.WriteLine(Utility.Shuffle(arr));
-		//Console.WriteLine("---");
+		Console.WriteLine("\nWith char[]");
+		Console.WriteLine("---");
+		char[] arr = { 'E', 'l', 'v', 'i', 's' };
+		Console.Write("Original: ");
+		Console.WriteLine(arr);
+		Console.Write($"Shuffled: ");
+		Console.WriteLine(Utility.Shuffle(arr));
+		Console.WriteLine("---");
 
-		//Console.WriteLine("\nWith string");
-		//Console.WriteLine("---");
-		//string str = "Presley";
-		//Console.WriteLine($"Original: {str}");
-		//Console.WriteLine($"Shuffled: {Utility.Shuffle(str)}");
-		//Console.WriteLine("---");
+		Console.WriteLine("\nWith string");
+		Console.WriteLine("---");
+		string str = "Presley";
+		Console.WriteLine($"Original: {str}");
+		Console.WriteLine($"Shuffled: {Utility.Shuffle(str)}");
+		Console.WriteLine("---");
 	}
 }
