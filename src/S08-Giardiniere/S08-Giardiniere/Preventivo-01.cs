@@ -32,35 +32,32 @@ public class Preventivo
 	}
 
 	public void CalcolaPreventivi() {
-		/// CALCOLO DEL PREVENTIVO PER OGNI PRATO
+		/// Calcolo del preventivo per ogni prato
 		Console.ForegroundColor = ConsoleColor.Green;
-		Console.WriteLine("PREVENTIVI PER PRATI");
+		Console.WriteLine("Prati");
 		Console.ForegroundColor = ConsoleColor.White;
-		Console.WriteLine("---");
 
 		for (int i = 0; i < this._numZone; i++) {
 			this._preventivoPrati += this._zone[i].Area() * this._pratoPrezzoMQ;
 			Console.WriteLine($"Preventivo per prato {this._zone[i].GetType()} #{i}: €{this._zone[i].Area() * this._pratoPrezzoMQ:F2}");
 		}
 
-		/// CALCOLO DEL PREVENTIVO PER OGNI SIEPIE
+		/// Calcolo del preventivo per ogni siepe
 		Console.WriteLine();
 		Console.ForegroundColor = ConsoleColor.Green;
-		Console.WriteLine("PREVENTIVI PER SIEPI");
+		Console.WriteLine("Siepi");
 		Console.ForegroundColor = ConsoleColor.White;
-		Console.WriteLine("---");
 
 		for (int i = 0; i < this._numZone; i++) {
 			this._preventivoSiepi += this._zone[i].Perimetro() * this._siepePrezzoM;
 			Console.WriteLine($"Preventivo per siepe {this._zone[i].GetType()} #{i}: €{this._zone[i].Perimetro() * this._siepePrezzoM:F2}");
 		}
 
-		/// CALCOLO DEL PREVENTIVO TOTALE
+		/// Calcolo del preventivo totale
 		Console.WriteLine();
 		Console.ForegroundColor = ConsoleColor.Green;
-		Console.WriteLine("PREVENTIVO TOTALE");
+		Console.WriteLine("Totale");
 		Console.ForegroundColor = ConsoleColor.White;
-		Console.WriteLine("---");
 
 		this._preventivoTotale = this._preventivoPrati + this._preventivoSiepi;
 		Console.WriteLine($"Preventivo totale: €{this._preventivoTotale:F2}");

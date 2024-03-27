@@ -7,7 +7,7 @@ namespace S08_Giardiniere;
 class Program {
     static void Main() {
 
-		// EXERCISE: : without creating any Class(es)
+		// EXERCISE
 		Console.ForegroundColor = ConsoleColor.DarkGreen;
 		Console.WriteLine("---------- VERSION A ----------\n");
 		Console.ForegroundColor = ConsoleColor.White;
@@ -34,22 +34,23 @@ class Program {
 		Console.ForegroundColor = ConsoleColor.Green;
 		Console.Write("Preventivo per i prati");
 		Console.ForegroundColor = ConsoleColor.White;
-		Console.WriteLine($": €{preventivoPrato}");
+		Console.WriteLine($": €{preventivoPrato:F2}");
 
 		Console.ForegroundColor = ConsoleColor.Green;
 		Console.Write("Preventivo per le siepi");
 		Console.ForegroundColor = ConsoleColor.White;
-		Console.WriteLine($": €{preventivoSiepe}");
+		Console.WriteLine($": €{preventivoSiepe:F2}");
 
 		Console.ForegroundColor = ConsoleColor.Green;
 		Console.Write("Preventivo totale");
 		Console.ForegroundColor = ConsoleColor.White;
-		Console.WriteLine($": €{preventivoTotale}");
+		Console.WriteLine($": €{preventivoTotale:F2}");
 
-		// EXERCISE: creating Class(es)
+		// EXERCISE
 		Console.ForegroundColor = ConsoleColor.DarkGreen;
 		Console.WriteLine("\n\n---------- VERSION B ----------\n");
 		Console.ForegroundColor = ConsoleColor.White;
+
 		Preventivo pMario = new(4);
 
         Rettangolo zonaA = new(6, 7);
@@ -67,9 +68,11 @@ class Program {
         Console.WriteLine();
         Console.WriteLine(pMario);
 
+		// EXERCISE
 		Console.ForegroundColor = ConsoleColor.DarkGreen;
 		Console.WriteLine("\n\n---------- VERSION C ----------\n");
 		Console.ForegroundColor = ConsoleColor.White;
+
 		PreventivoAlt pLuca = new(4);
 
 		Rettangolo zonaW = new(6, 7);
