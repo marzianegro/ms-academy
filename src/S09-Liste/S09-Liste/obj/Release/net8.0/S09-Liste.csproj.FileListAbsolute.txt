@@ -1,0 +1,15 @@
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S09-Liste/S09-Liste/bin/Release/net8.0/S09-Liste
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S09-Liste/S09-Liste/bin/Release/net8.0/S09-Liste.deps.json
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S09-Liste/S09-Liste/bin/Release/net8.0/S09-Liste.runtimeconfig.json
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S09-Liste/S09-Liste/bin/Release/net8.0/S09-Liste.dll
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S09-Liste/S09-Liste/bin/Release/net8.0/S09-Liste.pdb
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S09-Liste/S09-Liste/obj/Release/net8.0/S09-Liste.GeneratedMSBuildEditorConfig.editorconfig
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S09-Liste/S09-Liste/obj/Release/net8.0/S09-Liste.AssemblyInfoInputs.cache
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S09-Liste/S09-Liste/obj/Release/net8.0/S09-Liste.AssemblyInfo.cs
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S09-Liste/S09-Liste/obj/Release/net8.0/S09-Liste.csproj.CoreCompileInputs.cache
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S09-Liste/S09-Liste/obj/Release/net8.0/S09-Liste.sourcelink.json
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S09-Liste/S09-Liste/obj/Release/net8.0/S09-Liste.dll
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S09-Liste/S09-Liste/obj/Release/net8.0/refint/S09-Liste.dll
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S09-Liste/S09-Liste/obj/Release/net8.0/S09-Liste.pdb
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S09-Liste/S09-Liste/obj/Release/net8.0/S09-Liste.genruntimeconfig.cache
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S09-Liste/S09-Liste/obj/Release/net8.0/ref/S09-Liste.dll

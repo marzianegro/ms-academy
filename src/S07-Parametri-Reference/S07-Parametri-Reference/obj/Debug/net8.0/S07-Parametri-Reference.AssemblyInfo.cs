@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("S07-Parametri-Reference")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+112c364b5964d939c3976cf309775589fc3c4878")]
 [assembly: System.Reflection.AssemblyProductAttribute("S07-Parametri-Reference")]
 [assembly: System.Reflection.AssemblyTitleAttribute("S07-Parametri-Reference")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

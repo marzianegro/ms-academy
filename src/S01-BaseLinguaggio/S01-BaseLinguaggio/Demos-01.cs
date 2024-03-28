@@ -38,7 +38,7 @@ Console.WriteLine("*********");
 	Operators
 */
 Console.WriteLine(10 + 32); // This is the normal functioning of the + operator
-// In both the following cases, the + operator is being overloaded
+							// In both the following cases, the + operator is being overloaded
 Console.WriteLine(42 + " This is a string");
 Console.WriteLine(40 + "20");
 

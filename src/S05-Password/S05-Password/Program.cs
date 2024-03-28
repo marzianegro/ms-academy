@@ -2,8 +2,10 @@
 
 namespace S05_Password;
 
-class Program {
-    static void Main() {
+class Program
+{
+	static void Main()
+	{
 		Console.WriteLine("PASSWORD GENERATOR");
 		Console.WriteLine("----------");
 
@@ -11,7 +13,7 @@ class Program {
 		Console.WriteLine($"Password generata con StringBuilder: {PasswordGenerator.GeneraConBuilder(7)}");
 		Console.WriteLine($"Password generata con Substring: {PasswordGenerator.GeneraConSubstring(11)}");
 		Console.WriteLine($"Password generata con Shuffle: {PasswordGenerator.GeneraConShuffle(9)}");
-	
+
 		string pw_a = PasswordGenerator.GeneraConRegole(11, 0, 1, 1, 1);
 		PasswordGenerator.VerifyPassword(pw_a, pw_a.Length, 0, 1, 1, 1);
 		Console.WriteLine(": " + pw_a + '\n');

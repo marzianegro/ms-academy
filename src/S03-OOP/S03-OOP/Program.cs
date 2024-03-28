@@ -23,8 +23,10 @@ using Geometria;
 	When we declare a class without any access modifier, it takes the default accessibility
 	level, which is internal for classes defined within a namespace.
 */
-class MyClass {
-	static void Main() {
+class MyClass
+{
+	static void Main()
+	{
 		Console.WriteLine("----------");
 		SayHello();
 
@@ -80,9 +82,12 @@ class MyClass {
 
 		lamp.SiFulmina();
 		Console.WriteLine("\nOh no, la lampadina ha iniziato a fare le bizze... SI FULMINERÀ?");
-		if (!lamp.Vita) {
+		if (!lamp.Vita)
+		{
 			Console.WriteLine("AAA SIAMO RIMASTI AL BUIO!");
-		} else {
+		}
+		else
+		{
 			Console.WriteLine("Pheeew, questa volta l'abbiamo scampata!");
 
 			Console.WriteLine("\nForza, ora si va a dormire, spegnereee!");
@@ -147,23 +152,28 @@ class MyClass {
 		lamp.SpegniLuce();
 	}
 
-	static void SayHello() {
+	static void SayHello()
+	{
 		Console.WriteLine("Hello, World!");
 	}
 
-	static void SayMessage(string message) {
+	static void SayMessage(string message)
+	{
 		Console.WriteLine(message);
 	}
 
-	void PrintMessage(string message) {
+	void PrintMessage(string message)
+	{
 		Console.WriteLine(message);
 	}
 }
 
-class InstanceVariableDemo {
+class InstanceVariableDemo
+{
 	int x = Random.Shared.Next();
 
-	public override string? ToString() {
+	public override string? ToString()
+	{
 		// When an instance is passed to WriteLine(), it is converted to a string with ToString(), that's why we need to 'override'
 		return $"x is: {x}";
 	}

@@ -4,8 +4,10 @@ using Geometria;
 
 namespace S08_Giardiniere;
 
-class Program {
-    static void Main() {
+class Program
+{
+	static void Main()
+	{
 
 		// EXERCISE
 		Console.ForegroundColor = ConsoleColor.DarkGreen;
@@ -13,22 +15,22 @@ class Program {
 		Console.ForegroundColor = ConsoleColor.White;
 		// Step 1: establishing the prices
 		double pratoPrezzoMQ = 8;
-        double siepePrezzoM = 16;
+		double siepePrezzoM = 16;
 
 		// Step 2: constructing the different zones
-        Rettangolo zona1 = new(6, 7);
-        Rettangolo zona2 = new(6, 7);
-        Cerchio zona3 = new(2);
-        Cerchio zona4 = new(2);
+		Rettangolo zona1 = new(6, 7);
+		Rettangolo zona2 = new(6, 7);
+		Cerchio zona3 = new(2);
+		Cerchio zona4 = new(2);
 
 		// Step 3: calculating geometric results
-        double area = zona1.Area() + zona2.Area() + zona3.Area() + zona4.Area();
-        double perimetro = zona1.Perimetro() + zona2.Perimetro() + zona3.Perimetro() + zona4.Perimetro();
+		double area = zona1.Area() + zona2.Area() + zona3.Area() + zona4.Area();
+		double perimetro = zona1.Perimetro() + zona2.Perimetro() + zona3.Perimetro() + zona4.Perimetro();
 
 		// Step 4: converting geometric to money results
-        double preventivoPrato = pratoPrezzoMQ * area;
-        double preventivoSiepe = siepePrezzoM * perimetro;
-        double preventivoTotale = preventivoPrato + preventivoSiepe;
+		double preventivoPrato = pratoPrezzoMQ * area;
+		double preventivoSiepe = siepePrezzoM * perimetro;
+		double preventivoTotale = preventivoPrato + preventivoSiepe;
 
 		// Step 5: printing the results
 		Console.ForegroundColor = ConsoleColor.Green;
@@ -53,7 +55,7 @@ class Program {
 
 		Preventivo pMario = new(4);
 
-        Rettangolo zonaA = new(6, 7);
+		Rettangolo zonaA = new(6, 7);
 		Rettangolo zonaB = new(6, 7);
 		Cerchio zonaC = new(2);
 		Cerchio zonaD = new(2);
@@ -65,8 +67,8 @@ class Program {
 
 		pMario.CalcolaPreventivi();
 
-        Console.WriteLine();
-        Console.WriteLine(pMario);
+		Console.WriteLine();
+		Console.WriteLine(pMario);
 
 		// EXERCISE
 		Console.ForegroundColor = ConsoleColor.DarkGreen;

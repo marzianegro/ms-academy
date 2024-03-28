@@ -2,41 +2,56 @@
 
 namespace S03_OOP;
 
-public class Lampadina {
+public class Lampadina
+{
 	private bool _luce = false;
 	private bool _vita = true;
 
-	public bool Vita {
+	public bool Vita
+	{
 		get { return this._vita; }
 	}
 
-	public void AccendiLuce() {
-		if (!this._luce) {
+	public void AccendiLuce()
+	{
+		if (!this._luce)
+		{
 			this._luce = true;
-		} else {
+		}
+		else
+		{
 			Console.WriteLine("La lampadina è già accesa!");
 		}
 	}
 
-	public void SpegniLuce() {
-		if (this._luce == true) {
+	public void SpegniLuce()
+	{
+		if (this._luce == true)
+		{
 			this._luce = false;
-		} else {
+		}
+		else
+		{
 			Console.WriteLine("La lampadina è già spenta!");
 		}
 	}
 
-	public void SiFulmina() {
+	public void SiFulmina()
+	{
 		int speriamoDiNo = Random.Shared.Next(0, 2);
 
-		if (speriamoDiNo == 0) {
+		if (speriamoDiNo == 0)
+		{
 			this._vita = true;
-		} else {
+		}
+		else
+		{
 			this._vita = false;
 		}
 	}
 
-	public override string? ToString() {
+	public override string? ToString()
+	{
 		return $"La lampadina è accesa? {_luce}";
 	}
 }

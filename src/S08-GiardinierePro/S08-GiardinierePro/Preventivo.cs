@@ -7,18 +7,20 @@ public class Preventivo
 	private readonly double _pratoPrezzoMQ = 8; // 8€ al mq
 	private readonly double _siepePrezzoM = 16; // 16€ al m
 
-	private readonly Giardino	_giardino;
+	private readonly Giardino _giardino;
 
 	private double _preventivoPrati;
 	private double _preventivoSiepi;
 	private double _preventivoTotale;
 
 
-	public Preventivo(Giardino giardino) {
+	public Preventivo(Giardino giardino)
+	{
 		this._giardino = giardino;
 	}
 
-	public void CalcolaPreventivi() {
+	public void CalcolaPreventivi()
+	{
 		// Calcolo del preventivo per i prati
 		this._preventivoPrati = this._giardino.CalcolaAreaTotale() * this._pratoPrezzoMQ;
 
@@ -29,7 +31,8 @@ public class Preventivo
 		this._preventivoTotale = this._preventivoPrati + this._preventivoSiepi;
 	}
 
-	public void ComunicaPreventivi() {
+	public void ComunicaPreventivi()
+	{
 		// Stampa del preventivo per i prati
 		Console.ForegroundColor = ConsoleColor.Green;
 		Console.Write("Preventivo per i prati");
@@ -49,7 +52,8 @@ public class Preventivo
 		Console.WriteLine($": €{this._preventivoTotale:F2}");
 	}
 
-	public override string ToString() {
+	public override string ToString()
+	{
 		return $"Prati €{this._preventivoPrati:F2} | Siepi €{this._preventivoSiepi:F2} | Totale €{this._preventivoTotale:F2}";
 	}
 }

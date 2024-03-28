@@ -2,11 +2,13 @@
 
 namespace S08_GiardinierePro;
 
-class Program {
-    public static void Main() {
+class Program
+{
+	public static void Main()
+	{
 		Giardino gRossi = new(4);
 
-        Rettangolo zonaA = new(6, 7);
+		Rettangolo zonaA = new(6, 7);
 		gRossi.AggiungiZona(zonaA);
 		Rettangolo zonaB = new(6, 7);
 		gRossi.AggiungiZona(zonaB);
@@ -26,7 +28,7 @@ class Program {
 		Console.WriteLine(" - " + pRossi);
 
 		//////////
-		
+
 		Giardino gBianchi = new(4);
 
 		Rettangolo zonaW = new(6, 7);
