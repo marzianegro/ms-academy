@@ -1,7 +1,8 @@
-﻿
+﻿////////// 28 MARZO 2024 //////////
+
 namespace S09_Liste;
 
-class Program
+class Bootstrap
 {
 	static void Main()
 	{

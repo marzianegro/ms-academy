@@ -8,4 +8,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="S04-Geometria">
+      <HintPath>..\..\S04-Geometria\S04-Geometria\bin\Debug\net8.0\S04-Geometria.dll</HintPath>
+    </Reference>
+  </ItemGroup>
 </Project>

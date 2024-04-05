@@ -1,4 +1,6 @@
-﻿using System;
+﻿////////// 28 MARZO 2024 //////////
+
+using System;
 namespace S09_Liste;
 
 public class ContainerDemo
@@ -33,6 +35,12 @@ public class ContainerDemo
 		// i = c.Content; // Cannot implicitly convert type 'string' to 'int'
 		// i = ((int)c.Content); // Even explictly casting does NOT work, because checks are done at compile-time
 		s = c.Content.ToLower();
+		Console.WriteLine(s);
+
+		Console.WriteLine();
+		Pair<int, string> p = new(42, "Forty-Two");
+		Console.WriteLine(p);
+		s = p.SecondItem.ToLower();
 		Console.WriteLine(s);
 	}
 }
