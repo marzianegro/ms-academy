@@ -1,0 +1,12 @@
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S08-Giardiniere/S04-Geometria/bin/Debug/net8.0/S04-Geometria.deps.json
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S08-Giardiniere/S04-Geometria/bin/Debug/net8.0/S04-Geometria.dll
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S08-Giardiniere/S04-Geometria/bin/Debug/net8.0/S04-Geometria.pdb
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S08-Giardiniere/S04-Geometria/obj/Debug/net8.0/S04-Geometria.GeneratedMSBuildEditorConfig.editorconfig
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S08-Giardiniere/S04-Geometria/obj/Debug/net8.0/S04-Geometria.AssemblyInfoInputs.cache
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S08-Giardiniere/S04-Geometria/obj/Debug/net8.0/S04-Geometria.AssemblyInfo.cs
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S08-Giardiniere/S04-Geometria/obj/Debug/net8.0/S04-Geometria.csproj.CoreCompileInputs.cache
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S08-Giardiniere/S04-Geometria/obj/Debug/net8.0/S04-Geometria.sourcelink.json
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S08-Giardiniere/S04-Geometria/obj/Debug/net8.0/S04-Geometria.dll
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S08-Giardiniere/S04-Geometria/obj/Debug/net8.0/refint/S04-Geometria.dll
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S08-Giardiniere/S04-Geometria/obj/Debug/net8.0/S04-Geometria.pdb
+/Users/marzianegro/Desktop/Academy/ms-academy/src/S08-Giardiniere/S04-Geometria/obj/Debug/net8.0/ref/S04-Geometria.dll
