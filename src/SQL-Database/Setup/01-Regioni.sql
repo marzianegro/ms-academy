@@ -1,10 +1,11 @@
 DROP TABLE IF EXISTS regioni;
+
 CREATE TABLE regioni
 (
-    id int NOT NULL,
-    nome varchar(50) NOT NULL,
-    latitudine decimal(9,6) NOT NULL,
-    longitudine decimal(9,6) NOT NULL,
+    id			int NOT NULL,
+    nome		varchar(50) NOT NULL,
+    latitudine	decimal(9,6) NOT NULL,
+    longitudine	decimal(9,6) NOT NULL,
     PRIMARY KEY (id)
 )
 
