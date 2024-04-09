@@ -1,3 +1,6 @@
+USE corsodb
+GO
+
 --
 -- Creazione della prima table
 --

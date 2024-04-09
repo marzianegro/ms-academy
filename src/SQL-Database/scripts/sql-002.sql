@@ -1,3 +1,6 @@
+USE corsodb
+GO
+
 --
 -- Query su regioni, province, comuni
 --

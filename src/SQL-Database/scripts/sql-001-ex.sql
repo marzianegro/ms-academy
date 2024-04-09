@@ -1,3 +1,6 @@
+USE corsodb
+GO
+
 -- Esercizo
 -- PARTE 1
 DROP TABLE IF EXISTS studenti;

@@ -11,7 +11,10 @@ CREATE TABLE comuni
     latitudine          decimal(9,6) NOT NULL,
     longitudine         decimal(9,6) NOT NULL,
     PRIMARY KEY (id)
-);,
+);
+
+INSERT INTO comuni
+VALUES
     (1001, 1, 1, 'Agliè', 0, 'A074', 45.364155, 7.768627),
     (1002, 1, 1, 'Airasca', 0, 'A109', 44.917111, 7.489349),
     (1003, 1, 1, 'Ala di Stura', 0, 'A117', 45.315338, 7.310341),
