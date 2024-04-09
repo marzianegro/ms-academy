@@ -106,5 +106,3 @@ FROM (
 	SELECT 2, 'def'
 ) xyz;
 GO
-
--- Clausola JOIN

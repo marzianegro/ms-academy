@@ -1,0 +1,25 @@
+-- TASK #3
+-- List father, father's age, mother, mother's age, child, child's age, orphans
+	-- father
+		-- fc = 'father' in FatherChild
+		-- pf = Person
+	-- mother
+		-- mc = 'mother' in MotherChild
+		-- pm = Person
+	-- child
+		-- pc = Person
+-- Shared solution
+SELECT
+	pc.name AS child, pc.age AS child_age,
+	mc.mother, pc.age AS mother_age,
+	fc.father, pf.age AS father_age
+FROM Person pc
+LEFT JOIN MotherChild mc -- matching mother to child
+	ON mc.child = pc.name
+LEFT JOIN FatherChild fc -- matching father to child
+	ON fc.child = pc.name
+LEFT JOIN Person pm -- getting mother's age
+	ON mc.mother = pm.name
+LEFT JOIN Person pf -- getting father's age
+	ON fc.father = pf.name
+GO

@@ -99,8 +99,39 @@ WHERE a.id_cliente IS NOT NULL;
 GO
 
 -- RIGHT JOIN can be obtained through inversion of the LEFT JOIN
-SELECT nome, cognome, data, valore
+SELECT nome, cognome, data, valore	
 FROM ordini b
 LEFT OUTER JOIN clienti a
 	ON a.id_cliente = b.id_cliente
+GO
+
+
+--
+-- FULL (OUTER) JOIN
+--
+SELECT nome, cognome, data, valore
+FROM clienti a
+LEFT JOIN ordini b
+	ON a.id_cliente = b.id_cliente
+UNION
+SELECT nome, cognome, data, valore
+FROM clienti a
+RIGHT JOIN ordini b
+	ON a.id_cliente = b.id_cliente;
+GO
+
+-- Questa query produce esattamente lo stesso risultato che quella sopra
+SELECT nome, cognome, data, valore
+FROM clienti a
+FULL JOIN ordini b
+	ON a.id_cliente = b.id_cliente;
+GO
+
+-- Esempio INNER su tables multiple
+SELECT r.nome, p.nome, c.nome
+FROM regioni AS r
+INNER JOIN province AS p
+	ON r.id = p.id_regione
+INNER JOIN comuni AS c
+	ON p.id = c.id_provincia;
 GO

@@ -21,7 +21,6 @@ VALUES
 	(5,'Vincenzo','Bellini','bellini@bellini.org','Piazza San Francesco d’Assisi, 3','Catania','CT',95100);
 
 
-
 DROP TABLE IF EXISTS ordini;
 CREATE TABLE ordini (
 	id_ordine	int primary key,
@@ -39,7 +38,6 @@ VALUES
 	(6, convert(datetime,'01/06/2018', 105) ,144.00,   9);
 
 
-
 DROP TABLE IF EXISTS cjdA;
 CREATE TABLE cjdA (
 	x char
@@ -50,7 +48,6 @@ VALUES
 	('B'),
 	('C'),
 	('D');
-
 
 
 DROP TABLE IF EXISTS cjdB;
