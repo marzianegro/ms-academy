@@ -6,6 +6,7 @@
 		docker ps
 	1.2 Connect to the shell through command
 		docker exec -it --user=root <container name> bash
+		For me: docker exec -it --user=root SQL2022 bash
 
 2. Launch SQLCMD
 	2.1 Check if SQLCMD is present through command
@@ -25,5 +26,6 @@
 		4.3.2. Check the output (it should be something along the lines of)
 			total 7360
 			-rw-r----- 1 mssql mssql 7532544 Apr  9 10:34 corsodb.bak
-	4.4 Move the backup to the desired folder
-		docker cp SQL2022:/tmp/corsodb.bak <path to folder>
+	4.4 Now leave the shell and move the backup to the desired folder
+		docker cp SQL2022:/tmp/<backup file name> <path to folder>
+		For me: docker cp SQL2022:/tmp/<backup file name> Academy/ms-academy/src/SQL-Database/Backup

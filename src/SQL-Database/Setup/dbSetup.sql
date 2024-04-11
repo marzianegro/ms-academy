@@ -8,30 +8,30 @@
 -- NOTES:
 	-- ; e go non appartengono a SQL, ma sono parole chiave di una convenzione stabilita tra client e server
 	-- ; e go servono sostanziamente al client
-use master; -- ; termina un comando SQL
-go -- Esegue il batch (gruppo) di comandi SQL terminati da un ;
+USE master; -- ; termina un comando SQL
+GO -- Esegue il batch (gruppo) di comandi SQL terminati da un ;
 
 -- CREAZIONE DEL DATABASE
-drop database if exists corsodb -- Elimina il database in oggetto, se già esiste
-go
+DROP DATABASE IF EXISTS corsodb -- Elimina il database in oggetto, se già esiste
+GO
 
-create database corsodb -- Crea il database
-go
+CREATE DATABASE corsodb -- Crea il database
+GO
 
-use corsodb -- Si posiziona sul database
-go
+USE corsodb -- Si posiziona sul database
+GO
 
 -- CREAZIONE DI UTENTE IN SQLSERVER
 	-- 1) Creazione del login
-drop login corso -- Elimina il login
-go
+DROP LOGIN corso -- Elimina il login
+GO
 
-create login corso with password = '@@C202403', default_database = corsodb
-go
+CREATE LOGIN corso WITH PASSWORD = '@@C202403', DEFAULT_DATABASE = corsodb
+GO
 
 	-- 2) Creazione dell'user
-create user corso for login corso
-go
+CREATE USER corso FOR LOGIN corso
+GO
 
-grant control to corso
-go
+GRANT CONTROL TO corso
+GO
