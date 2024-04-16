@@ -60,21 +60,29 @@ class Program
 		// EntityClient c = clientsDAO.FindByID(15);
 		// Console.WriteLine(c);
 
-		// Console.WriteLine(clientsDAO.DeleteByID(15));
-		try {
-			EntityClient testDelete = clientsDAO.FindByID(15);
-			Console.WriteLine(testDelete);
-		} catch (Exception e) {
-			Console.WriteLine(e.Message);
-		}
+		// // Console.WriteLine(clientsDAO.DeleteByID(15));
+		// try {
+		// 	EntityClient testDelete = clientsDAO.FindByID(15);
+		// 	Console.WriteLine(testDelete);
+		// } catch (Exception e) {
+		// 	Console.WriteLine(e.Message);
+		// }
 
-		Console.WriteLine();
-		// Console.WriteLine(clientsDAO.DeleteByID(13));
-		try {
-			EntityClient testDelete = clientsDAO.FindByID(13);
-			Console.WriteLine(testDelete);
-		} catch (Exception e) {
-			Console.WriteLine(e.Message);
-		}
+		// Console.WriteLine();
+		// // Console.WriteLine(clientsDAO.DeleteByID(13));
+		// try {
+		// 	EntityClient testDelete = clientsDAO.FindByID(13);
+		// 	Console.WriteLine(testDelete);
+		// } catch (Exception e) {
+		// 	Console.WriteLine(e.Message);
+		// }
+
+		EntityClient c = clientsDAO.FindByID(10);
+		Console.WriteLine(c);
+
+		c.Nome = "Arturo";
+		c.Cognome = "Rossi";
+		clientsDAO.Create(c);
+		Console.WriteLine(c);
 	}
 }

@@ -39,6 +39,16 @@ public class EntityClient
 
 	public override string? ToString()
 	{
-		return $"Cliente: ID = {ID}; Nome = {Nome}; Cognome = {Cognome}; Email = {Email}; Indirizzo = {Indirizzo}; Città = {Città}; Provincia = {Provincia}; CAP = {CAP};";
+		return $"------------------------------\n" +
+				$"ID:\t\t{ID}\n" +
+				$"Nome:\t\t{Nome}\n" +
+				$"Cognome:\t{Cognome}\n" +
+				$"E-mail:\t\t{Email}\n" +
+				$"Indirizzo:\t{Indirizzo}\n" +
+				$"Città:\t\t{Città}\n" +
+				$"Provincia:\t{Provincia}\n" +
+				$"CAP:\t\t{CAP}\n" +
+				"------------------------------\n\n";
+		// return $"Cliente: ID = {ID}; Nome = {Nome}; Cognome = {Cognome}; Email = {Email}; Indirizzo = {Indirizzo}; Città = {Città}; Provincia = {Provincia}; CAP = {CAP};";
 	}
 }

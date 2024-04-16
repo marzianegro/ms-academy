@@ -7,12 +7,21 @@ namespace S14_Clienti;
 
 public class ClientsDAO : AbstractDAO<EntityClient, int>
 {
-	const string countQuery = "SELECT COUNT(*) AS conteggio_clienti FROM clienti";
-	const string findAllQuery = "SELECT id_cliente, nome, cognome, email, indirizzo, citta, provincia, cap FROM clienti";
+	const string countQuery = @"SELECT COUNT(*) AS conteggio_clienti
+								FROM clienti";
+	const string findAllQuery = @"SELECT id_cliente, nome, cognome, email, indirizzo, citta, provincia, cap
+								FROM clienti";
 	const string findByIDQuery = $"{findAllQuery} WHERE id_cliente = @client_id";
-	const string updateQuery = $"UPDATE clienti SET nome=@client_nome, cognome=@client_cognome, email=@client_email, indirizzo=@client_indirizzo, citta=@client_città, provincia=@client_provincia, cap=@client_CAP WHERE id_cliente=@client_ID";
+	const string updateQuery = @$"UPDATE clienti
+								SET nome=@client_nome, cognome=@client_cognome, email=@client_email, indirizzo=@client_indirizzo, citta=@client_città, provincia=@client_provincia, cap=@client_CAP
+								WHERE id_cliente=@client_ID";
 	const string deleteAllQuery = "DELETE FROM clienti";
 	const string deleteByIDQuery = $"{deleteAllQuery} WHERE id_cliente = @client_ID";
+	// OUTPUT: returns information from, or expressions based on, each row affected by an INSERT, UPDATE, DELETE, or MERGE statement
+	const string insertQuery = @"INSERT INTO clienti (nome, cognome, email, indirizzo, citta, provincia, cap)
+								OUTPUT INSERTED.id_cliente
+								VALUES (@client_nome, @client_cognome, @client_email, @client_indirizzo, @client_città, @client_provincia, @client_CAP)";
+
 
 
 	// EXERCISE:
@@ -127,6 +136,7 @@ public class ClientsDAO : AbstractDAO<EntityClient, int>
 		SqlParameter client_email = new("@client_email", SqlDbType.VarChar);
 		SqlParameter client_indirizzo = new("@client_indirizzo", SqlDbType.VarChar);
 		SqlParameter client_città = new("@client_città", SqlDbType.VarChar);
+		SqlParameter client_provincia = new("@client_provincia", SqlDbType.VarChar);
 		SqlParameter client_CAP = new("@client_CAP", SqlDbType.VarChar);
 		bool result = false;
 
@@ -142,6 +152,7 @@ public class ClientsDAO : AbstractDAO<EntityClient, int>
 				sqlCmd.Parameters.Add(client_email);
 				sqlCmd.Parameters.Add(client_indirizzo);
 				sqlCmd.Parameters.Add(client_città);
+				sqlCmd.Parameters.Add(client_provincia);
 				sqlCmd.Parameters.Add(client_CAP);
 				
 				// Giving parameters a value
@@ -151,6 +162,7 @@ public class ClientsDAO : AbstractDAO<EntityClient, int>
 				client_email.Value = entity.Email;
 				client_indirizzo.Value = entity.Indirizzo;
 				client_città.Value = entity.Città;
+				client_provincia.Value = entity.Provincia;
 				client_CAP.Value = entity.CAP;
 
 				// This is the explicit version
@@ -165,7 +177,7 @@ public class ClientsDAO : AbstractDAO<EntityClient, int>
 
 	public override bool Delete(EntityClient client)
 	{
-    	return DeleteByID(client.ID);
+    	return DeleteByID(client.ID); // Because Equals() considers only the ID
 	}
 
 	public override bool DeleteByID(int key)
@@ -180,4 +192,54 @@ public class ClientsDAO : AbstractDAO<EntityClient, int>
 
         return sqlCmd.ExecuteNonQuery() > 0;
     }
+
+    public override EntityClient Create(EntityClient newClient)
+    {
+		SqlParameter client_nome = new("@client_nome", SqlDbType.VarChar);
+		SqlParameter client_cognome = new("@client_cognome", SqlDbType.VarChar);
+		SqlParameter client_email = new("@client_email", SqlDbType.VarChar);
+		SqlParameter client_indirizzo = new("@client_indirizzo", SqlDbType.VarChar);
+		SqlParameter client_città = new("@client_città", SqlDbType.VarChar);
+		SqlParameter client_provincia = new("@client_provincia", SqlDbType.VarChar);
+		SqlParameter client_CAP = new("@client_CAP", SqlDbType.VarChar);
+
+		using (SqlConnection connection = ConnectionManager.Instance.GetConnection())
+		{
+			connection.Open();
+			using (SqlCommand sqlCmd = new(insertQuery, connection))
+			{
+				sqlCmd.Parameters.Add(client_nome);
+				sqlCmd.Parameters.Add(client_cognome);
+				sqlCmd.Parameters.Add(client_email);
+				sqlCmd.Parameters.Add(client_indirizzo);
+				sqlCmd.Parameters.Add(client_città);
+				sqlCmd.Parameters.Add(client_provincia);
+				sqlCmd.Parameters.Add(client_CAP);
+				
+				client_nome.Value = newClient.Nome;
+				client_cognome.Value = newClient.Cognome;
+				client_email.Value = newClient.Email;
+				client_indirizzo.Value = newClient.Indirizzo;
+				client_città.Value = newClient.Città;
+				client_provincia.Value = newClient.Provincia;
+				client_CAP.Value = newClient.CAP;
+
+				int generatedID = Convert.ToInt32(sqlCmd.ExecuteScalar()); // ExecuteScalar executes a query and returns a result (actually an obejct)
+				newClient.ID = generatedID;
+			}
+		}
+		return newClient;
+    }
+
+	public override bool DeleteByIDs(List<int> keys)
+	{
+		bool result = true;
+
+		return result;
+	}
+
+	// private bool checkClient(EntityClient client)
+	// {
+	// 	...
+	// }
 }
