@@ -76,7 +76,7 @@ docker exec \
 if [ $? -eq 0 ]; then
     echo "Database backed up successfully"
 else
-    echo "Error backing up database"
+    echo "Error while backing up database"
     exit 1
 fi
 
@@ -88,7 +88,7 @@ docker cp "${CONTAINER_ID}:${SRC_DIR}/${LATEST_FILE}" "${DEST_PATH}"
 
 # Check the exit status of the previous command
 if [ $? -eq 0 ]; then
-    echo "Files copied successfully"
+    echo "Backup from Docker copied successfully"
 else
-    echo "Error copying files"
+    echo "Error while copying backup from Docker"
 fi

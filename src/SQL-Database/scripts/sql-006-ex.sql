@@ -235,6 +235,7 @@ INNER JOIN comuni AS cc
 	AND c.id != cc.id;
 GO
 
+-- Visualizzazione dei codici dei comuni doppi
 SELECT r.id, r.nome, p.id, p.nome, c.id, cc.id, c.nome AS 'Comune con identico nome'
 FROM comuni AS c
 INNER JOIN comuni AS cc

@@ -5,7 +5,7 @@
 use corsodb;
 go
 
--- controllo numero righe tra tabelle ==> 21 righe in più nella comuni
+-- controllo numero righe tra tabelle ==> 21 righe in piï¿½ nella comuni
 select
 	( select count(*) from comuni ) as '# Comuni',
 	( select count(*) from comuni_italiani ) as '# ComuniItaliani',
@@ -184,12 +184,18 @@ where ci.comune is null
 ;
 
 -- ===========================================================
+-- L'idea sinora seguita va corretta aggiungendo Regione e Provincia al match del nome comune
+-- ===========================================================
+
 
 -- verifica dell'esistenza di comuni con il medesimo nome
 -- !ESISTONO COMUNI CON NOME UGUALE
+-- 7 comuni hanno nome uguale
 select 
 (select count (distinct c.nome) from Comuni c) as 'numero comuni con nome diverso',
-(select  count (distinct c.comune) from comuni_italiani c )  as 'numero comuni italiani con nome diverso'
+(select count(*) from comuni) - (select count (distinct c.nome) from Comuni c) as 'numero comuni con nome uguale e id diverso',
+(select  count (distinct c.comune) from comuni_italiani c )  as 'numero comuni italiani con nome diverso',
+ (select count(*) from comuni_italiani) - (select  count (distinct c.comune) from comuni_italiani c )  as 'numero comuni_italiani con nome diverso'
 ;
 
 -- quali sono i comuni con nome uguale?
@@ -197,6 +203,12 @@ select distinct c.nome as 'comune con identico nome'
 from comuni c
 inner join comuni cc
 on c.nome = cc.nome and c.id != cc.id;
+
+select distinct c.id, cc.id, c.comune 
+from comuni_italiani c
+inner join comuni_italiani cc
+on c.comune = cc.comune and c.id != cc.id;
+
 
 -- quali sono i codici dei comuni doppi
 select r.id, r.nome, p.id, p.nome, c.id, cc.id, c.nome as 'comune con identico nome'
@@ -209,30 +221,64 @@ inner join province p
 on c.id_provincia = p.id
 ;
 
--- verifica nomi e codici su comuni_italiani_copy
 -- =============================================================
-select distinct c.id, cc.id, c.nome 
-from comuni c
-inner join comuni cc
-on c.nome = cc.nome and c.id != cc.id;
 
-select distinct c.id, cc.id, c.comune 
-from comuni_italiani c
-inner join comuni_italiani cc
-on c.comune = cc.comune and c.id != cc.id;
+drop table if exists comuni_italiani_copy;
 
---1)copia della tabella comuni_italiani in comuni_itaaliani_copy
+--1) copia della tabella comuni_italiani in comuni_itaaliani_copy
 select * into comuni_italiani_copy from comuni_italiani;
 
-select * from comuni_italiani_copy;
---2)alter table su comuni_italiani_copy per aggiungere i campi id_comune e nome_comune
-alter table comuni_italiani_copy add id_comune int, nome_comune varchar(100);
-select * from comuni_italiani_copy;
+select count(*) as 'conteggio comuni copiati' from comuni_italiani_copy;
+
+--2) alter table su comuni_italiani_copy per aggiungere i campi id_comune e nome_comune
+alter table comuni_italiani_copy 
+add 
+	id_comune int, 
+	nome_comune varchar(100);
+
+
+--update tramite id e codice istat
+-- 7812
+update comuni_italiani_copy
+set comuni_italiani_copy.id_comune = c.id, comuni_italiani_copy.nome_comune = c.nome
+from Comuni c
+inner join comuni_italiani_copy ci
+on c.id = ci.istat;
+
+-- contare quelli rimasti null
+-- 166 rimasti null
+select count(*) from comuni_italiani_copy where id_comune is null
+
+
+--
+--
+-- modificare gli update introducendo le modifiche per Regione+Provincia+NomeComune
+--
+--
+
+
+
+
+-- ?1) query per contare quanti match tra i regione+provincia+nome2
+
+
+
+
+-- ?2) aggiornare la query di update
+-- OLD
 --3)update con join dei campi creati
 --update tramite nomi
 update comuni_italiani_copy
 set comuni_italiani_copy.id_comune = null, comuni_italiani_copy.nome_comune = null;
 
+
+
+
+
+
+-- ?3) quenti sono quelli ancora da aggiornare
+
+-- OLD
 --7835
 update comuni_italiani_copy
 set comuni_italiani_copy.id_comune = c.id, comuni_italiani_copy.nome_comune = c.nome
@@ -241,17 +287,8 @@ inner join comuni_italiani_copy ci
 on c.nome = ci.comune;
 
 
---update tramite istat
---133
-update comuni_italiani_copy
-set comuni_italiani_copy.id_comune = c.id, comuni_italiani_copy.nome_comune = c.nome
-from Comuni c
-inner join comuni_italiani_copy ci
-on c.id = ci.istat
-where ci.id_comune is null;
 
---contiamo quelli rimasti null
---10 rimasti null
-select count(*) from comuni_italiani_copy where id_comune is null
+
+
 --4)verifiche
 --5)TBD
