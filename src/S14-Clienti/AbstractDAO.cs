@@ -26,7 +26,7 @@ public abstract class AbstractDAO<E, K> : InterfaceDAO<E, K>
 		throw new NotImplementedException();
 	}
 
-	public virtual bool Delete(List<E> entities)
+	public virtual bool DeleteAll(List<E> entities)
 	{
 		throw new NotImplementedException();
 	}
@@ -56,7 +56,7 @@ public abstract class AbstractDAO<E, K> : InterfaceDAO<E, K>
 		throw new NotImplementedException();
 	}
 
-	public virtual bool Update(List<E> entities)
+	public virtual bool UpdateAll(List<E> entities)
 	{
 		throw new NotImplementedException();
 	}

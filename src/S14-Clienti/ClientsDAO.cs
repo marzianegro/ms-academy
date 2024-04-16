@@ -1,6 +1,7 @@
 ﻿using Microsoft.Data.SqlClient;
 using System;
 using System.Data;
+using System.Xml.XPath;
 
 namespace S14_Clienti;
 
@@ -10,6 +11,9 @@ public class ClientsDAO : AbstractDAO<EntityClient, int>
 	const string findAllQuery = "SELECT id_cliente, nome, cognome, email, indirizzo, citta, provincia, cap FROM clienti";
 	const string findByIDQuery = $"{findAllQuery} WHERE id_cliente = @client_id";
 	const string updateQuery = $"UPDATE clienti SET nome=@client_nome, cognome=@client_cognome, email=@client_email, indirizzo=@client_indirizzo, citta=@client_città, provincia=@client_provincia, cap=@client_CAP WHERE id_cliente=@client_ID";
+	const string deleteAllQuery = "DELETE FROM clienti";
+	const string deleteByIDQuery = $"{deleteAllQuery} WHERE id_cliente = @client_ID";
+
 
 	// EXERCISE:
 	// public override long Count(SqlConnection connection)
@@ -105,7 +109,7 @@ public class ClientsDAO : AbstractDAO<EntityClient, int>
 			}
 		}
 		// The null-coalescing operator (??) returns the left-hand operand if it is not null, or else it returns the right-hand operand.
-		return client ?? throw new Exception("Client not found");
+		return client ?? throw new Exception($"Client with ID {key} not found");
 	}
 
 	// This is a way of updating the client's info using Equals(...)
@@ -153,9 +157,27 @@ public class ClientsDAO : AbstractDAO<EntityClient, int>
 				// int updatedRows = sqlCmd.ExecuteNonQuery(); // Execute the UPDATE
 				// result = updatedRows > 0;
 				// This is the implicit version
-				result = sqlCmd.ExecuteNonQuery() > 0;
+				result = sqlCmd.ExecuteNonQuery() > 0; // ExecuteNonQuery executes everything that is not a SELECT
 			}
 		}
 		return result;
+    }
+
+	public override bool Delete(EntityClient client)
+	{
+    	return DeleteByID(client.ID);
+	}
+
+	public override bool DeleteByID(int key)
+	{
+		SqlParameter client_ID = new("@client_ID", SqlDbType.Int);
+
+        using SqlConnection connection = ConnectionManager.Instance.GetConnection();
+        connection.Open();
+
+        using SqlCommand sqlCmd = new(deleteByIDQuery, connection);
+        sqlCmd.Parameters.AddWithValue("client_ID", key);
+
+        return sqlCmd.ExecuteNonQuery() > 0;
     }
 }

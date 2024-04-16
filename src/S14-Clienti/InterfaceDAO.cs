@@ -19,12 +19,12 @@ public interface InterfaceDAO<E, PK>
 
 	// Update
 	public bool Update(E entity);
-	public bool Update(List<E> entities);
+	public bool UpdateAll(List<E> entities);
 
 
 	// Delete
 	public bool DeleteByID(PK key);
 	public bool DeleteByIDs(List<PK> keys);
 	public bool Delete(E entity);
-	public bool Delete(List<E> entities);
+	public bool DeleteAll(List<E> entities);
 }

@@ -54,10 +54,27 @@ class Program
 	// 	connection.Close();
 
 		ClientsDAO clientsDAO = new();
-	// 	long clientCount = client.Count(connection);
-	// 	Console.WriteLine($"\nNumber of clients: {clientCount}");
+		// long clientCount = client.Count(connection);
+		// Console.WriteLine($"\nNumber of clients: {clientCount}");
 
-		EntityClient c = clientsDAO.FindByID(15);
-		Console.WriteLine(c);
+		// EntityClient c = clientsDAO.FindByID(15);
+		// Console.WriteLine(c);
+
+		// Console.WriteLine(clientsDAO.DeleteByID(15));
+		try {
+			EntityClient testDelete = clientsDAO.FindByID(15);
+			Console.WriteLine(testDelete);
+		} catch (Exception e) {
+			Console.WriteLine(e.Message);
+		}
+
+		Console.WriteLine();
+		// Console.WriteLine(clientsDAO.DeleteByID(13));
+		try {
+			EntityClient testDelete = clientsDAO.FindByID(13);
+			Console.WriteLine(testDelete);
+		} catch (Exception e) {
+			Console.WriteLine(e.Message);
+		}
 	}
 }
