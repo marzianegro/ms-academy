@@ -9,6 +9,7 @@ public class ClientsDAO : AbstractDAO<EntityClient, int>
 	const string countQuery = "SELECT COUNT(*) AS conteggio_clienti FROM clienti";
 	const string findAllQuery = "SELECT id_cliente, nome, cognome, email, indirizzo, citta, provincia, cap FROM clienti";
 	const string findByIDQuery = $"{findAllQuery} WHERE id_cliente = @client_id";
+	const string updateQuery = $"UPDATE clienti SET nome=@client_nome, cognome=@client_cognome, email=@client_email, indirizzo=@client_indirizzo, citta=@client_città, provincia=@client_provincia, cap=@client_CAP WHERE id_cliente=@client_ID";
 
 	// EXERCISE:
 	// public override long Count(SqlConnection connection)
@@ -76,7 +77,7 @@ public class ClientsDAO : AbstractDAO<EntityClient, int>
 
 	public override EntityClient FindByID(int key)
 	{
-		SqlParameter client_id = new("@client_id", SqlDbType.Int);
+		SqlParameter client_ID = new("@client_ID", SqlDbType.Int);
 		EntityClient? client = null; // If reader.Read() doesn't find anything, we must return NULL, so we can't create a new instance of EntityClient right here
 
 		using (SqlConnection connection = ConnectionManager.Instance.GetConnection())
@@ -84,7 +85,7 @@ public class ClientsDAO : AbstractDAO<EntityClient, int>
 			connection.Open();
 			using (SqlCommand sqlCmd = new(findByIDQuery, connection))
 			{
-				sqlCmd.Parameters.AddWithValue("client_id", key);
+				sqlCmd.Parameters.AddWithValue("client_ID", key);
 				SqlDataReader reader = sqlCmd.ExecuteReader();
 				if (reader.Read())
 				{
@@ -106,4 +107,55 @@ public class ClientsDAO : AbstractDAO<EntityClient, int>
 		// The null-coalescing operator (??) returns the left-hand operand if it is not null, or else it returns the right-hand operand.
 		return client ?? throw new Exception("Client not found");
 	}
+
+	// This is a way of updating the client's info using Equals(...)
+    public override bool Update(EntityClient entity)
+    {
+		EntityClient oldClient = FindByID(entity.ID);
+		if (!entity.Equals(oldClient)) // This applies IF AND ONLY IF this.ID == other._ID (basically what happens in ClientsDAO.Equals(...))
+		{
+			return false;
+		}
+
+		SqlParameter client_ID = new("@client_ID", SqlDbType.Int);
+		SqlParameter client_nome = new("@client_nome", SqlDbType.VarChar);
+		SqlParameter client_cognome = new("@client_cognome", SqlDbType.VarChar);
+		SqlParameter client_email = new("@client_email", SqlDbType.VarChar);
+		SqlParameter client_indirizzo = new("@client_indirizzo", SqlDbType.VarChar);
+		SqlParameter client_città = new("@client_città", SqlDbType.VarChar);
+		SqlParameter client_CAP = new("@client_CAP", SqlDbType.VarChar);
+		bool result = false;
+
+		using (SqlConnection connection = ConnectionManager.Instance.GetConnection())
+		{
+			connection.Open();
+			using (SqlCommand sqlCmd = new(updateQuery, connection))
+			{
+				// Setting parameters
+				sqlCmd.Parameters.Add(client_ID);
+				sqlCmd.Parameters.Add(client_nome);
+				sqlCmd.Parameters.Add(client_cognome);
+				sqlCmd.Parameters.Add(client_email);
+				sqlCmd.Parameters.Add(client_indirizzo);
+				sqlCmd.Parameters.Add(client_città);
+				sqlCmd.Parameters.Add(client_CAP);
+				
+				// Giving parameters a value
+				client_ID.Value = entity.ID;
+				client_nome.Value = entity.Nome;
+				client_cognome.Value = entity.Cognome;
+				client_email.Value = entity.Email;
+				client_indirizzo.Value = entity.Indirizzo;
+				client_città.Value = entity.Città;
+				client_CAP.Value = entity.CAP;
+
+				// This is the explicit version
+				// int updatedRows = sqlCmd.ExecuteNonQuery(); // Execute the UPDATE
+				// result = updatedRows > 0;
+				// This is the implicit version
+				result = sqlCmd.ExecuteNonQuery() > 0;
+			}
+		}
+		return result;
+    }
 }
