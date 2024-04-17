@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VGq1ZRFnyndkhDWlz1WaYQfo9WnIPTCAFPWTeFbo2KHqEPR+EGhcxhI3+aI2Pn8VU1Gmy5QcidsdOEYZbkfGSw==",
+  "dgSpecHash": "02FwzotKjU40foaOrNNPEbQigMIIqWKr6j+0lZQfR/Ujd6Cq/UHtOgw4EChpu8BGT6kbM2rQhfxeQx35K8lPaw==",
   "success": true,
-  "projectFilePath": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S14-Clienti/S14-Clienti.csproj",
+  "projectFilePath": "/Users/marzianegro/Desktop/Academy/ms-academy/S14-Clienti/S14-Clienti.csproj",
   "expectedPackageFiles": [
     "/Users/marzianegro/.nuget/packages/azure.core/1.35.0/azure.core.1.35.0.nupkg.sha512",
     "/Users/marzianegro/.nuget/packages/azure.identity/1.10.3/azure.identity.1.10.3.nupkg.sha512",

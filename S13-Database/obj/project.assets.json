@@ -1890,11 +1890,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S13-Database/S13-Database.csproj",
+      "projectUniqueName": "/Users/marzianegro/Desktop/Academy/ms-academy/S13-Database/S13-Database.csproj",
       "projectName": "S13-Database",
-      "projectPath": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S13-Database/S13-Database.csproj",
+      "projectPath": "/Users/marzianegro/Desktop/Academy/ms-academy/S13-Database/S13-Database.csproj",
       "packagesPath": "/Users/marzianegro/.nuget/packages/",
-      "outputPath": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S13-Database/obj/",
+      "outputPath": "/Users/marzianegro/Desktop/Academy/ms-academy/S13-Database/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/marzianegro/.nuget/NuGet/NuGet.Config"

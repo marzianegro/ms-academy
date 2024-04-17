@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/marzianegro/Desktop/Academy/ms-academy/src/S14-Clienti/S14-Clienti.csproj": {}
+    "/Users/marzianegro/Desktop/Academy/ms-academy/S14-Clienti/S14-Clienti.csproj": {}
   },
   "projects": {
-    "/Users/marzianegro/Desktop/Academy/ms-academy/src/S14-Clienti/S14-Clienti.csproj": {
+    "/Users/marzianegro/Desktop/Academy/ms-academy/S14-Clienti/S14-Clienti.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S14-Clienti/S14-Clienti.csproj",
+        "projectUniqueName": "/Users/marzianegro/Desktop/Academy/ms-academy/S14-Clienti/S14-Clienti.csproj",
         "projectName": "S14-Clienti",
-        "projectPath": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S14-Clienti/S14-Clienti.csproj",
+        "projectPath": "/Users/marzianegro/Desktop/Academy/ms-academy/S14-Clienti/S14-Clienti.csproj",
         "packagesPath": "/Users/marzianegro/.nuget/packages/",
-        "outputPath": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S14-Clienti/obj/",
+        "outputPath": "/Users/marzianegro/Desktop/Academy/ms-academy/S14-Clienti/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/marzianegro/.nuget/NuGet/NuGet.Config"

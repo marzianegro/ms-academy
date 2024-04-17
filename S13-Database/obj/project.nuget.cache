@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "C3tT9iz2pjB41ZXbeNpaDm3Azykaml+4qNAHQXhDO86VcyImwxJ9ybKyxFN2o7Sky40ujx03HsNd7OvoSoDjUw==",
+  "dgSpecHash": "gD3KcyU/EUzds8iRqamTxnptkKeoO/Y/H4J5aT7fWpSYLC1+6Mo3u4DbYkpQZ5X1KbuRnyydmK2WiqjOg7EbOw==",
   "success": true,
-  "projectFilePath": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S13-Database/S13-Database.csproj",
+  "projectFilePath": "/Users/marzianegro/Desktop/Academy/ms-academy/S13-Database/S13-Database.csproj",
   "expectedPackageFiles": [
     "/Users/marzianegro/.nuget/packages/azure.core/1.35.0/azure.core.1.35.0.nupkg.sha512",
     "/Users/marzianegro/.nuget/packages/azure.identity/1.10.3/azure.identity.1.10.3.nupkg.sha512",
