@@ -64,10 +64,10 @@ class Program
 
 		transaction.Rollback();
 
-		print(connection);
+		Print(connection);
 	}
 
-	private static void print(SqlConnection connection)
+	private static void Print(SqlConnection connection)
 	{
 		SqlCommand sqlCmd = new("SELECT * FROM prova", connection);
 		SqlDataReader reader = sqlCmd.ExecuteReader();

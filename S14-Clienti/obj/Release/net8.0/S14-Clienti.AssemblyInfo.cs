@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("S14-Clienti")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+064ce611b6dea6b03ac3ad24d4986aa15cb51e1f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cfd636df3a6a8d5e3f8661e01ba3c96328956357")]
 [assembly: System.Reflection.AssemblyProductAttribute("S14-Clienti")]
 [assembly: System.Reflection.AssemblyTitleAttribute("S14-Clienti")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

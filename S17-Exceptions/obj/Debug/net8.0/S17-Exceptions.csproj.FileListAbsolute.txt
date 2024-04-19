@@ -1,0 +1,15 @@
+/Users/marzianegro/Desktop/Academy/ms-academy/S17-Exceptions/bin/Debug/net8.0/S17-Exceptions
+/Users/marzianegro/Desktop/Academy/ms-academy/S17-Exceptions/bin/Debug/net8.0/S17-Exceptions.deps.json
+/Users/marzianegro/Desktop/Academy/ms-academy/S17-Exceptions/bin/Debug/net8.0/S17-Exceptions.runtimeconfig.json
+/Users/marzianegro/Desktop/Academy/ms-academy/S17-Exceptions/bin/Debug/net8.0/S17-Exceptions.dll
+/Users/marzianegro/Desktop/Academy/ms-academy/S17-Exceptions/bin/Debug/net8.0/S17-Exceptions.pdb
+/Users/marzianegro/Desktop/Academy/ms-academy/S17-Exceptions/obj/Debug/net8.0/S17-Exceptions.GeneratedMSBuildEditorConfig.editorconfig
+/Users/marzianegro/Desktop/Academy/ms-academy/S17-Exceptions/obj/Debug/net8.0/S17-Exceptions.AssemblyInfoInputs.cache
+/Users/marzianegro/Desktop/Academy/ms-academy/S17-Exceptions/obj/Debug/net8.0/S17-Exceptions.AssemblyInfo.cs
+/Users/marzianegro/Desktop/Academy/ms-academy/S17-Exceptions/obj/Debug/net8.0/S17-Exceptions.csproj.CoreCompileInputs.cache
+/Users/marzianegro/Desktop/Academy/ms-academy/S17-Exceptions/obj/Debug/net8.0/S17-Exceptions.sourcelink.json
+/Users/marzianegro/Desktop/Academy/ms-academy/S17-Exceptions/obj/Debug/net8.0/S17-Exceptions.dll
+/Users/marzianegro/Desktop/Academy/ms-academy/S17-Exceptions/obj/Debug/net8.0/refint/S17-Exceptions.dll
+/Users/marzianegro/Desktop/Academy/ms-academy/S17-Exceptions/obj/Debug/net8.0/S17-Exceptions.pdb
+/Users/marzianegro/Desktop/Academy/ms-academy/S17-Exceptions/obj/Debug/net8.0/S17-Exceptions.genruntimeconfig.cache
+/Users/marzianegro/Desktop/Academy/ms-academy/S17-Exceptions/obj/Debug/net8.0/ref/S17-Exceptions.dll

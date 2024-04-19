@@ -8,7 +8,7 @@ public abstract class AbstractDAO<E, K> : InterfaceDAO<E, K>
 {
 	public virtual long Count()
 	{
-		throw new NotImplementedException();
+		throw new NotImplementedException(); // We're generating an exception
 	}
 
 	public virtual E Create(E entity)
