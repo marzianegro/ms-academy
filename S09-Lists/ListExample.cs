@@ -2,7 +2,7 @@
 
 using System;
 using System.Collections.Generic;
-using Geometria;
+using Geometry;
 
 namespace S09_Liste;
 
@@ -18,7 +18,7 @@ public class ListExample
 		List<float> floatList = new();
 		floatList.Add(21.42f);
 
-		List<FiguraGeometrica> fg = new();
+		List<GeometricShape> fg = new();
 		fg.Add(new Quadrato(7));
 		fg.Add(new Rettangolo(14, 21));
 	}

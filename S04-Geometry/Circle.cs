@@ -1,7 +1,7 @@
 ﻿////////// 20 MARZO 2024 //////////
 
 using System;
-using Geometria;
+using Geometry;
 
 public class Circle : Ellipse
 {

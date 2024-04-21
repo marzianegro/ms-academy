@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S04-Geometria/S04-Geometria/S04-Geometria.csproj",
-      "projectName": "S04-Geometria",
-      "projectPath": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S04-Geometria/S04-Geometria/S04-Geometria.csproj",
+      "projectUniqueName": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S04-Geometry/S04-Geometry/S04-Geometry.csproj",
+      "projectName": "S04-Geometry",
+      "projectPath": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S04-Geometry/S04-Geometry/S04-Geometry.csproj",
       "packagesPath": "/Users/marzianegro/.nuget/packages/",
-      "outputPath": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S04-Geometria/S04-Geometria/obj/",
+      "outputPath": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S04-Geometry/S04-Geometry/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/marzianegro/.nuget/NuGet/NuGet.Config"

@@ -1,6 +1,6 @@
 ﻿////////// 25/26 MARZO 2024 //////////
 
-using Geometria;
+using Geometry;
 
 namespace S06_Polimorfismo;
 

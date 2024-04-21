@@ -1,5 +1,5 @@
 ﻿using System;
-using Geometria;
+using Geometry;
 
 public class Ellipse : GeometricShape
 {
