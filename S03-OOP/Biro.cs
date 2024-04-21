@@ -1,6 +1,4 @@
-﻿////////// 18 MARZO 2024 //////////
-
-namespace S03_OOP;
+﻿namespace S03_OOP;
 
 class Biro
 {

@@ -14,7 +14,8 @@ public class DupeKeyAppException : ApplicationException
     public DupeKeyAppException(string? message, int dupeKey, Exception? innerException) : base(message, innerException)
     {
         this._dupeKey = dupeKey;
-    }    
+    }
+
     public DupeKeyAppException(string? message, Exception? innerException) : base(message, innerException)
     {
     }

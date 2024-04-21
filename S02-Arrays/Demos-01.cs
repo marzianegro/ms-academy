@@ -1,6 +1,4 @@
-﻿////////// 15 MARZO 2024 //////////
-
-using System;
+﻿using System;
 
 /*
 	TOPIC:

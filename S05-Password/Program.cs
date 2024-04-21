@@ -9,20 +9,20 @@ class Program
 		Console.WriteLine("PASSWORD GENERATOR");
 		Console.WriteLine("----------");
 
-		Console.WriteLine($"\nPassword generata con char[]: {PasswordGenerator.GeneraConArray(14)}");
-		Console.WriteLine($"Password generata con StringBuilder: {PasswordGenerator.GeneraConBuilder(7)}");
-		Console.WriteLine($"Password generata con Substring: {PasswordGenerator.GeneraConSubstring(11)}");
-		Console.WriteLine($"Password generata con Shuffle: {PasswordGenerator.GeneraConShuffle(9)}");
+		Console.WriteLine($"\nPassword generated with char[]: {PasswordGenerator.GenerateWithArray(14)}");
+		Console.WriteLine($"Password generated with StringBuilder: {PasswordGenerator.GenerateWithBuilder(7)}");
+		Console.WriteLine($"Password generated with Substring: {PasswordGenerator.GenerateWithSubstring(11)}");
+		Console.WriteLine($"Password generated with Shuffle: {PasswordGenerator.GenerateWithShuffle(9)}");
 
-		string pw_a = PasswordGenerator.GeneraConRegole(11, 0, 1, 1, 1);
+		string pw_a = PasswordGenerator.GenerateWithRules(11, 0, 1, 1, 1);
 		PasswordGenerator.VerifyPassword(pw_a, pw_a.Length, 0, 1, 1, 1);
 		Console.WriteLine(": " + pw_a + '\n');
 
-		string pw_b = PasswordGenerator.GeneraConRegole(23, 1, 3, 2, 4);
+		string pw_b = PasswordGenerator.GenerateWithRules(23, 1, 3, 2, 4);
 		PasswordGenerator.VerifyPassword(pw_b, pw_b.Length, 1, 3, 2, 4);
 		Console.WriteLine(": " + pw_b + '\n');
 
-		string pw_c = PasswordGenerator.GeneraConRegole(14, 2, 6, 0, 2);
+		string pw_c = PasswordGenerator.GenerateWithRules(14, 2, 6, 0, 2);
 		PasswordGenerator.VerifyPassword(pw_c, pw_c.Length, 2, 6, 0, 2);
 		Console.WriteLine(": " + pw_c + '\n');
 

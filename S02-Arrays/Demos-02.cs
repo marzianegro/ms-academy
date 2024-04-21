@@ -1,6 +1,4 @@
-﻿////////// 18 MARZO 2024 //////////
-
-using System;
+﻿using System;
 
 // EXERCISE
 Console.WriteLine("---------- VERSION A, with while-loop ----------\n");

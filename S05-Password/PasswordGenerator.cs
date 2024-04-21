@@ -24,7 +24,7 @@ public class PasswordGenerator
 		This can provide the following benefits: performance improvement, memory efficiency,
 		code clarity and organization, utility/helper method.
 	*/
-	public static string GeneraConArray(int length)
+	public static string GenerateWithArray(int length)
 	{
 		char[] pw = new char[length];
 		Random rand = new();
@@ -36,7 +36,7 @@ public class PasswordGenerator
 		return new string(pw);
 	}
 
-	public static string GeneraConBuilder(int length)
+	public static string GenerateWithBuider(int length)
 	{
 		StringBuilder pw = new(length);
 		Random rand = new();
@@ -48,7 +48,7 @@ public class PasswordGenerator
 		return pw.ToString();
 	}
 
-	public static string GeneraConSubstring(int length)
+	public static string GenerateWithSubstring(int length)
 	{
 		char[] pw = new char[length];
 		Random rand = new();
@@ -63,7 +63,7 @@ public class PasswordGenerator
 		return new string(pw);
 	}
 
-	public static string GeneraConShuffle(int length)
+	public static string GenerateWithShuffle(int length)
 	{
 		char[] pw = PasswordGenerator._base.ToCharArray();
 
@@ -71,7 +71,7 @@ public class PasswordGenerator
 		return new string(pw.Take(length).ToArray()); // Takes the first length characters from the shuffled array
 	}
 
-	public static string GeneraConRegole(int len, int minLower, int minUpper, int minDigit, int minSpecial)
+	public static string GenerateWithRules(int len, int minLower, int minUpper, int minDigit, int minSpecial)
 	{
 		Console.WriteLine($"Requirements for password of {len} characters are: {minLower} lowercase, {minUpper} uppercase, {minDigit} digit, and {minSpecial} special");
 

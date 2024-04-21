@@ -1,6 +1,4 @@
-﻿////////// 18 MARZO 2024 //////////
-
-/*
+﻿/*
 	Using the explicit syntax allows you to have multiple namespaces throughout the file
 	
 	namespace S03_OOP {
@@ -17,7 +15,7 @@
 namespace S03_OOP;
 
 using System;
-using Geometria;
+using Geometry;
 
 /*
 	When we declare a class without any access modifier, it takes the default accessibility

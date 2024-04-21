@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sGBgoOhLDvFbM0OLlwRTFHQsjqsNvWYONMcbluUVCjYPKv0KEpLjbOStf8NzqtbubJpJJmkXb/45Z7XL02KzBA==",
+  "dgSpecHash": "4e3XMtuusZgIXo1VLvoRsNVC8GovSiBQBUMe75DLkFfjAZPzrWoiwc8Rc8iVplBRlrtE1r+cu9+j/DioExEq5Q==",
   "success": true,
-  "projectFilePath": "/Users/marzianegro/Desktop/Academy/ms-academy/S19-DataBase/S19-DataBase.csproj",
+  "projectFilePath": "/Users/marzianegro/Desktop/Academy/ms-academy/S20-CasualOrders/S20-CasualOrders.csproj",
   "expectedPackageFiles": [
     "/Users/marzianegro/.nuget/packages/azure.core/1.35.0/azure.core.1.35.0.nupkg.sha512",
     "/Users/marzianegro/.nuget/packages/azure.identity/1.10.3/azure.identity.1.10.3.nupkg.sha512",

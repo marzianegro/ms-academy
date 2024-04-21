@@ -1,5 +1,5 @@
 ﻿using System.Data.SqlTypes;
-using Microsoft.Data.SqlClient; // .pkg not included with .NET
+using Microsoft.Data.SqlClient;
 
 namespace S19_DataBase;
 
@@ -14,7 +14,8 @@ class Program
 		string password = "@@C202403";
 
 		string connectionString = $"Server={serverName};Database={databaseName};User ID={userName};Password={password}; TrustServerCertificate=true;";
-		string sqlQuery = "INSERT INTO prova (codice, nome) VALUES (-9999, 'Manual insert')";
+		string sqlQuery = "INSERT INTO prova (codice, nome)" +
+							"VALUES (-9999, 'Manual insert')";
 
 		using SqlConnection connection = new(connectionString);
 		connection.Open();
@@ -34,7 +35,7 @@ class Program
 		}
 		catch (Exception e)
 		{
-			// eccezione SqlException reason=Cannot insert duplicate key in object 'dbo.prova'. The duplicate key value is (-9999).
+			// Exception SqlException. Reason: Cannot insert duplicate key in object 'dbo.prova'. The duplicate key value is (-9999).
 			// Console.WriteLine($"An exception has been caught. Message: {e.Message}");
 			// Console.WriteLine($"An exception has been caught. Trace: {e.StackTrace}");
 
