@@ -12,7 +12,7 @@ GO -- Raggruppa i ; e li runna tutti insieme (più efficiente)
 CREATE TABLE prova (
 	codice			int,
 	nome			varchar(100), -- Da zero a 100 caratteri (stringa di lunghezza variabile)
-	classificazione	char(4), -- Un campo di lunghezza 4 (fissa) di tipo carattere
+	classificazione	 char(4), -- Un campo di lunghezza 4 (fissa) di tipo carattere
 	importo			decimal (10, 2) -- Mostra 2 cifre decimali
 );
 GO
@@ -20,25 +20,34 @@ GO
 -- INSERT (realizza il CREATE (C) per il database)
 -- Inserire tuple/row/record
 -- Formato canonico
-INSERT INTO prova (codice, nome, classificazione, importo) VALUES (1, 'Lampadina 100W' , 'LAMP', 3.24);
-INSERT INTO prova (codice, nome, classificazione, importo) VALUES (2, 'Lampadina 500W' , 'LAMP', 5.80);
-INSERT INTO prova (codice, nome, classificazione, importo) VALUES (3, 'Lampadina 50W' , 'LAMP', 2.80);
+INSERT INTO prova (codice, nome, classificazione, importo)
+	VALUES (1, 'Lampadina 100W' , 'LAMP', 3.24);
+INSERT INTO prova (codice, nome, classificazione, importo)
+	VALUES (2, 'Lampadina 500W' , 'LAMP', 5.80);
+INSERT INTO prova (codice, nome, classificazione, importo)
+	VALUES (3, 'Lampadina 50W' , 'LAMP', 2.80);
  -- Con la forma canonica non sono obbligato a rispettare l'ordine di definizione dei campi
-INSERT INTO prova (nome, classificazione, importo, codice) VALUES ('Lampadario 2 posizioni' , 'LMPD', 24.00, 4);
-INSERT INTO prova (nome, importo, codice) VALUES ('Lampadario 42 posizioni', 48.50, 8);
+INSERT INTO prova (nome, classificazione, importo, codice)
+	VALUES ('Lampadario 2 posizioni' , 'LMPD', 24.00, 4);
+INSERT INTO prova (nome, importo, codice)
+	VALUES ('Lampadario 42 posizioni', 48.50, 8);
 GO
 
 -- Formato abbreviato, da non usare se non 'quick and dirty' (no in programmi e documenti ufficiali)
-INSERT INTO prova VALUES(10, 'Variatore intensità 1KW' , 'VI1', 82.77);
-INSERT INTO prova VALUES(11, 'Variatore intensità 4KW' , 'VI1', 110.00);
-INSERT INTO prova VALUES(12, 'Variatore intensità 4KW' , null, 0.00);
+INSERT INTO prova
+	VALUES(10, 'Variatore intensità 1KW' , 'VI1', 82.77);
+INSERT INTO prova
+	VALUES(11, 'Variatore intensità 4KW' , 'VI1', 110.00);
+INSERT INTO prova
+	VALUES(12, 'Variatore intensità 4KW' , null, 0.00);
 GO
 
 -- Formato 'bulk insert' (forma canonica che permette però di usare un elenco)
-INSERT INTO prova (codice, nome, classificazione, importo) VALUES 
-(20, 'Interruttore differenziale C10' , 'ID', 20.50),
-(21, 'Interruttore differenziale C16' , 'ID', 22.00),
-(22, 'Interruttore differenziale C25' , 'ID', 28.10);
+INSERT INTO prova (codice, nome, classificazione, importo)
+VALUES 
+	(20, 'Interruttore differenziale C10' , 'ID', 20.50),
+	(21, 'Interruttore differenziale C16' , 'ID', 22.00),
+	(22, 'Interruttore differenziale C25' , 'ID', 28.10);
 GO
 
 -- concat non funzionerà con classificazione, perché è di tipo char, non varchar; il risultato sarà '(No column name)'
