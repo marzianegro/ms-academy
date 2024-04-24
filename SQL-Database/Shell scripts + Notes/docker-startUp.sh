@@ -4,8 +4,10 @@
 docker run \
 
 # The -e flag sets environment variables inside the container
--e "ACCEPT_EULA=Y" \\ # This environment variable accepts the End User License Agreement (EULA) for SQL Server
--e "MSSQL_SA_PASSWORD=@@C202403" \\ # This environment variable sets the password for the SQL Server system administrator (sa) account
+# This environment variable accepts the End User License Agreement (EULA) for SQL Server
+-e "ACCEPT_EULA=Y" \\
+# This environment variable sets the password for the SQL Server system administrator (sa) account
+-e "MSSQL_SA_PASSWORD=@@C202403" \\
 
 # This flag maps the host's port 1433 to the container's port 1433 for SQL Server
 -p 1433:1433 \\
