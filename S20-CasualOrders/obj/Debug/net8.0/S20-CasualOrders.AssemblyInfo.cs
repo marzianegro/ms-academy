@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("S20-CasualOrders")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+85c5200415f5722c050a50f30e7de1f423ed58e2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cd6963601c76431c80258a2ae1f9c01ea2bc46d2")]
 [assembly: System.Reflection.AssemblyProductAttribute("S20-CasualOrders")]
 [assembly: System.Reflection.AssemblyTitleAttribute("S20-CasualOrders")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,0 +1,15 @@
+/Users/marzianegro/Desktop/Academy/ms-academy/S22-CSVPrinter/bin/Debug/net8.0/S22-CSVPrinter
+/Users/marzianegro/Desktop/Academy/ms-academy/S22-CSVPrinter/bin/Debug/net8.0/S22-CSVPrinter.deps.json
+/Users/marzianegro/Desktop/Academy/ms-academy/S22-CSVPrinter/bin/Debug/net8.0/S22-CSVPrinter.runtimeconfig.json
+/Users/marzianegro/Desktop/Academy/ms-academy/S22-CSVPrinter/bin/Debug/net8.0/S22-CSVPrinter.dll
+/Users/marzianegro/Desktop/Academy/ms-academy/S22-CSVPrinter/bin/Debug/net8.0/S22-CSVPrinter.pdb
+/Users/marzianegro/Desktop/Academy/ms-academy/S22-CSVPrinter/obj/Debug/net8.0/S22-CSVPrinter.GeneratedMSBuildEditorConfig.editorconfig
+/Users/marzianegro/Desktop/Academy/ms-academy/S22-CSVPrinter/obj/Debug/net8.0/S22-CSVPrinter.AssemblyInfoInputs.cache
+/Users/marzianegro/Desktop/Academy/ms-academy/S22-CSVPrinter/obj/Debug/net8.0/S22-CSVPrinter.AssemblyInfo.cs
+/Users/marzianegro/Desktop/Academy/ms-academy/S22-CSVPrinter/obj/Debug/net8.0/S22-CSVPrinter.csproj.CoreCompileInputs.cache
+/Users/marzianegro/Desktop/Academy/ms-academy/S22-CSVPrinter/obj/Debug/net8.0/S22-CSVPrinter.sourcelink.json
+/Users/marzianegro/Desktop/Academy/ms-academy/S22-CSVPrinter/obj/Debug/net8.0/S22-CSVPrinter.dll
+/Users/marzianegro/Desktop/Academy/ms-academy/S22-CSVPrinter/obj/Debug/net8.0/refint/S22-CSVPrinter.dll
+/Users/marzianegro/Desktop/Academy/ms-academy/S22-CSVPrinter/obj/Debug/net8.0/S22-CSVPrinter.pdb
+/Users/marzianegro/Desktop/Academy/ms-academy/S22-CSVPrinter/obj/Debug/net8.0/S22-CSVPrinter.genruntimeconfig.cache
+/Users/marzianegro/Desktop/Academy/ms-academy/S22-CSVPrinter/obj/Debug/net8.0/ref/S22-CSVPrinter.dll

@@ -1890,11 +1890,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/marzianegro/Desktop/Academy/ms-academy/S14-Clienti/S14-Clienti.csproj",
+      "projectUniqueName": "/Users/marzianegro/Desktop/Academy/ms-academy/S14-Clients/S14-Clienti.csproj",
       "projectName": "S14-Clienti",
-      "projectPath": "/Users/marzianegro/Desktop/Academy/ms-academy/S14-Clienti/S14-Clienti.csproj",
+      "projectPath": "/Users/marzianegro/Desktop/Academy/ms-academy/S14-Clients/S14-Clienti.csproj",
       "packagesPath": "/Users/marzianegro/.nuget/packages/",
-      "outputPath": "/Users/marzianegro/Desktop/Academy/ms-academy/S14-Clienti/obj/",
+      "outputPath": "/Users/marzianegro/Desktop/Academy/ms-academy/S14-Clients/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/marzianegro/.nuget/NuGet/NuGet.Config"
