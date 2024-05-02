@@ -4,15 +4,20 @@
 	TOPIC:
 	Allocation
 */
-int[] a = { 10, 11, 34, 56, 77 }; // Allocation and initialization are done at the same time, but they can also be done separately
-int[] b = new int[5]; // Allocation
-					  // Initialization
+// Allocation and initialization are done at the same time
+int[] a = { 10, 11, 34, 56, 77 };
+
+// Allocation
+int[] b = new int[5];
+// Initialization
 c[0] = 10;
 c[1] = 11;
 c[2] = 34;
 c[3] = 56;
 c[4] = 77;
-int[] c = [10, 11, 34, 56, 77]; // This method may not be supported on MacOS
+
+// Allocation and initialization in one line (not supported on MacOS)
+int[] c = [10, 11, 34, 56, 77];
 
 /*
 	TOPIC:
@@ -37,7 +42,7 @@ foreach (int elem in a)
 	Console.WriteLine(elem);
 }
 
-int[] d = new int[10]; // There's o need to use delete: after exiting the scope, b will be automatically deleted
+int[] d = new int[10]; // No need to use delete: after exiting the scope, d will be automatically deleted
 d[7] = Random.Shared.Next();
 foreach (int elem in d)
 {
@@ -163,15 +168,15 @@ for (int i = lenD; i < lenF; i++)
 }
 
 /*
-	The correct way to refer to intArr is by saying it is the instance of an object
-	representing an array of integers
+    The correct way to refer to intArr is by saying it is the instance of an object
+    representing an array of integers
 */
 int[] intArr = new int[89];
 Console.WriteLine(intArr);
 Console.WriteLine("Hello, World!");
 Console.WriteLine(5);
 
-// Actually, WriteLine() always and implictely calls ToString()
+// Actually, WriteLine() always and implicitly calls ToString()
 Console.WriteLine(intArr.ToString());
 Console.WriteLine("Hello, World!".ToString());
 Console.WriteLine(5.ToString());

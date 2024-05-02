@@ -8,18 +8,23 @@
 	TOPIC:
 	Console
 */
+// Console.WriteLine() writes the specified string value, followed by the current line terminator, to the standard output stream.
 Console.WriteLine("Hello, World!"); // Console is an object representing the standard output
-Console.WriteLine(); // WriteLine() automatically puts \n
+// Console.Write() writes the specified string value to the standard output stream.
+Console.WriteLine(); // WriteLine() automatically inserts \n
 
 Console.WriteLine("Ciao, Mondo!\n");
 
-Console.Write("Hola, "); // Write() doesn't automatically put \n
+Console.Write("Hola, "); // Write() doesn't automatically insert \n
 Console.WriteLine("Mundo!");
 
-Console.WriteLine("This part goes on one line\nand this text goes on the next line");
+// You can include line breaks in the string with \n
+Console.WriteLine("This part goes on one line\nand this part goes on the next line");
+// To include a backslash in the string, use \\
 Console.WriteLine("This text contains a \\");
 
-Console.Error.WriteLine("\nWriting message on syserr\n"); // Error is also an object; in this case, Console is using Error 
+// Console.Error.WriteLine() writes the specified string value, followed by the current line terminator, to the standard error stream.
+Console.Error.WriteLine("\nWriting message on syserr\n"); // Error is an object, too; in this case, Console is using Error 
 
 // EXERCISE
 Console.WriteLine("Drawing *'s");
@@ -35,18 +40,24 @@ Console.WriteLine("*********");
 	TOPIC:
 	Operators
 */
-Console.WriteLine(10 + 32); // This is the normal functioning of the + operator
-// In both the following cases, the + operator is being overloaded
+// The + operator can be used for addition of numbers
+Console.WriteLine(10 + 32); // This is its normal functioning
+// In both the following cases, the operator is being overloaded
+// It can also be used for concatenation of strings
 Console.WriteLine(42 + " This is a string");
+// If one operand is a string, the operator concatenates the string representations of the operands
 Console.WriteLine(40 + "20");
 
-int sum = 10 + 32; // This is an assignment operation
+// The = operator is used for assignment
+int sum = 10 + 32;
 
 /*
 	TOPIC:
 	Reading from the standard input
 */
+// Console.ReadLine() reads the next line of characters from the standard input stream.
 Console.WriteLine(Console.ReadLine());
+// Console.ReadKey() obtains the next character or function key pressed by the user. The pressed key is displayed in the console window.
 Console.ReadKey();
 
 Console.WriteLine("Using ReadLine");
@@ -65,8 +76,10 @@ Console.WriteLine(inputD);
 	TOPIC:
 	Class String
 */
+// String is a sequence of characters. It is an object of type System.String
 string strA; // This is the definition of a variable
 strA = "Hello, World!";
+// Length property gets the number of characters in the current String object
 int lenA = strA.Length;
 Console.WriteLine("String '" + strA + "' is of length " + lenA);
 string emptyStr = "";
@@ -74,8 +87,10 @@ int emptyLen = emptyStr.Length;
 Console.WriteLine("String '" + emptyStr + "' is of length " + emptyLen);
 
 Console.WriteLine();
+// ToLower() method returns a copy of this string converted to lowercase
 Console.WriteLine(strA.ToLower());
 Console.WriteLine(strA);
+// ToUpper() method returns a copy of this string converted to uppercase
 Console.WriteLine(strA.ToUpper());
 
 Console.WriteLine();
@@ -89,6 +104,7 @@ Console.WriteLine(strA);
 // EXERCISE
 string strB = "   xxx   yyy   ";
 Console.WriteLine("Before:\n" + "START-" + strB + "-END");
+// Trim() method removes all leading and trailing white-space characters from the current string
 strB = strB.Trim();
 Console.WriteLine("\nAfter trimming white-space characters at the start and end:");
 Console.WriteLine("START-" + strB + "-END");
@@ -110,11 +126,16 @@ Console.WriteLine("'   Voilà   ' after trimming becomes: " + "START-" + "   Voi
 	TOPIC:
 	Interpolation and Verbatim (As Is)
 */
+// Interpolation is a way to construct a new String value from a mix of constants, variables, literals, and expressions by including their values inside a string literal.
 string strC = "Hmpf";
 int lenB = strC.Length;
-Console.WriteLine($"The string is \\{strC}\\, of length {lenB}"); // This is an example of interpolation
-Console.WriteLine(@"The string is \" + strC + @"\, of length " + lenB); // This is an example of verbatim
-Console.WriteLine(@$"The string is \{strC}\, of length {lenB}"); // This is an example of interpolation used with verbatim
+Console.WriteLine($"The string is \\{strC}\\, of length {lenB}");
+
+// The @ character turns off escape sequences in a string literal. This is called a verbatim string
+Console.WriteLine(@"The string is \" + strC + @"\, of length " + lenB);
+
+// You can use both interpolation and verbatim in the same string.
+Console.WriteLine(@$"The string is \{strC}\, of length {lenB}");
 
 // EXERCISE
 Console.WriteLine("Drawing *'s using interpolation and verbatim (as is)");

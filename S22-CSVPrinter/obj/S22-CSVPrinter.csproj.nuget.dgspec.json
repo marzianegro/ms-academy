@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/marzianegro/Desktop/Academy/ms-academy/S22-CSVPrinter/S22-CSVPrinter.csproj": {}
+    "/Users/marzianegro/Desktop/Academy/ms-academy/S22-csvPrinter/S22-csvPrinter.csproj": {}
   },
   "projects": {
-    "/Users/marzianegro/Desktop/Academy/ms-academy/S22-CSVPrinter/S22-CSVPrinter.csproj": {
+    "/Users/marzianegro/Desktop/Academy/ms-academy/S22-csvPrinter/S22-csvPrinter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/marzianegro/Desktop/Academy/ms-academy/S22-CSVPrinter/S22-CSVPrinter.csproj",
-        "projectName": "S22-CSVPrinter",
-        "projectPath": "/Users/marzianegro/Desktop/Academy/ms-academy/S22-CSVPrinter/S22-CSVPrinter.csproj",
+        "projectUniqueName": "/Users/marzianegro/Desktop/Academy/ms-academy/S22-csvPrinter/S22-csvPrinter.csproj",
+        "projectName": "S22-csvPrinter",
+        "projectPath": "/Users/marzianegro/Desktop/Academy/ms-academy/S22-csvPrinter/S22-csvPrinter.csproj",
         "packagesPath": "/Users/marzianegro/.nuget/packages/",
-        "outputPath": "/Users/marzianegro/Desktop/Academy/ms-academy/S22-CSVPrinter/obj/",
+        "outputPath": "/Users/marzianegro/Desktop/Academy/ms-academy/S22-csvPrinter/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/marzianegro/.nuget/NuGet/NuGet.Config"
@@ -42,6 +42,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

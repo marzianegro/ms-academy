@@ -1,0 +1,15 @@
+/Users/marzianegro/Desktop/Academy/ms-academy/S24-ShuntingYard/bin/Debug/net8.0/S24-ShuntingYard
+/Users/marzianegro/Desktop/Academy/ms-academy/S24-ShuntingYard/bin/Debug/net8.0/S24-ShuntingYard.deps.json
+/Users/marzianegro/Desktop/Academy/ms-academy/S24-ShuntingYard/bin/Debug/net8.0/S24-ShuntingYard.runtimeconfig.json
+/Users/marzianegro/Desktop/Academy/ms-academy/S24-ShuntingYard/bin/Debug/net8.0/S24-ShuntingYard.dll
+/Users/marzianegro/Desktop/Academy/ms-academy/S24-ShuntingYard/bin/Debug/net8.0/S24-ShuntingYard.pdb
+/Users/marzianegro/Desktop/Academy/ms-academy/S24-ShuntingYard/obj/Debug/net8.0/S24-ShuntingYard.GeneratedMSBuildEditorConfig.editorconfig
+/Users/marzianegro/Desktop/Academy/ms-academy/S24-ShuntingYard/obj/Debug/net8.0/S24-ShuntingYard.AssemblyInfoInputs.cache
+/Users/marzianegro/Desktop/Academy/ms-academy/S24-ShuntingYard/obj/Debug/net8.0/S24-ShuntingYard.AssemblyInfo.cs
+/Users/marzianegro/Desktop/Academy/ms-academy/S24-ShuntingYard/obj/Debug/net8.0/S24-ShuntingYard.csproj.CoreCompileInputs.cache
+/Users/marzianegro/Desktop/Academy/ms-academy/S24-ShuntingYard/obj/Debug/net8.0/S24-ShuntingYard.sourcelink.json
+/Users/marzianegro/Desktop/Academy/ms-academy/S24-ShuntingYard/obj/Debug/net8.0/S24-ShuntingYard.dll
+/Users/marzianegro/Desktop/Academy/ms-academy/S24-ShuntingYard/obj/Debug/net8.0/refint/S24-ShuntingYard.dll
+/Users/marzianegro/Desktop/Academy/ms-academy/S24-ShuntingYard/obj/Debug/net8.0/S24-ShuntingYard.pdb
+/Users/marzianegro/Desktop/Academy/ms-academy/S24-ShuntingYard/obj/Debug/net8.0/S24-ShuntingYard.genruntimeconfig.cache
+/Users/marzianegro/Desktop/Academy/ms-academy/S24-ShuntingYard/obj/Debug/net8.0/ref/S24-ShuntingYard.dll

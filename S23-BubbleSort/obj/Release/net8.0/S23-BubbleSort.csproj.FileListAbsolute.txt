@@ -1,0 +1,15 @@
+/Users/marzianegro/Desktop/Academy/ms-academy/S23-BubbleSort/bin/Release/net8.0/S23-BubbleSort
+/Users/marzianegro/Desktop/Academy/ms-academy/S23-BubbleSort/bin/Release/net8.0/S23-BubbleSort.deps.json
+/Users/marzianegro/Desktop/Academy/ms-academy/S23-BubbleSort/bin/Release/net8.0/S23-BubbleSort.runtimeconfig.json
+/Users/marzianegro/Desktop/Academy/ms-academy/S23-BubbleSort/bin/Release/net8.0/S23-BubbleSort.dll
+/Users/marzianegro/Desktop/Academy/ms-academy/S23-BubbleSort/bin/Release/net8.0/S23-BubbleSort.pdb
+/Users/marzianegro/Desktop/Academy/ms-academy/S23-BubbleSort/obj/Release/net8.0/S23-BubbleSort.GeneratedMSBuildEditorConfig.editorconfig
+/Users/marzianegro/Desktop/Academy/ms-academy/S23-BubbleSort/obj/Release/net8.0/S23-BubbleSort.AssemblyInfoInputs.cache
+/Users/marzianegro/Desktop/Academy/ms-academy/S23-BubbleSort/obj/Release/net8.0/S23-BubbleSort.AssemblyInfo.cs
+/Users/marzianegro/Desktop/Academy/ms-academy/S23-BubbleSort/obj/Release/net8.0/S23-BubbleSort.csproj.CoreCompileInputs.cache
+/Users/marzianegro/Desktop/Academy/ms-academy/S23-BubbleSort/obj/Release/net8.0/S23-BubbleSort.sourcelink.json
+/Users/marzianegro/Desktop/Academy/ms-academy/S23-BubbleSort/obj/Release/net8.0/S23-BubbleSort.dll
+/Users/marzianegro/Desktop/Academy/ms-academy/S23-BubbleSort/obj/Release/net8.0/refint/S23-BubbleSort.dll
+/Users/marzianegro/Desktop/Academy/ms-academy/S23-BubbleSort/obj/Release/net8.0/S23-BubbleSort.pdb
+/Users/marzianegro/Desktop/Academy/ms-academy/S23-BubbleSort/obj/Release/net8.0/S23-BubbleSort.genruntimeconfig.cache
+/Users/marzianegro/Desktop/Academy/ms-academy/S23-BubbleSort/obj/Release/net8.0/ref/S23-BubbleSort.dll

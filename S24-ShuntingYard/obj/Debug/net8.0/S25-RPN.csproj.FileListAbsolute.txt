@@ -1,0 +1,15 @@
+/Users/marzianegro/Desktop/Academy/ms-academy/S25-RPN/obj/Debug/net8.0/S25-RPN.GeneratedMSBuildEditorConfig.editorconfig
+/Users/marzianegro/Desktop/Academy/ms-academy/S25-RPN/obj/Debug/net8.0/S25-RPN.AssemblyInfoInputs.cache
+/Users/marzianegro/Desktop/Academy/ms-academy/S25-RPN/obj/Debug/net8.0/S25-RPN.AssemblyInfo.cs
+/Users/marzianegro/Desktop/Academy/ms-academy/S25-RPN/obj/Debug/net8.0/S25-RPN.csproj.CoreCompileInputs.cache
+/Users/marzianegro/Desktop/Academy/ms-academy/S25-RPN/obj/Debug/net8.0/S25-RPN.sourcelink.json
+/Users/marzianegro/Desktop/Academy/ms-academy/S25-RPN/bin/Debug/net8.0/S25-RPN
+/Users/marzianegro/Desktop/Academy/ms-academy/S25-RPN/bin/Debug/net8.0/S25-RPN.deps.json
+/Users/marzianegro/Desktop/Academy/ms-academy/S25-RPN/bin/Debug/net8.0/S25-RPN.runtimeconfig.json
+/Users/marzianegro/Desktop/Academy/ms-academy/S25-RPN/bin/Debug/net8.0/S25-RPN.dll
+/Users/marzianegro/Desktop/Academy/ms-academy/S25-RPN/bin/Debug/net8.0/S25-RPN.pdb
+/Users/marzianegro/Desktop/Academy/ms-academy/S25-RPN/obj/Debug/net8.0/S25-RPN.dll
+/Users/marzianegro/Desktop/Academy/ms-academy/S25-RPN/obj/Debug/net8.0/refint/S25-RPN.dll
+/Users/marzianegro/Desktop/Academy/ms-academy/S25-RPN/obj/Debug/net8.0/S25-RPN.pdb
+/Users/marzianegro/Desktop/Academy/ms-academy/S25-RPN/obj/Debug/net8.0/S25-RPN.genruntimeconfig.cache
+/Users/marzianegro/Desktop/Academy/ms-academy/S25-RPN/obj/Debug/net8.0/ref/S25-RPN.dll

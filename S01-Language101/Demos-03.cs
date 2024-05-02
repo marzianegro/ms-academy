@@ -1,6 +1,14 @@
 ﻿using System;
 
-// EXERCISE: FizzBuzz
+/*
+	TOPIC:
+	FizzBuzz Exercise
+
+	FizzBuzz is a common programming task. It prints the numbers from 1 to 50,
+	but for multiples of three, it prints "Fizz" instead of the number, and for
+	multiples of five, it prints "Buzz". For numbers which are multiples of both
+	three and five, it prints "FizzBuzz".
+*/
 for (int i = 0; i < 51; i++)
 {
 	if (i % 3 == 0 && i % 5 == 0)
@@ -21,14 +29,15 @@ for (int i = 0; i < 51; i++)
 	}
 }
 
-// EXERCISE: FizzBuzz with ternary operator and while-loop
+// This is another way to implement FizzBuzz using a while-loop and the ternary operator.
 int num1 = 0;
 while (num1++ < 51)
 {
 	Console.WriteLine((num1 % 3 == 0 && num1 % 5 == 0) ? "FizzBuzz" : (num1 % 3 == 0) ? "Fizz" : (num1 % 5 == 0) ? "Buzz" : num1);
 }
 
-// EXERCISE: using continue and break
+// This is another way to implement FizzBuzz using continue and break.
+// This loop sums the multiples of 4 from 1 to 1000, but stops when the sum exceeds 100.
 int sum1 = 0;
 for (int i = 1; i < 1001; i++)
 {
@@ -47,7 +56,8 @@ for (int i = 1; i < 1001; i++)
 }
 Console.WriteLine($"Sum is: {sum1}");
 
-// EXERCISE: using switch/case
+// This is another way to implement FizzBuzz using switch/case
+// This loop does the same as the previous one, but uses a switch/case statement instead of an if/else statement.
 int sum2 = 0;
 for (int i = 1; i < 1001; i++)
 {
@@ -58,7 +68,7 @@ for (int i = 1; i < 1001; i++)
 				sum2 += i;
 				if (sum2 > 100)
 				{
-					i = 1000;
+					i = 1000; // This effectively ends the loop
 				}
 				break;
 			}
@@ -70,7 +80,7 @@ for (int i = 1; i < 1001; i++)
 }
 Console.WriteLine($"Sum is: {sum2}");
 
-// EXERCISE
+// This loop performs different operations on a floating point number depending on whether it's a multiple of 100, an even number, or an odd number.
 float res = 0;
 for (float i = 1000; i > 149; i--)
 {
@@ -93,10 +103,11 @@ Console.WriteLine($"Result is: {res}");
 	TOPIC:
 	Class Random
 */
+// This loop generates 100 random numbers between 7890 and 9999 (exclusive), sums the ones that are multiples of 3, and prints the sum.
 int sum3 = 0;
 for (int i = 0; i < 101; i++)
 {
-	int num2 = Random.Shared.Next(7890, 9999); // 7890 and 9999 are excluded from the range
+	int num2 = Random.Shared.Next(7890, 9999);  // 7890 and 9999 are excluded from the range
 	if (num2 % 3 == 0)
 	{
 		sum3 += num2;
@@ -104,6 +115,7 @@ for (int i = 0; i < 101; i++)
 }
 Console.WriteLine($"Sum is: {sum3}");
 
+// This loop generates and prints 100 random floating point numbers between 0 and 1.
 for (int i = 0; i < 100; i++)
 {
 	float num3 = Random.Shared.NextSingle();

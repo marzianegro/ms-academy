@@ -1,6 +1,6 @@
 ﻿using System;
 
-// EXERCISE
+// EXERCISE: 
 Console.WriteLine("---------- VERSION A, with while-loop ----------\n");
 int[] arrA = new int[100];
 

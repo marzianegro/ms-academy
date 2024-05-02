@@ -2,20 +2,22 @@
 
 /*
 	TOPIC:
-	Conversions
+	Type Conversions
 */
-int integer = 420; // The default type for integers is int, 32-bit
-long longInteger = 4200; // 64-bit
-longInteger = integer; // This is an implicit cast
+int integer = 420; // // int is a 32-bit integer
+long longInteger = 4200; // long is a 64-bit integer
+longInteger = integer; // This is an implicit cast (conversion)
 integer = (int)longInteger; // Here, an implicit cast is impossible, so we need an explicit cast
+
+// GetType() method returns the type of the variable
 Console.WriteLine($"Type of integer is: {integer.GetType()}");
 Console.WriteLine($"Type of longInteger is: {longInteger.GetType()}");
 Console.WriteLine($"Type of 42 is: {42.GetType()}\n");
 
-double doubleFloatingPoint = 123.77; // The default type for floating points is double
-float singleFloatingPoint = 33.87f; // 32-bit
+double doubleFloatingPoint = 123.77;  // double is a 64-bit floating point number
+float singleFloatingPoint = 33.87f; // float is a 32-bit floating point number
 /*
-	In this example, the only reason to explicitly cast 33.87 to a float would be if you specifically
+	In this example, the only reason to explicitly cast (convert) 33.87 to a float would be if you specifically
 	want to store the value in a 32-bit float variable, perhaps due to memory constraints or
 	compatibility with certain APIs expecting floats.
 */
@@ -28,19 +30,20 @@ Console.WriteLine($"Type of 42.42f is: {42.42f.GetType()}");
 Console.WriteLine($"Min value to be stored in a double is {Double.MinValue}");
 Console.WriteLine($"Max value to be stored in a double is {Double.MaxValue}\n");
 
-decimal decimalNumber = 100.88m; // The letter M was chosen as the most visually distinct letter between the double an decimal keywords
+decimal decimalNumber = 100.88m; // decimal is a 128-bit data type
+// The letter M was chosen as the most visually distinct letter between the double an decimal keywords
 Console.WriteLine($"Type of decimalNumber is: {decimalNumber.GetType()}");
 Console.WriteLine($"Min value to be stored in a decimal is {Decimal.MinValue}");
 Console.WriteLine($"Max value to be stored in a decimal is {Decimal.MaxValue}\n");
 
-bool boolean = false; // Variables of type bool can only be either true or false
+bool boolean = false; // bool can only be true or false
 Console.WriteLine($"Type of boolean is: {boolean.GetType()}");
 boolean = 100 < 1000;
 Console.WriteLine($"Value of boolean is {boolean}\n");
 
 /*
 	TOPIC:
-	Control structures
+	Control Structures
 */
 int a = 400;
 int b = 200;
@@ -65,7 +68,7 @@ else
 
 /*
 	TOPIC:
-	Modulo operator
+	Modulo Operator
 */
 int c = 2000;
 string strC = "";
@@ -249,11 +252,11 @@ for (int i = 0; i < 100; i += 1)
 	if (i % 2 != 0)
 	{
 		// i is odd
-		continue; // continue makes us go back to line 179
+		continue; // continue skips the rest of the loop and starts the next iteration
 	}
 	if (i < 15)
 	{
-		break; // braks makes us exits the loop immediately
+		break; // break exits the loop immediately
 	}
 	Console.WriteLine($"i is: {i}");
 	toSum += 1;

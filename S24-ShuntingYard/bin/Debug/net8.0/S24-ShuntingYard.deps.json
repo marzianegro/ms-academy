@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "S24-ShuntingYard/1.0.0": {
+        "runtime": {
+          "S24-ShuntingYard.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "S24-ShuntingYard/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
