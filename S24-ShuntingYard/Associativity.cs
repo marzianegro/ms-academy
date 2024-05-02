@@ -1,5 +1,7 @@
 namespace S24_ShuntingYard;
 
+// https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/enum
+
 public enum Associativity
 {
 	Left, // This is simply another way to mean 0
