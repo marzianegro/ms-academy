@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("S24-ShuntingYard")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2d2513414165238246f1c7e21eadc8dedb5d4a0d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+43983d56bb532832120d039dbc340b395cc67958")]
 [assembly: System.Reflection.AssemblyProductAttribute("S24-ShuntingYard")]
 [assembly: System.Reflection.AssemblyTitleAttribute("S24-ShuntingYard")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

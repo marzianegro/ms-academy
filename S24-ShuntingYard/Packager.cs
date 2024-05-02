@@ -20,9 +20,13 @@ public class Packager : ConcreteSubject<object>, IObserver<char>
 			return;
 		}
 		// Handling operators by
-		Notify(new OperandItem(_buffer.ToString()));// notifying operator,
-		_buffer.Length = 0; // clearing buffer so it can receive new operands,
-		// notifying buffer
+		Notify(new OperandItem(_buffer.ToString())); // notifying operator,
+		_buffer.Length = 0; // clearing buffer so that it can receive new operands,
+		Operator? op = Operator.Get(inputChar.ToString());
+		if (op != null)
+		{
+			Notify(new OperatorItem(op)); // notifying buffer
+		}
 	}
 
 	private static bool IsDot(char c)

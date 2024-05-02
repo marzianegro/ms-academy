@@ -2,7 +2,7 @@ namespace S24_ShuntingYard;
 
 public class Filter : ConcreteSubject<char>, IObserver<char>
 {
-	private static readonly char[] _allowedOperators = ['+', '-', '*', '/', '%', '='];
+	// private static readonly char[] _allowedOperators = ['+', '-', '*', '/', '%', '='];
 
 	public void Update(char inputChar) // Receives chars from the subject
 	{
@@ -22,7 +22,8 @@ public class Filter : ConcreteSubject<char>, IObserver<char>
 		{
 			return true;
 		}
-		else if (_allowedOperators.Contains(c))
+		// else if (_allowedOperators.Contains(c))
+		else if (Operator.Get(c.ToString()) != null)
 		{
 			return true;
 		}

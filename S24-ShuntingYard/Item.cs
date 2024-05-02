@@ -12,7 +12,7 @@ public class Item<T>
 
 public class OperatorItem : Item<Operator>
 {
-	public OperatorItem(OperatorItem op) : base()
+	public OperatorItem(Operator op) : base()
 	{
 		Payload = op;
 	}
