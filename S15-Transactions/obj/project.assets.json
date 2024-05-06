@@ -1890,11 +1890,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/marzianegro/Desktop/Academy/ms-academy/S15-Transazioni/S15-Transazioni.csproj",
-      "projectName": "S15-Transazioni",
-      "projectPath": "/Users/marzianegro/Desktop/Academy/ms-academy/S15-Transazioni/S15-Transazioni.csproj",
+      "projectUniqueName": "/Users/marzianegro/Desktop/Academy/ms-academy/S16-Transazioni/S16-Transazioni.csproj",
+      "projectName": "S16-Transazioni",
+      "projectPath": "/Users/marzianegro/Desktop/Academy/ms-academy/S16-Transazioni/S16-Transazioni.csproj",
       "packagesPath": "/Users/marzianegro/.nuget/packages/",
-      "outputPath": "/Users/marzianegro/Desktop/Academy/ms-academy/S15-Transazioni/obj/",
+      "outputPath": "/Users/marzianegro/Desktop/Academy/ms-academy/S16-Transazioni/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/marzianegro/.nuget/NuGet/NuGet.Config"

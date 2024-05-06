@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zSFTsO3x6e6sM/A43kGkW6unNXoBz83goPkCWk9ZqFccoDzUZy/TVaxkBvPzZUWa9JcocT11rW3F6CU5mNai/w==",
+  "dgSpecHash": "6OwRdWWAHcNksaa8pJdOSfnpcUpIcibRKSgOcMLLoFzJtseUK0yLiqjwILbyFjt9dxUN8s4buBP8Ul4Vf20VxA==",
   "success": true,
-  "projectFilePath": "/Users/marzianegro/Desktop/Academy/ms-academy/S16-Transazioni/S16-Transazioni.csproj",
+  "projectFilePath": "/Users/marzianegro/Desktop/Academy/ms-academy/S15-Transazioni/S15-Transazioni.csproj",
   "expectedPackageFiles": [
     "/Users/marzianegro/.nuget/packages/azure.core/1.35.0/azure.core.1.35.0.nupkg.sha512",
     "/Users/marzianegro/.nuget/packages/azure.identity/1.10.3/azure.identity.1.10.3.nupkg.sha512",
