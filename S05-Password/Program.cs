@@ -1,6 +1,4 @@
-﻿////////// 20/21 MARZO 2024 //////////
-
-namespace S05_Password;
+﻿namespace S05_Password;
 
 class Program
 {
@@ -9,11 +7,13 @@ class Program
 		Console.WriteLine("PASSWORD GENERATOR");
 		Console.WriteLine("----------");
 
+		// Generate passwords using different methods
 		Console.WriteLine($"\nPassword generated with char[]: {PasswordGenerator.GenerateWithArray(14)}");
 		Console.WriteLine($"Password generated with StringBuilder: {PasswordGenerator.GenerateWithBuilder(7)}");
 		Console.WriteLine($"Password generated with Substring: {PasswordGenerator.GenerateWithSubstring(11)}");
 		Console.WriteLine($"Password generated with Shuffle: {PasswordGenerator.GenerateWithShuffle(9)}");
 
+		// Generate passwords with specific rules and verify them
 		string pw_a = PasswordGenerator.GenerateWithRules(11, 0, 1, 1, 1);
 		PasswordGenerator.VerifyPassword(pw_a, pw_a.Length, 0, 1, 1, 1);
 		Console.WriteLine(": " + pw_a + '\n');
@@ -26,6 +26,8 @@ class Program
 		PasswordGenerator.VerifyPassword(pw_c, pw_c.Length, 2, 6, 0, 2);
 		Console.WriteLine(": " + pw_c + '\n');
 
+
+		// Verify passwords that do not meet the requirements
 		Console.WriteLine("\nPASSWORD VERIFIER");
 		Console.WriteLine("----------");
 		// Case #1: missing lowercase characters requirement
@@ -39,7 +41,7 @@ class Program
 		// Case #5: length requirement not met
 		PasswordGenerator.VerifyPassword("a%&ZLM12#", 8, 1, 3, 2, 4);
 
-
+		// Demonstrate the Fisher-Yates shuffle algorithm with a char array and a string
 		Console.ForegroundColor = ConsoleColor.Yellow;
 		Console.WriteLine("\n\nFISHER-YATES SHUFFLE ALGORITHM");
 		Console.ForegroundColor = ConsoleColor.White;
