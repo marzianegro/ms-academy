@@ -1,15 +1,25 @@
 ﻿/*
-	Using the explicit syntax allows you to have multiple namespaces throughout the file
-	
-	namespace S03_OOP {
-		internal class Program {
-			static void Main(string[] args) {
-				Console.WriteLine("Hello, World!");
-			}
-		}
-	}
+    In C#, there are two syntaxes for declaring namespaces: explicit and implicit.
 
-	Using the implicit syntax restricts you to having only one namespace for the whole file
+    1. Explicit Namespace Declaration:
+    This syntax allows you to declare multiple namespaces within the same file. 
+    You define a namespace using a block, and all the types (classes, structs, etc.) 
+    within that block belong to the declared namespace. 
+
+    Example:
+    namespace S03_OOP {
+        internal class Program  {
+            static void Main(string[] args) {
+                Console.WriteLine("Hello, World!");
+            }
+        }
+    }
+
+    2. Implicit Namespace Declaration:
+    This is a newer syntax introduced in C# 10.0. It allows you to declare a namespace 
+    at the top of the file without a block. However, this syntax restricts you to having 
+    only one namespace for the entire file.
+    Note: This feature requires .NET 6.0 or later and won't work in older versions.
 */
 
 namespace S03_OOP;
@@ -18,8 +28,11 @@ using System;
 using Geometry;
 
 /*
-	When we declare a class without any access modifier, it takes the default accessibility
-	level, which is internal for classes defined within a namespace.
+	When we declare a class without any access modifier, it takes the
+	default accessibility level. For classes defined within a namespace,
+	the default accessibility level is internal. This means the class
+	can be accessed from any code in the same assembly, but not from
+	another assembly.
 */
 class MyClass
 {
@@ -50,129 +63,132 @@ class MyClass
 		Console.WriteLine("----------");
 
 		Console.WriteLine("\n----------");
-		Console.WriteLine("Area: " + new Quadrato(100).Area());
-		Console.WriteLine("Perimetro: " + new Quadrato(100).Perimetro());
-		Console.WriteLine(new Quadrato(100));
+		Console.WriteLine("Area: " + new Square(100).Area());
+		Console.WriteLine("Perimeter: " + new Square(100).Perimeter());
+		Console.WriteLine(new Square(100));
 
-		Quadrato q1 = new Quadrato(100);
-		// The compiler infers the type to instantiate
-		Quadrato q2 = new(100);
+		Square s1 = new Square(100);
+        // When the type can be inferred from the context, we can use the
+		// new keyword without specifying a type.
+		Square s2 = new(100);
 		Console.WriteLine();
-		Console.WriteLine($"q1 == q2 results in: {q1 == q2}");
-		Quadrato q3 = q1; // q3 is NOT a copy of q1
-		Console.WriteLine($"q1 == q3 results in: {q1 == q3}");
+		Console.WriteLine($"s1 == s2 results in: {s1 == s2}");
+		Square s3 = s1; // s3 is NOT a copy of s1, it's a reference to the same object
+		Console.WriteLine($"s1 == s3 results in: {s1 == s3}");
 
-		Quadrato q4 = new(200);
-		Console.WriteLine($"Perimetro di q4 è: {q4.Perimetro()}");
-		//q4.Lato = 200; // Changing the value of _lato destroys encapsulation, so it's NOT a good method to be using
-		Console.WriteLine($"Area di q4 è: {q4.Area()}");
+		Square s4 = new(200);
+		Console.WriteLine($"Perimeter of s4 is: {s4.Perimeter()}");
+		//s4.Side = 200; // Changing the value of _side destroys encapsulation, so it's NOT a good method to be using
+		Console.WriteLine($"Area of s4 is: {s4.Area()}");
 		Console.WriteLine("----------");
 
 		Console.WriteLine("\n----------");
-		Lampadina lamp = new();
+		LightBulb lightBulb = new();
 		Console.WriteLine("Bisogna risparmiare elettricità, quindi la lampadina di default è spenta...");
-		Console.WriteLine(lamp);
+		Console.WriteLine(lightBulb);
 
 		Console.WriteLine("\nCosì però non vedo niente! Meglio accendere");
-		lamp.AccendiLuce();
-		lamp.AccendiLuce();
-		Console.WriteLine(lamp);
+		lightBulb.TurnOn();
+		lightBulb.TurnOn();
+		Console.WriteLine(lightBulb);
 
-		lamp.SiFulmina();
+		lightBulb.BurnOutBulb();
 		Console.WriteLine("\nOh no, la lampadina ha iniziato a fare le bizze... SI FULMINERÀ?");
-		if (!lamp.Vita)
-		{
+		if (!lightBulb.Life) {
 			Console.WriteLine("AAA SIAMO RIMASTI AL BUIO!");
-		}
-		else
-		{
+		} else {
 			Console.WriteLine("Pheeew, questa volta l'abbiamo scampata!");
 
 			Console.WriteLine("\nForza, ora si va a dormire, spegnereee!");
-			lamp.SpegniLuce();
-			lamp.SpegniLuce();
-			Console.WriteLine(lamp);
+			lightBulb.TurnOff();
+			lightBulb.TurnOff();
+			Console.WriteLine(lightBulb);
 		}
 		Console.WriteLine("----------");
 
-		Console.WriteLine("EREDITARIETÀ");
-		Quadrato quadrato = new(42);
+		Console.WriteLine("INHERITANCE");
+		Square Square = new(42);
 		Console.WriteLine("\n----------");
-		Console.WriteLine("Quadrato\n");
-		Console.WriteLine($"Perimetro = {quadrato.Perimetro()}");
-		Console.WriteLine($"Area = {quadrato.Area()}");
-		Console.WriteLine(quadrato);
+		Console.WriteLine("Square\n");
+		Console.WriteLine($"Perimeter = {Square.Perimeter()}");
+		Console.WriteLine($"Area = {Square.Area()}");
+		Console.WriteLine(Square);
 		Console.WriteLine("----------");
 
 		Console.WriteLine("\n----------");
-		Console.WriteLine("Rettangolo\n");
-		Rettangolo rettangolo = new(21, 42);
-		Console.WriteLine($"Perimetro = {rettangolo.Perimetro()}");
-		Console.WriteLine($"Area = {rettangolo.Area()}");
-		Console.WriteLine(rettangolo);
+		Console.WriteLine("Rectangle\n");
+		Rectangle rectangle = new(21, 42);
+		Console.WriteLine($"Perimeter = {rectangle.Perimeter()}");
+		Console.WriteLine($"Area = {rectangle.Area()}");
+		Console.WriteLine(rectangle);
 		Console.WriteLine("----------");
 
 		Console.WriteLine("\n----------");
-		Console.WriteLine("Cerchio\n");
-		Cerchio cerchio = new(7);
-		Console.WriteLine($"Perimetro = {cerchio.Perimetro()}");
-		Console.WriteLine($"Area = {cerchio.Area()}");
-		Console.WriteLine(cerchio);
+		Console.WriteLine("Circle\n");
+		Circle circle = new(7);
+		Console.WriteLine($"Perimeter = {circle.Perimeter()}");
+		Console.WriteLine($"Area = {circle.Area()}");
+		Console.WriteLine(circle);
 		Console.WriteLine("----------");
 
 		Console.WriteLine("\n----------");
-		Console.WriteLine("Ellisse\n");
-		Ellisse ellisse = new(21, 42);
-		Console.WriteLine($"Perimetro = {ellisse.Perimetro()}");
-		Console.WriteLine($"Area = {ellisse.Area()}");
-		Console.WriteLine(ellisse);
+		Console.WriteLine("Ellipse\n");
+		Ellipse ellipse = new(21, 42);
+		Console.WriteLine($"Perimeter = {ellipse.Perimeter()}");
+		Console.WriteLine($"Area = {ellipse.Area()}");
+		Console.WriteLine(ellipse);
 		Console.WriteLine("----------");
 
-		Console.WriteLine("INCAPSULAMENTO");
-		Lampadario lamp = new(5);
+		Console.WriteLine("ENCAPSULATION");
+		Chandelier chandelier = new(5);
 		Console.WriteLine("Il lampadario è stato creato");
-		Console.WriteLine(lamp);
+		Console.WriteLine(chandelier);
 
 		Console.WriteLine();
 		Console.WriteLine("Il lampadario è spento, accendiamolo");
-		lamp.AccendiLuce();
+		chandelier.TurnOn();
 		Console.Write("Ora la luce è accesa? ");
-		Console.WriteLine(lamp.Stato);
+		Console.WriteLine(chandelier.State);
 		Console.WriteLine("Proviamo ad accendere il lampadario");
-		lamp.AccendiLuce();
+		chandelier.TurnOn();
 
 		Console.WriteLine();
 		Console.WriteLine("Il lampadario è acceso, spegniamolo");
-		lamp.SpegniLuce();
+		chandelier.TurnOff();
 		Console.Write("Ora la luce è accesa? ");
-		Console.WriteLine(lamp.Stato);
+		Console.WriteLine(chandelier.State);
 		Console.WriteLine("Proviamo a spegnere il lampadario");
-		lamp.SpegniLuce();
+		chandelier.TurnOff();
 	}
 
-	static void SayHello()
-	{
+    // These are static methods, which means they can be called on the
+	// class itself, not on instances of the class.
+	static void SayHello() {
 		Console.WriteLine("Hello, World!");
 	}
 
-	static void SayMessage(string message)
-	{
+	static void SayMessage(string message) {
 		Console.WriteLine(message);
 	}
 
-	void PrintMessage(string message)
-	{
+	// This is an instance method, which means it can be called on instances of the class.
+	void PrintMessage(string message) {
 		Console.WriteLine(message);
 	}
 }
 
-class InstanceVariableDemo
-{
+class InstanceVariableDemo {
+	// This is an instance variable, which means it belongs to instances of the class
 	int x = Random.Shared.Next();
 
 	public override string? ToString()
 	{
-		// When an instance is passed to WriteLine(), it is converted to a string with ToString(), that's why we need to 'override'
+		/*
+			The ToString method is used to create a string representation of an object.
+			Since when passed to WriteLine(), an instance is automatically converted to a
+			string with ToString(), here we're overriding the ToString method to return
+			a string representation OF OUR LIKINGS of the instance variable.
+		*/
 		return $"x is: {x}";
 	}
 }

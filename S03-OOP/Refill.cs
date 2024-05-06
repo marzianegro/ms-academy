@@ -1,16 +1,12 @@
-﻿////////// 18 MARZO 2024 //////////
-
-using System;
+﻿using System;
 
 namespace S03_OOP;
 
-class Refill
+public class Refill
 {
-	// Instance's identifier
-	int id = Random.Shared.Next(1, 1000);
+	int id = Random.Shared.Next(1, 1000); // Represents the unique identifier of the refill instance
 
-	public void WriteText(string text)
-	{
+	public void WriteText(string text) {
 		Console.WriteLine($"Refill {id} writes: {text}");
 	}
 }

@@ -6,6 +6,7 @@
 */
 int integer = 420; // // int is a 32-bit integer
 long longInteger = 4200; // long is a 64-bit integer
+
 longInteger = integer; // This is an implicit cast (conversion)
 integer = (int)longInteger; // Here, an implicit cast is impossible, so we need an explicit cast
 
@@ -17,9 +18,9 @@ Console.WriteLine($"Type of 42 is: {42.GetType()}\n");
 double doubleFloatingPoint = 123.77;  // double is a 64-bit floating point number
 float singleFloatingPoint = 33.87f; // float is a 32-bit floating point number
 /*
-	In this example, the only reason to explicitly cast (convert) 33.87 to a float would be if you specifically
-	want to store the value in a 32-bit float variable, perhaps due to memory constraints or
-	compatibility with certain APIs expecting floats.
+	In this example, the only reason to explicitly cast (convert) 33.87 to a float would be
+	if you specifically want to store the value in a 32-bit float variable, perhaps due
+	to memory constraints or compatibility with certain APIs expecting floats.
 */
 float exampleFloat = (float)33.87;
 
@@ -49,18 +50,13 @@ int a = 400;
 int b = 200;
 string res = $"Result is: {a > b}";
 Console.WriteLine($"Is a ({a}) > b ({b})?");
-if (a > b)
-{
+if (a > b) {
 	// true
 	Console.WriteLine(res + "\na > b");
-}
-else if (a < b)
-{
+} else if (a < b) {
 	// false
 	Console.WriteLine(res + "\na < b");
-}
-else
-{
+} else {
 	// false
 	Console.WriteLine(res + "\na == b");
 	// This block is optional, this expression would still be executed without the 'else'
@@ -72,12 +68,9 @@ else
 */
 int c = 2000;
 string strC = "";
-if (c % 2 == 0)
-{
+if (c % 2 == 0) {
 	strC = $"{c} is even";
-}
-else
-{
+} else {
 	strC = $"{c} is odd";
 }
 Console.WriteLine("\n" + strC);
@@ -94,23 +87,17 @@ Console.WriteLine(strD);
 string s1 = "Upper";
 string s2 = "lOWER";
 Console.WriteLine($"\nString is '{s1}'");
-if (s1[0] > 64 && s1[0] < 91)
-{
+if (s1[0] > 64 && s1[0] < 91) {
 	// The first character is upper-case
 	Console.WriteLine(s1.ToUpper());
-}
-else if (s1[0] > 96 && s1[0] < 123)
-{
+} else if (s1[0] > 96 && s1[0] < 123) {
 	// The first character is lower-case
 	Console.WriteLine(s1.ToLower());
 }
-if (s2[0] > 64 && s2[0] < 91)
-{
+if (s2[0] > 64 && s2[0] < 91) {
 	// The first character is upper-case
 	Console.WriteLine(s2.ToUpper());
-}
-else if (s2[0] > 96 && s2[0] < 123)
-{
+} else if (s2[0] > 96 && s2[0] < 123) {
 	// The first character is lower-case
 	Console.WriteLine(s2.ToLower());
 }
@@ -119,48 +106,33 @@ else if (s2[0] > 96 && s2[0] < 123)
 string s3 = "AbCdEfGhIJ";
 int len3 = s3.Length;
 Console.WriteLine($"\nString '{s3}' is of length {len3}");
-if (len3 < 10)
-{
+if (len3 < 10) {
 	Console.WriteLine(s3.ToUpper());
-}
-else if (len3 > 10)
-{
+} else if (len3 > 10) {
 	Console.WriteLine(s3.ToLower());
-}
-else
-{
+} else {
 	Console.WriteLine(s3.Substring(0, 5));
 }
 
 string s4 = "AbCdEfGhIJk";
 int len4 = s4.Length;
 Console.WriteLine($"\nString '{s4}' is of length {len4}");
-if (len4 < 10)
-{
+if (len4 < 10) {
 	Console.WriteLine(s4.ToUpper());
-}
-else if (len4 > 10)
-{
+} else if (len4 > 10) {
 	Console.WriteLine(s4.ToLower());
-}
-else
-{
+} else {
 	Console.WriteLine(s4.Substring(0, 5));
 }
 
 string s5 = "AbCdEfGhI";
 int len5 = s5.Length;
 Console.WriteLine($"\nString '{s5}' is of length {len5}");
-if (len5 < 10)
-{
+if (len5 < 10) {
 	Console.WriteLine(s5.ToUpper());
-}
-else if (len5 > 10)
-{
+} else if (len5 > 10) {
 	Console.WriteLine(s5.ToLower());
-}
-else
-{
+} else {
 	Console.WriteLine(s5.Substring(0, 5));
 }
 
@@ -169,8 +141,7 @@ else
 	switch/case
 */
 int semaphore = 2;
-switch (semaphore)
-{
+switch (semaphore) {
 	case 1:
 		Console.WriteLine("Green light");
 		break;
@@ -191,25 +162,19 @@ switch (semaphore)
 */
 bool choice = len3 < 10;
 Console.WriteLine($"\nChoice is: {choice}");
-if (choice)
-{
+if (choice) {
 	// do something
-}
-else if (!choice)
-{
+} else if (!choice) {
 	// do something
 }
 
-if (a == 100 && b < 200 && len3 == 200)
-{
+if (a == 100 && b < 200 && len3 == 200) {
 	// do something
 }
-if (a == 100 || b < 200 || len3 == 100)
-{
+if (a == 100 || b < 200 || len3 == 100) {
 	// do something
 }
-if (a == 100 && b < 200 || len3 == 100)
-{
+if (a == 100 && b < 200 || len3 == 100) {
 	// do something
 }
 
@@ -220,42 +185,35 @@ if (a == 100 && b < 200 || len3 == 100)
 // Part 1
 int toSum = 10;
 int repeat = 0;
-for (; ; )
-{
+for (; ; ) {
 	toSum = toSum + 1;
 	repeat = repeat + 1;
 	Console.WriteLine($"toSum + 1 is: {toSum}");
-	if (repeat > 4)
-	{
+	if (repeat > 4) {
 		break;
 	}
 }
 Console.WriteLine($"final toSum is: {toSum}");
 
 // Part 2
-for (repeat = 0; repeat <= 5; repeat = repeat + 1)
-{
+for (repeat = 0; repeat <= 5; repeat = repeat + 1) {
 	toSum = toSum + 1;
 }
 Console.WriteLine($"\nfinal toSum is: {toSum}");
 
 // Part 3
-for (int i = 0; i <= 5; i = i + 1)
-{
+for (int i = 0; i <= 5; i = i + 1) {
 	toSum = toSum + 1;
 }
 Console.WriteLine($"\nfinal toSum is: {toSum}");
 
 // Part 4
-for (int i = 0; i < 100; i += 1)
-{
-	if (i % 2 != 0)
-	{
+for (int i = 0; i < 100; i += 1) {
+	if (i % 2 != 0) {
 		// i is odd
 		continue; // continue skips the rest of the loop and starts the next iteration
 	}
-	if (i < 15)
-	{
+	if (i < 15) {
 		break; // break exits the loop immediately
 	}
 	Console.WriteLine($"i is: {i}");
@@ -265,11 +223,9 @@ Console.WriteLine($"\nfinal toSum is: {toSum}");
 
 // The focus is on the logic operation
 int k = 0;
-for (bool kCondition = true; kCondition;)
-{
+for (bool kCondition = true; kCondition;) {
 	k++;
-	if (k > 10)
-	{
+	if (k > 10) {
 		kCondition = false;
 	}
 }
@@ -278,11 +234,9 @@ Console.WriteLine($"\nfinal k is: {k}");
 // The focus is on the condition (jCondition)
 int j = 0;
 bool jCondition = true;
-while (jCondition)
-{
+while (jCondition) {
 	j++;
-	if (j > 10)
-	{
+	if (j > 10) {
 		jCondition = false;
 	}
 }
@@ -298,8 +252,7 @@ for (int i = 0; i < 5; i++)
 Console.WriteLine($"final toSum is: {toSum}");
 
 // EXERCISE
-for (int i = 10; i != 5; i--)
-{
+for (int i = 10; i != 5; i--) {
 	Console.WriteLine($"i ({i}) + 1 is: {i + 1}");
 }
 
@@ -308,8 +261,7 @@ for (int i = 10; i != 5; i--)
 	Post-Increment
 */
 int index = 0;
-while (index < 50)
-{
+while (index < 50) {
 	toSum++;
 	index++;
 }

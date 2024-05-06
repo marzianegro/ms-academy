@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("S22-csvPrinter")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+84fc722182dbe7954edbe4dfbc50dcd1de050dd4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5a8433ede25dff93df362c9096c259f8760cb778")]
 [assembly: System.Reflection.AssemblyProductAttribute("S22-csvPrinter")]
 [assembly: System.Reflection.AssemblyTitleAttribute("S22-csvPrinter")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -8,12 +8,10 @@
 	TOPIC:
 	Console
 */
-// Console.WriteLine() writes the specified string value, followed by the current line terminator, to the standard output stream.
-Console.WriteLine("Hello, World!"); // Console is an object representing the standard output
-// Console.Write() writes the specified string value to the standard output stream.
+Console.WriteLine("Hello, World!"); // Console is an object representing the standard output stream
 Console.WriteLine(); // WriteLine() automatically inserts \n
-
-Console.WriteLine("Ciao, Mondo!\n");
+Console.
+	WriteLine("Ciao, Mondo!\n");
 
 Console.Write("Hola, "); // Write() doesn't automatically insert \n
 Console.WriteLine("Mundo!");
@@ -42,6 +40,7 @@ Console.WriteLine("*********");
 */
 // The + operator can be used for addition of numbers
 Console.WriteLine(10 + 32); // This is its normal functioning
+
 // In both the following cases, the operator is being overloaded
 // It can also be used for concatenation of strings
 Console.WriteLine(42 + " This is a string");
@@ -55,15 +54,16 @@ int sum = 10 + 32;
 	TOPIC:
 	Reading from the standard input
 */
-// Console.ReadLine() reads the next line of characters from the standard input stream.
+// Console.ReadLine() reads the next line of characters from the standard input stream
 Console.WriteLine(Console.ReadLine());
-// Console.ReadKey() obtains the next character or function key pressed by the user. The pressed key is displayed in the console window.
+// Console.ReadKey() obtains the next character or function key pressed by the user. The pressed key is displayed in the console window
 Console.ReadKey();
 
 Console.WriteLine("Using ReadLine");
-string inputA = Console.ReadLine();
-string inputB = inputA;
-Console.WriteLine(inputB);
+string input = Console.ReadLine();
+Console.WriteLine(input);
+string tmp = input;
+Console.WriteLine(tmp);
 
 // The code above is giving 2 warnings (Converting null literal or possible null value to non-nullable type.), so this is a way to try and fix that
 #nullable enable
@@ -75,8 +75,9 @@ Console.WriteLine(inputD);
 /*
 	TOPIC:
 	Class String
+
+	String is a sequence of characters. It is an object of type System.String
 */
-// String is a sequence of characters. It is an object of type System.String
 string strA; // This is the definition of a variable
 strA = "Hello, World!";
 // Length property gets the number of characters in the current String object
@@ -138,7 +139,7 @@ Console.WriteLine(@"The string is \" + strC + @"\, of length " + lenB);
 Console.WriteLine(@$"The string is \{strC}\, of length {lenB}");
 
 // EXERCISE
-Console.WriteLine("Drawing *'s using interpolation and verbatim (as is)");
+Console.WriteLine("Drawing *'s using interpolation and verbatim (As Is)");
 string drawing = @"*********
 *       *
 *       *
