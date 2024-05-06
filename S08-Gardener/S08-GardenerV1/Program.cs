@@ -1,13 +1,9 @@
-﻿////////// 26 MARZO 2024 //////////
-
-using Geometry;
+﻿using Geometry;
 
 namespace S08_GardenerV1;
 
-class Program
-{
-	static void Main()
-	{
+class Program {
+	static void Main() {
 		// EXERCISE
 		Console.ForegroundColor = ConsoleColor.DarkGreen;
 		Console.WriteLine("---------- VERSION A ----------\n");

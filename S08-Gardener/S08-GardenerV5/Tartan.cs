@@ -8,39 +8,27 @@ using Geometry;
 
 namespace S08_GardenerV5;
 
-public class Tartan : Prodotto
-{
-	// Non si può costruire un oggetto Tartan, se non c'è almeno un prato ICalcolabile
-	public Tartan(double prezzoPrato, ICalcolabile prato) : base(prezzoPrato, prato)
-	{
-	}
+public class Tartan : Product {
+	// Can't create a Tartan object, if there isn't at least one ICalculable tartan 
+	public Tartan(double priceGrass, ICalculable grass) : base(priceGrass, grass) {}
 
-	public Tartan(double prezzoPrato, ICalcolabile[] prati) : base(prezzoPrato, prati)
-	{
-	}
+	public Tartan(double priceGrass, ICalculable[] grass) : base(priceGrass, grass) {}
 
-	// Calcolo del costo del prato
-	public override double Costo()
-	{
-		// Somma delle unità
-		double areaComplessivaPrati = 0;
+	public override double Price() {
+		double totalGrassArea = 0;
 
-		foreach (ICalcolabile prato in _figureAggiunte)
-		{
-			areaComplessivaPrati += prato.Area();
+		foreach (ICalculable grass in _addedShapes) {
+			totalGrassArea += grass.Area();
 		}
-		return areaComplessivaPrati * Prezzo;
+		return totalGrassArea * Price;
 	}
 
-	// ---
-	public override string ToString()
-	{
-		string stampaFigureAggiunte = "";
+	public override string ToString() {
+		string printAddedShapes = "";
 
-		foreach (ICalcolabile figuraAggiunta in _figureAggiunte)
-		{
-			stampaFigureAggiunte += $"{figuraAggiunta.GetType()}: {figuraAggiunta.Area()}\n";
+		foreach (ICalculable addedShape in _addedShapes) {
+			printAddedShapes += $"{addedShape.GetType()}: {addedShape.Area()}\n";
 		}
-		return $"Tartan aggiunta:\n{stampaFigureAggiunte}\nCosto totale: {Costo()}";
+		return $"Added tartan:\n{printAddedShapes}\nTotal price: {Price()}";
 	}
 }

@@ -7,31 +7,26 @@ using System.Threading.Tasks;
 
 namespace Geometry;
 
-public class Ellipse : GeometricShape
-{
+public class Ellipse : GeometricShape {
     private readonly double _semiminorAxis;
     private readonly double _semimajorAxis;
 
-    public Ellipse(double semiminorAxis, double semimajorAxis)
-    {
+    public Ellipse(double semiminorAxis, double semimajorAxis) {
         this._semiminorAxis = semiminorAxis;
         this._semimajorAxis = semimajorAxis;
     }
 
-    public override double Perimeter()
-    {
+    public override double Perimeter() {
         double perimetro = 2 * Math.PI * Math.Sqrt((Math.Pow(this._semiminorAxis, 2) + Math.Pow(this._semimajorAxis, 2)) / 2);
         return Math.Round(perimetro,2) ;
     }
 
-    public override double Area()
-    {
+    public override double Area() {
         double area = Math.PI * this._semiminorAxis * this._semimajorAxis;
         return Math.Round(area ,2);
     }
 
-    public override string? ToString()
-    {
+    public override string? ToString() {
         return $"{GetType()}: area = {Area()} perimeter = {Perimeter()} semiminor-axis = {this._semiminorAxis} semimajor-axis = {this._semimajorAxis}";
     }
 }

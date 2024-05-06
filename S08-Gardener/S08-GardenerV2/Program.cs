@@ -2,10 +2,8 @@
 
 namespace S08_GardenerV2;
 
-class Program
-{
-	public static void Main()
-	{
+class Program {
+	public static void Main() {
 		Garden gRossi = new(4);
 
 		Rectangle zoneA = new(6, 7);

@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace Geometry;
 
-public interface ICalcolabile
-{
+public interface ICalcolabile {
     public double Area();
     public double Perimetro();
 }

@@ -6,17 +6,14 @@ using System.Threading.Tasks;
 
 namespace Geometry;
 
-public class Circle : Ellipse
-{
+public class Circle : Ellipse {
     private readonly double _radius;
 
-    public Circle(double radius) : base(radius, radius)
-    {
+    public Circle(double radius) : base(radius, radius) {
         this._radius = radius;
     }
 
-    public override string? ToString()
-    {
+    public override string? ToString() {
         return $"{GetType()}: area = {Area()} perimeter = {Perimeter()} radius = {this._radius}";
     }
 }

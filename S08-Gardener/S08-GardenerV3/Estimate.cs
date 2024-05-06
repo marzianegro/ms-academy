@@ -1,6 +1,7 @@
-﻿namespace S08_GardenerV2;
+﻿namespace S08_GardenerV3;
 
-public class Estimate {
+public class Estimate
+{
 	private readonly double _grassPriceM = 8; // 8€ al mq
 	private readonly double _hedgePriceMQ = 16; // 16€ al m
 
@@ -46,7 +47,8 @@ public class Estimate {
 		Console.WriteLine($": €{this._estimateTotal:F2}");
 	}
 
-	public override string ToString() {
+	public override string ToString()
+	{
 		return $"Grass €{this._estimateGrass:F2} | Hedge €{this._estimateHedge:F2} | Total €{this._estimateTotal:F2}";
 	}
 }

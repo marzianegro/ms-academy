@@ -1,55 +1,51 @@
-﻿////////// 27 MARZO 2024 //////////
+﻿using Geometry;
 
-using Geometry;
+namespace S08_GardenerV3;
 
-namespace S08_GardenerPro;
+class Program {
+	public static void Main() {
+		Garden gRossi = new(4);
 
-class Program
-{
-	public static void Main()
-	{
-		Giardino gRossi = new(4);
+		Rectangle zoneA = new(6, 7);
+		gRossi.AddZone(zoneA);
+		Rectangle zoneB = new(6, 7);
+		gRossi.AddZone(zoneB);
+		Circle zoneC = new(2);
+		gRossi.AddZone(zoneC);
+		Circle zoneD = new(2);
+		gRossi.AddZone(zoneD);
 
-		Rettangolo zonaA = new(6, 7);
-		gRossi.AggiungiZona(zonaA);
-		Rettangolo zonaB = new(6, 7);
-		gRossi.AggiungiZona(zonaB);
-		Cerchio zonaC = new(2);
-		gRossi.AggiungiZona(zonaC);
-		Cerchio zonaD = new(2);
-		gRossi.AggiungiZona(zonaD);
-
-		Preventivo pRossi = new(gRossi);
-		pRossi.CalcolaPreventivi();
-		pRossi.ComunicaPreventivi();
+		Estimate eRossi = new(gRossi);
+		eRossi.CalcEstimate();
+		eRossi.TellEstimate();
 
 		Console.WriteLine();
 		Console.ForegroundColor = ConsoleColor.Green;
 		Console.Write("ToString()");
 		Console.ForegroundColor = ConsoleColor.White;
-		Console.WriteLine(" - " + pRossi);
+		Console.WriteLine(" - " + eRossi);
 
 		//////////
 
-		Giardino gBianchi = new(4);
+		Garden gBianchi = new(4);
 
-		Rettangolo zonaW = new(6, 7);
-		gBianchi.AggiungiZona(zonaW);
-		Rettangolo zonaX = new(6, 7);
-		gBianchi.AggiungiZona(zonaX);
-		Cerchio zonaY = new(2);
-		gBianchi.AggiungiZona(zonaY);
-		Cerchio zonaZ = new(2);
-		gBianchi.AggiungiZona(zonaZ);
+		Rectangle zoneW = new(6, 7);
+		gBianchi.AddZone(zoneW);
+		Rectangle zoneX = new(6, 7);
+		gBianchi.AddZone(zoneX);
+		Circle zoneY = new(2);
+		gBianchi.AddZone(zoneY);
+		Circle zoneZ = new(2);
+		gBianchi.AddZone(zoneZ);
 
-		Preventivo pBianchi = new(gBianchi);
-		pBianchi.CalcolaPreventivi();
-		pBianchi.ComunicaPreventivi();
+		Estimate eBianchi = new(gBianchi);
+		eBianchi.CalcEstimate();
+		eBianchi.TellEstimate();
 
 		Console.WriteLine();
 		Console.ForegroundColor = ConsoleColor.Green;
 		Console.Write("ToString()");
 		Console.ForegroundColor = ConsoleColor.White;
-		Console.WriteLine(" - " + pBianchi);
+		Console.WriteLine(" - " + eBianchi);
 	}
 }

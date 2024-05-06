@@ -8,48 +8,36 @@ using Geometry;
 
 namespace S08_GardenerV6;
 
-public class Tartan : Prodotto
-{
-	// Non si può costruire un oggetto Tartan, se non c'è almeno un prato ICalcolabile
-	public Tartan(double prezzoPrato, ICalcolabile prato) : base(prezzoPrato, prato)
-	{
+public class Tartan : Product {
+	// Can't create a Tartan object, if there isn't at least one ICalculable tartan 
+	public Tartan(double priceGrass, ICalculable grass) : base(priceGrass, grass) {}
+
+	public Tartan(double priceGrass, ICalculable[] grass) : base(priceGrass, grass) {}
+
+	public override double Price() {
+		double totalGrassArea = 0;
+
+		// Summing units
+		foreach (ICalculable grass in _addedShapes) {
+			totalGrassArea += grass.Area();
+		}
+		// Subtracting units
+		foreach (ICalculable grass in _removedShapes){
+			totalGrassArea -= grass.Area();
+		}
+		return totalGrassArea * Price;
 	}
 
-	public Tartan(double prezzoPrato, ICalcolabile[] prati) : base(prezzoPrato, prati)
-	{
-	}
-
-	// Calcolo del costo del prato
-	public override double Costo()
-	{
-		double areaComplessivaPrati = 0;
-
-		// Somma delle unità
-		foreach (ICalcolabile prato in _figureAggiunte)
-		{
-			areaComplessivaPrati += prato.Area();
-		}
-		// Sottrazione delle unità
-		foreach (ICalcolabile prato in _figureRimosse)
-		{
-			areaComplessivaPrati -= prato.Area();
-		}
-		return areaComplessivaPrati * Prezzo;
-	}
-
-	public override string ToString()
-	{
-		string stampaFigureAggiunte = "";
-		foreach (ICalcolabile figura in _figureAggiunte)
-		{
-			stampaFigureAggiunte += $"{figura.GetType()}: {figura.Area()}\n";
+	public override string ToString() {
+		string printAddedShapes = "";
+		foreach (ICalculable shape in _addedShapes) {
+			printAddedShapes += $"{shape.GetType()}: {shape.Area()}\n";
 		}
 
-		string stampaFigurerimosse = "";
-		foreach (ICalcolabile figura in _figureRimosse)
-		{
-			stampaFigurerimosse += $"{figura.GetType()}: {figura.Area()}\n";
+		string printRemovedShapes = "";
+		foreach (ICalculable shape in _removedShapes) {
+			printRemovedShapes += $"{shape.GetType()}: {shape.Area()}\n";
 		}
-		return $"Tartan aggiunte:\n{stampaFigureAggiunte}Tartan rimosse:\n{stampaFigurerimosse}\nCosto totale: {Costo()}";
+		return $"Added tartan:\n{printAddedShapes}Removed tartan:\n{printRemovedShapes}\nTotal price: {Price()}";
 	}
 }

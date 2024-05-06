@@ -8,22 +8,19 @@ using Geometry;
 
 namespace S08_GardenerV5;
 
-public class Regola
+public class Rule
 {
-    public readonly static Regola ZERO = new(0);
-    public readonly static Regola PLUS = new(1);
-    public readonly static Regola MINUS = new(-1);
+    public readonly static Rule ZERO = new(0);
+    public readonly static Rule PLUS = new(1);
+    public readonly static Rule MINUS = new(-1);
 
-    // ---
     private double _multiplier;
 
-    public Regola(double multiplier)
-    {
+    public Rule(double multiplier) {
         this._multiplier = multiplier;
     }
 
-    public double Applica(double value)
-    {
+    public double Apply(double value) {
         return value * this._multiplier;
     }
 }

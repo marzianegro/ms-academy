@@ -7,6 +7,4 @@ using System.Threading.Tasks;
 
 namespace Geometry;
 
-public abstract class RegularShape : GeometricShape
-{
-}
+public abstract class RegularShape : GeometricShape {}
