@@ -2,10 +2,8 @@
 
 namespace S21_InOutFiles;
 
-class Program
-{
-	static void Main()
-	{
+class Program {
+	static void Main() {
 		//FileDemo.MainFileDemo();
 		DictionaryDemo.MainDictionaryDemo();
 	}

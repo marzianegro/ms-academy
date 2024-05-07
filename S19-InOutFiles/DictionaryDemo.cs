@@ -1,14 +1,10 @@
 ﻿using System;
 namespace S21_InOutFiles;
 
-public class DictionaryDemo
-{
-	public DictionaryDemo()
-	{
-	}
+public class DictionaryDemo {
+	public DictionaryDemo() {}
 
-	public static void MainDictionaryDemo()
-	{
+	public static void MainDictionaryDemo() {
 		Dictionary<string, string> dict = new();
 
 		//Example
