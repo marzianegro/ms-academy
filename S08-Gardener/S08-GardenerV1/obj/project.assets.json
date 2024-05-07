@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S08-Gardener/S08-GardenerV1/S08-GardenerV1.csproj",
+      "projectUniqueName": "/Users/marzianegro/Desktop/Academy/ms-academy/S08-Gardener/S08-GardenerV1/S08-GardenerV1.csproj",
       "projectName": "S08-GardenerV1",
-      "projectPath": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S08-Gardener/S08-GardenerV1/S08-GardenerV1.csproj",
+      "projectPath": "/Users/marzianegro/Desktop/Academy/ms-academy/S08-Gardener/S08-GardenerV1/S08-GardenerV1.csproj",
       "packagesPath": "/Users/marzianegro/.nuget/packages/",
-      "outputPath": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S08-Gardener/S08-GardenerV1/obj/",
+      "outputPath": "/Users/marzianegro/Desktop/Academy/ms-academy/S08-Gardener/S08-GardenerV1/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/marzianegro/.nuget/NuGet/NuGet.Config"

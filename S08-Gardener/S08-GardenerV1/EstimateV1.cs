@@ -46,8 +46,8 @@ public class EstimateV1 {
 		Console.ForegroundColor = ConsoleColor.White;
 
 		for (int i = 0; i < this._numZones; i++) {
-			this._estimateHedge += this._zones[i].Perimetro() * this._hedgePriceMQ;
-			Console.WriteLine($"Estimate for hedge {this._zones[i].GetType()} #{i}: €{this._zones[i].Perimetro() * this._hedgePriceMQ:F2}");
+			this._estimateHedge += this._zones[i].Perimeter() * this._hedgePriceMQ;
+			Console.WriteLine($"Estimate for hedge {this._zones[i].GetType()} #{i}: €{this._zones[i].Perimeter() * this._hedgePriceMQ:F2}");
 		}
 
 		// Calculating estimate total

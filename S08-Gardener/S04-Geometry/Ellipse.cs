@@ -17,8 +17,8 @@ public class Ellipse : GeometricShape {
     }
 
     public override double Perimeter() {
-        double perimetro = 2 * Math.PI * Math.Sqrt((Math.Pow(this._semiminorAxis, 2) + Math.Pow(this._semimajorAxis, 2)) / 2);
-        return Math.Round(perimetro,2) ;
+        double perimeter = 2 * Math.PI * Math.Sqrt((Math.Pow(this._semiminorAxis, 2) + Math.Pow(this._semimajorAxis, 2)) / 2);
+        return Math.Round(perimeter,2) ;
     }
 
     public override double Area() {

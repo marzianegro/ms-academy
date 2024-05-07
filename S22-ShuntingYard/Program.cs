@@ -1,6 +1,6 @@
 ﻿// https://en.wikipedia.org/wiki/Shunting_yard_algorithm
 
-namespace S24_ShuntingYard;
+namespace S22_ShuntingYard;
 
 class Program
 {

@@ -1,4 +1,4 @@
-namespace S24_ShuntingYard;
+namespace S22_ShuntingYard;
 
 public class Filter : ConcreteSubject<char>, IObserver<char>
 {

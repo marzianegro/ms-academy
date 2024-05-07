@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/marzianegro/Desktop/Academy/ms-academy/src/S08-Gardener/S04-Geometry/S04-Geometry.csproj": {}
+    "/Users/marzianegro/Desktop/Academy/ms-academy/S08-Gardener/S04-Geometry/S04-Geometry.csproj": {}
   },
   "projects": {
-    "/Users/marzianegro/Desktop/Academy/ms-academy/src/S08-Gardener/S04-Geometry/S04-Geometry.csproj": {
+    "/Users/marzianegro/Desktop/Academy/ms-academy/S08-Gardener/S04-Geometry/S04-Geometry.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S08-Gardener/S04-Geometry/S04-Geometry.csproj",
+        "projectUniqueName": "/Users/marzianegro/Desktop/Academy/ms-academy/S08-Gardener/S04-Geometry/S04-Geometry.csproj",
         "projectName": "S04-Geometry",
-        "projectPath": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S08-Gardener/S04-Geometry/S04-Geometry.csproj",
+        "projectPath": "/Users/marzianegro/Desktop/Academy/ms-academy/S08-Gardener/S04-Geometry/S04-Geometry.csproj",
         "packagesPath": "/Users/marzianegro/.nuget/packages/",
-        "outputPath": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S08-Gardener/S04-Geometry/obj/",
+        "outputPath": "/Users/marzianegro/Desktop/Academy/ms-academy/S08-Gardener/S04-Geometry/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/marzianegro/.nuget/NuGet/NuGet.Config"

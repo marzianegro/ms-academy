@@ -1,4 +1,4 @@
-namespace S24_ShuntingYard;
+namespace S22_ShuntingYard;
 
 /*
 	This is an implementation of the Observer design pattern in C#.

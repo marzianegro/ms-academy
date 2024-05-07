@@ -36,7 +36,7 @@ public class EstimateV2 {
 
 		// Calculating estimate for each hedge
 		for (int i = 0; i < this._numZones; i++) {
-			this._estimateHedge += this._zones[i].Perimetro() * this._hedgePriceMQ;
+			this._estimateHedge += this._zones[i].Perimeter() * this._hedgePriceMQ;
 		}
 
 		// Calculating estimate total

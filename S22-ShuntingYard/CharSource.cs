@@ -1,4 +1,4 @@
-namespace S24_ShuntingYard;
+namespace S22_ShuntingYard;
 
 public abstract class CharSourceSubject : ConcreteSubject<char>
 {

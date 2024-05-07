@@ -1,0 +1,6 @@
+/Users/marzianegro/Desktop/Academy/ms-academy/S08-Gardener/S08-GardenerV1/obj/Debug/net8.0/S08-GardenerV1.csproj.AssemblyReference.cache
+/Users/marzianegro/Desktop/Academy/ms-academy/S08-Gardener/S08-GardenerV1/obj/Debug/net8.0/S08-GardenerV1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/marzianegro/Desktop/Academy/ms-academy/S08-Gardener/S08-GardenerV1/obj/Debug/net8.0/S08-GardenerV1.AssemblyInfoInputs.cache
+/Users/marzianegro/Desktop/Academy/ms-academy/S08-Gardener/S08-GardenerV1/obj/Debug/net8.0/S08-GardenerV1.AssemblyInfo.cs
+/Users/marzianegro/Desktop/Academy/ms-academy/S08-Gardener/S08-GardenerV1/obj/Debug/net8.0/S08-GardenerV1.csproj.CoreCompileInputs.cache
+/Users/marzianegro/Desktop/Academy/ms-academy/S08-Gardener/S08-GardenerV1/obj/Debug/net8.0/S08-GardenerV1.sourcelink.json

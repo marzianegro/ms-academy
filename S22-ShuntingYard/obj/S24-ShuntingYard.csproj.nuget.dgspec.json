@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/marzianegro/Desktop/Academy/ms-academy/S24-ShuntingYard/S24-ShuntingYard.csproj": {}
+    "/Users/marzianegro/Desktop/Academy/ms-academy/S22-ShuntingYard/S22-ShuntingYard.csproj": {}
   },
   "projects": {
-    "/Users/marzianegro/Desktop/Academy/ms-academy/S24-ShuntingYard/S24-ShuntingYard.csproj": {
+    "/Users/marzianegro/Desktop/Academy/ms-academy/S22-ShuntingYard/S22-ShuntingYard.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/marzianegro/Desktop/Academy/ms-academy/S24-ShuntingYard/S24-ShuntingYard.csproj",
-        "projectName": "S24-ShuntingYard",
-        "projectPath": "/Users/marzianegro/Desktop/Academy/ms-academy/S24-ShuntingYard/S24-ShuntingYard.csproj",
+        "projectUniqueName": "/Users/marzianegro/Desktop/Academy/ms-academy/S22-ShuntingYard/S22-ShuntingYard.csproj",
+        "projectName": "S22-ShuntingYard",
+        "projectPath": "/Users/marzianegro/Desktop/Academy/ms-academy/S22-ShuntingYard/S22-ShuntingYard.csproj",
         "packagesPath": "/Users/marzianegro/.nuget/packages/",
-        "outputPath": "/Users/marzianegro/Desktop/Academy/ms-academy/S24-ShuntingYard/obj/",
+        "outputPath": "/Users/marzianegro/Desktop/Academy/ms-academy/S22-ShuntingYard/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/marzianegro/.nuget/NuGet/NuGet.Config"

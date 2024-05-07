@@ -1,4 +1,4 @@
-namespace S24_ShuntingYard;
+namespace S22_ShuntingYard;
 
 public class CPU : ConcreteSubject<string>, IObserver<object>
 {

@@ -1,6 +1,6 @@
 using System.Text;
 
-namespace S24_ShuntingYard;
+namespace S22_ShuntingYard;
 
 public class Packager : ConcreteSubject<object>, IObserver<char>
 {

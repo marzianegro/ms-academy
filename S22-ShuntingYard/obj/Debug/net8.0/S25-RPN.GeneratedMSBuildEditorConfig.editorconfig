@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = S25_RPN
-build_property.ProjectDir = /Users/marzianegro/Desktop/Academy/ms-academy/S24-ShuntingYard/
+build_property.ProjectDir = /Users/marzianegro/Desktop/Academy/ms-academy/S22-ShuntingYard/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
