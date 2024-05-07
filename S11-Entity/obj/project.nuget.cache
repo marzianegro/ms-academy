@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jkhTcLa9rpojlWp35MlOfjsnTQB91RGvggD9XbZTbzFHhR/RtSPe1GPskbL2NqcGMZBNMNjNWv9wrdxK86JEwg==",
+  "dgSpecHash": "2yv49Y9JsXe8CNrPw63t4wQNuRDUpX4/ugbECEXTOx8m0NJWGLogM0gRszfaoOZEPcncdUV4ATR8yZA7KxZ2Ew==",
   "success": true,
-  "projectFilePath": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S12-Entity/S12-Entity/S12-Entity.csproj",
+  "projectFilePath": "/Users/marzianegro/Desktop/Academy/ms-academy/S11-Entity/S11-Entity.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

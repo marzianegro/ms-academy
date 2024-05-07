@@ -1,15 +1,11 @@
-﻿////////// 28/29 MARZO 2024 //////////
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using Geometry;
 
-namespace S09_Liste;
+namespace S09_Lists;
 
-public class ListExample
-{
-	public static void Exec()
-	{
+public class ListExample {
+	public static void Exec() {
 		// Creating a List object
 		List<string> stringList = new();
 		// Filling it up with objects
@@ -18,8 +14,8 @@ public class ListExample
 		List<float> floatList = new();
 		floatList.Add(21.42f);
 
-		List<GeometricShape> fg = new();
-		fg.Add(new Quadrato(7));
-		fg.Add(new Rettangolo(14, 21));
+		List<GeometricShape> gs = new();
+		gs.Add(new Circle(7));
+		gs.Add(new Rectangle(14, 21));
 	}
 }

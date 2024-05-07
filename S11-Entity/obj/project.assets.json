@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S12-Entity/S12-Entity/S12-Entity.csproj",
-      "projectName": "S12-Entity",
-      "projectPath": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S12-Entity/S12-Entity/S12-Entity.csproj",
+      "projectUniqueName": "/Users/marzianegro/Desktop/Academy/ms-academy/S11-Entity/S11-Entity.csproj",
+      "projectName": "S11-Entity",
+      "projectPath": "/Users/marzianegro/Desktop/Academy/ms-academy/S11-Entity/S11-Entity.csproj",
       "packagesPath": "/Users/marzianegro/.nuget/packages/",
-      "outputPath": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S12-Entity/S12-Entity/obj/",
+      "outputPath": "/Users/marzianegro/Desktop/Academy/ms-academy/S11-Entity/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/marzianegro/.nuget/NuGet/NuGet.Config"
@@ -38,6 +38,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
