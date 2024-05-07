@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S02-Arrays/S02-Arrays/S02-Arrays.csproj",
+      "projectUniqueName": "/Users/marzianegro/Desktop/Academy/ms-academy/S02-Arrays/S02-Arrays.csproj",
       "projectName": "S02-Arrays",
-      "projectPath": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S02-Arrays/S02-Arrays/S02-Arrays.csproj",
+      "projectPath": "/Users/marzianegro/Desktop/Academy/ms-academy/S02-Arrays/S02-Arrays.csproj",
       "packagesPath": "/Users/marzianegro/.nuget/packages/",
-      "outputPath": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S02-Arrays/S02-Arrays/obj/",
+      "outputPath": "/Users/marzianegro/Desktop/Academy/ms-academy/S02-Arrays/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/marzianegro/.nuget/NuGet/NuGet.Config"

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("S22-ShuntingYard")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b25dac81b3e65d8ef9e5570b26cf30ef48761a82")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d04a73a69c3564fa2f3acdf226fa65b4df49a618")]
 [assembly: System.Reflection.AssemblyProductAttribute("S22-ShuntingYard")]
 [assembly: System.Reflection.AssemblyTitleAttribute("S22-ShuntingYard")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

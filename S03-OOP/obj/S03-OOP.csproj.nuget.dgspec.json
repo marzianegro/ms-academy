@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/marzianegro/Desktop/Academy/ms-academy/src/S03-OOP/S03-OOP/S03-OOP.csproj": {}
+    "/Users/marzianegro/Desktop/Academy/ms-academy/S03-OOP/S03-OOP.csproj": {}
   },
   "projects": {
-    "/Users/marzianegro/Desktop/Academy/ms-academy/src/S03-OOP/S03-OOP/S03-OOP.csproj": {
+    "/Users/marzianegro/Desktop/Academy/ms-academy/S03-OOP/S03-OOP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S03-OOP/S03-OOP/S03-OOP.csproj",
+        "projectUniqueName": "/Users/marzianegro/Desktop/Academy/ms-academy/S03-OOP/S03-OOP.csproj",
         "projectName": "S03-OOP",
-        "projectPath": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S03-OOP/S03-OOP/S03-OOP.csproj",
+        "projectPath": "/Users/marzianegro/Desktop/Academy/ms-academy/S03-OOP/S03-OOP.csproj",
         "packagesPath": "/Users/marzianegro/.nuget/packages/",
-        "outputPath": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S03-OOP/S03-OOP/obj/",
+        "outputPath": "/Users/marzianegro/Desktop/Academy/ms-academy/S03-OOP/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/marzianegro/.nuget/NuGet/NuGet.Config"

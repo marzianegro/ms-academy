@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = S03_OOP
-build_property.ProjectDir = /Users/marzianegro/Desktop/Academy/ms-academy/src/S03-OOP/S03-OOP/
+build_property.ProjectDir = /Users/marzianegro/Desktop/Academy/ms-academy/S03-OOP/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
