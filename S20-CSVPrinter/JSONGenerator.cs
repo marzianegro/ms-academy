@@ -4,22 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace S22_CSVPrinter;
+namespace S20_CSVPrinter;
 
 /*
     This is a C# class named JSONGenerator that is used
     to convert a table of data into JSON format.
 */
 
-public class JSONGenerator
-{
-    public static void PrintJSON(Table<Row<object>> table)
-    {
+public class JSONGenerator {
+    public static void PrintJSON(Table<Row<object>> table) {
         Console.WriteLine(ToJSON(table));
     }
 
-    public static string ToJSON(Table<Row<object>> table)
-    {
+    public static string ToJSON(Table<Row<object>> table) {
         Row<object> header = table.ElementAt(0);
         StringBuilder stringBuilder = new();
 
@@ -27,17 +24,14 @@ public class JSONGenerator
         stringBuilder.Append('[');
         stringBuilder.Append('\n');
         // We loop over each row in the table, starting from the second row (since the first row is assumed to be the header).
-        for (int i = 1; i < table.Size(); i++)
-        {
+        for (int i = 1; i < table.Size(); i++) {
             Row<object> row = table.ElementAt(i);
             // For each row, we append an opening curly brace ({), which signifies the start of an object in JSON.
             stringBuilder.Append('{');
             stringBuilder.Append('\n');
             // For each element in the row, we append a string in the format "header": "element", followed by a comma.
             // This represents a key-value pair in the JSON object, where the key is the corresponding header and the value is the element.
-            for (int j = 0; j < row.Size(); j++)
-            {
-
+            for (int j = 0; j < row.Size(); j++) {
                 stringBuilder.Append($"{'"'}{header.ElementAt(j)}{'"'}:{'"'}{row.ElementAt(j)}{'"'}{','}");
                 stringBuilder.Append("\n");
             }

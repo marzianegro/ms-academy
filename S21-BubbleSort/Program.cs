@@ -11,12 +11,10 @@
     - Analyzing bubble sort, the worst case is O(n^2). The best case is Ω(n).
 */
 
-namespace S23_BubbleSort;
+namespace S21_BubbleSort;
 
-public class Program
-{
-    static void Main()
-    {
+public class Program {
+    static void Main() {
         int[] arrayToSort = GenerateArray();
 
         WriteInColor("UNSORTED ARRAY", ConsoleColor.Yellow);
@@ -28,18 +26,15 @@ public class Program
         PrintArray(arrayToSort);
     }
 
-    private static int[] GenerateArray()
-    {
+    private static int[] GenerateArray() {
         int[] newArray = new int[30];
-        for (int i = 0; i < 30; i++)
-        {
+        for (int i = 0; i < 30; i++) {
             newArray[i] = Random.Shared.Next(0, 31);
         }
         return newArray;
     }
 
-    public static void WriteInColor(string message, ConsoleColor color)
-    {
+    public static void WriteInColor(string message, ConsoleColor color) {
         ConsoleColor previousColor = Console.ForegroundColor;
 
         Console.ForegroundColor = color;
@@ -47,32 +42,25 @@ public class Program
         Console.ForegroundColor = previousColor;
     }
 
-    private static void PrintArray(int[] arrayToPrint)
-    {
-        for (int i = 0; i < arrayToPrint.Length; i++)
-        {
+    private static void PrintArray(int[] arrayToPrint) {
+        for (int i = 0; i < arrayToPrint.Length; i++) {
             Console.Write($" {arrayToPrint[i]}");
         }
     }
 
-    static void BubbleSort(int[] arrayToSort)
-    {
+    static void BubbleSort(int[] arrayToSort) {
         int n = arrayToSort.Length;
         bool swapped = false;
 
-        for (int i = 0; i < n - 1; i++)
-        {
-            for (int j = 0; j < n - i - 1; j++)
-            {
-                if (arrayToSort[j] > arrayToSort[j + 1])
-                {
+        for (int i = 0; i < n - 1; i++) {
+            for (int j = 0; j < n - i - 1; j++) {
+                if (arrayToSort[j] > arrayToSort[j + 1]) {
                     // Using tuple deconstruction to swap the values in a more concise way
                     (arrayToSort[j], arrayToSort[j + 1]) = (arrayToSort[j + 1], arrayToSort[j]);
                     swapped = true;
                 }
             }
-            if (!swapped)
-            {
+            if (!swapped) {
                 // If no two elements were swapped by inner loop, then the array is sorted
                 Console.WriteLine("Array is already sorted");
                 break;

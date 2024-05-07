@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/marzianegro/Desktop/Academy/ms-academy/S23-BubbleSort/S23-BubbleSort.csproj",
-      "projectName": "S23-BubbleSort",
-      "projectPath": "/Users/marzianegro/Desktop/Academy/ms-academy/S23-BubbleSort/S23-BubbleSort.csproj",
+      "projectUniqueName": "/Users/marzianegro/Desktop/Academy/ms-academy/S21-BubbleSort/S21-BubbleSort.csproj",
+      "projectName": "S21-BubbleSort",
+      "projectPath": "/Users/marzianegro/Desktop/Academy/ms-academy/S21-BubbleSort/S21-BubbleSort.csproj",
       "packagesPath": "/Users/marzianegro/.nuget/packages/",
-      "outputPath": "/Users/marzianegro/Desktop/Academy/ms-academy/S23-BubbleSort/obj/",
+      "outputPath": "/Users/marzianegro/Desktop/Academy/ms-academy/S21-BubbleSort/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/marzianegro/.nuget/NuGet/NuGet.Config"

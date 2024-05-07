@@ -4,8 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace S22_CSVPrinter;
+namespace S20_CSVPrinter;
 
-public class Headers : Row<object>
-{
-}
+public class Headers : Row<object> {}

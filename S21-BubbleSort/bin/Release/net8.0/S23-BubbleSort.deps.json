@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "S23-BubbleSort/1.0.0": {
+      "S21-BubbleSort/1.0.0": {
         "runtime": {
-          "S23-BubbleSort.dll": {}
+          "S21-BubbleSort.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "S23-BubbleSort/1.0.0": {
+    "S21-BubbleSort/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,51 +1,38 @@
 ﻿using Microsoft.Data.SqlClient;
 using System;
 
-namespace S22_CSVPrinter;
-
-// ConnectionManager is implemented as the only inspector
-// ConnectionManager ensures a 'Singleton Pattern', meaning we can only create ONE instance of a class
+namespace S20_CSVPrinter;
 
 public class ConnectionManager
 {
     public readonly static ConnectionManager _instance = new();
 
-    public static ConnectionManager Instance
-	{
+    public static ConnectionManager Instance {
 		get { return _instance; }
 	}
-    public static ConnectionManager GetInstance()
-    {
+
+    public static ConnectionManager GetInstance() {
         return _instance;
     }
 
-    private ConnectionManager()
-    {
-    }
+    private ConnectionManager() {}
 
-    public SqlConnection GetConnection()
-    {
+    public SqlConnection GetConnection() {
         string serverName = "localhost";
         string databaseName = "corsodb";
-        string userName = "corso";
-        string password = "@@C202403";
+		string userName = "corso";
+		string password = "@@C202403";
 
-        string connectionString = $@"Server = {serverName};Database = {databaseName};User ID = {userName}; Password = {password}; TrustServerCertificate=true;";
-        SqlConnection connection = new(connectionString);
+        SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder {
+			DataSource = serverName,
+			InitialCatalog = databaseName,
+			UserID = userName,
+			Password = password,
+			TrustServerCertificate = true
+		};
 
+		SqlConnection connection = new(connectionString);
         return connection;
     }
-
-    //public SqlConnection GetConnection()
-    //{
-    //    string filename = "connection-parameters.dat";
-
-    //    Param ps = new(filename);
-    //    Dictionary<string, string> dict = ps.Read();
-
-    //    string connectionString = dict["Connection.String"];
-    //    SqlConnection connection = new(connectionString);
-
-    //    return connection;
-    //}
 }
+

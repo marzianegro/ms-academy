@@ -1,17 +1,13 @@
 using Microsoft.Data.SqlClient;
 
-namespace S22_CSVPrinter;
+namespace S20_CSVPrinter;
 
-public class QueryReader
-{
-	private string _query = "";
+public class QueryReader {
+	private string _query;
 
-	public QueryReader()
-	{
-	}
+	public QueryReader() {}
 
-	public Table<Row<object>> ExecQuery(string query)
-	{
+	public Table<Row<object>> ExecQuery(string query) {
 		Table<Row<object>> table = new(); // Container for all the rows
 
 		using SqlConnection connection = ConnectionManager.Instance.GetConnection();
@@ -25,41 +21,34 @@ public class QueryReader
 
         // Gets the number of columns in the current row
         // public override int FieldCount { get; }
-		for (int i = 0; i < reader.FieldCount; i++)
-        {
+		for (int i = 0; i < reader.FieldCount; i++) {
             header.Add(reader.GetName(i));
         }
         table.Add(header);
 
-		while (reader.Read()) // 19 iterations
-		{
+		while (reader.Read()) { // 19 iterations 
 			// Gets the number of columns in the current row.
             // public override int FieldCount { get; }
 			Row<object> row = new(); // New row ready to be the container for all fields in the row
-			for (int i = 0; i < reader.FieldCount; i++)
-			{
+			for (int i = 0; i < reader.FieldCount; i++) {
 				row.Add(reader[reader.GetName(i)]); // Adding field to the row
 			}
 			table.Add(row); // The row is complete and gets added to the table
 		}
-		return table'
+		return table;
 	}
 
-	private void PrintTable(Table<Row<object>> table)
-	{
-			// Console.WriteLine(row.Size());
-			// Printing the table with rows containing data
-			Console.WriteLine($"Number of rows in table: {table.Size()}"); // 133 = 19x7
+	private void PrintTable(Table<Row<object>> table) {
+		// Console.WriteLine(row.Size());
+		// Printing the table with rows containing data
+		Console.WriteLine($"Number of rows in table: {table.Size()}"); // 133 = 19x7
 
-			for (int i = 0; i < table.Size(); i++)
-			{
-				Row<object> row = table.ElementAt(i);
-				for (int j = 0; j< row.Size(); j++)
-				{
-					Console.Write($" --- {row.ElementAt(j)}");
-				}
-				Console.WriteLine();
+		for (int i = 0; i < table.Size(); i++) {
+			Row<object> row = table.ElementAt(i);
+			for (int j = 0; j< row.Size(); j++) {
+				Console.Write($" --- {row.ElementAt(j)}");
 			}
+			Console.WriteLine();
 		}
 	}
 }

@@ -2,7 +2,7 @@
 using System.Text;
 using static System.Console;
 
-namespace S22_CSVPrinter;
+namespace S20_CSVPrinter;
 
 /*
     This is a C# program that reads SQL queries from files, executes them,
@@ -10,17 +10,14 @@ namespace S22_CSVPrinter;
     based on the command-line arguments.
 */
 
-public class CsvPrinter
-{
-    static void Main(string[] args)
-    {
+public class CsvPrinter {
+    static void Main(string[] args) {
         // Setting up some default values
         string[] defaultQueryFilenames = new { "DefaultQuery.sql" };
         string outputType = "csv";
 
         // If there are any command-line arguments (args), they replace the defaultQueryFilenames
-        if (args.Length > 0)
-        {
+        if (args.Length > 0) {
             defaultQueryFilenames = args;
         }
 
@@ -31,18 +28,14 @@ public class CsvPrinter
         Dictionary<string, string> dict = param.Read(); // Getting the directory containing the queries
 
         // Looping over each query filename. If a filename starts with a '-', it's treated as a program switch to change the output type (csv, json, or xml)
-        for (int i = 0; i < defaultQueryFilenames.Length; i++)
-        {
-            if (defaultQueryFilenames[i].StartsWith('-')) // Decides if there's a program switch
-            {
+        for (int i = 0; i < defaultQueryFilenames.Length; i++) {
+            if (defaultQueryFilenames[i].StartsWith('-')) { // Decides if there's a program switch 
                 string s = defaultQueryFilenames[i].Substring(1).ToLower();
-                if (s.Equals("csv") || s.Equals("json") || s.Equals("xml")) // List of acceptable parameters
-                {
+                if (s.Equals("csv") || s.Equals("json") || s.Equals("xml")) { // List of acceptable parameters 
                     outputType = s;
                 }
                 continue;
             }
-
 
             // For each query filename,
             // it constructs the full path to the query file,
@@ -51,16 +44,11 @@ public class CsvPrinter
             string queryStatement = ReadQuery(queryFile);
             //  and executes the query
             QueryReader qr = new();
-            if (outputType.Equals("csv"))
-            {
+            if (outputType.Equals("csv")) {
                 CSVGenerator.PrintCSV(qr.ExecuteQuery(queryStatement));
-            }            
-            if (outputType.Equals("json"))
-            {
+            } else if (outputType.Equals("json")) {
                 JSONGenerator.PrintJSON(qr.ExecuteQuery(queryStatement));
-            }
-            if (outputType.Equals("xml"))
-            {
+            } else if (outputType.Equals("xml")) {
                 XMLGenerator.PrintXML(qr.ExecuteQuery(queryStatement));
             }
             Console.WriteLine();
@@ -68,18 +56,16 @@ public class CsvPrinter
     }
 
     // Reading each line of the file, appending it to a StringBuilder, and returning the full query as a string.
-    public static string ReadQuery(string queryFile)
-    {
+    public static string ReadQuery(string queryFile) {
         StreamReader sr = null;
         StringBuilder stringBuilder = new();
         sr = new(queryFile);
-        string s = sr.ReadLine();
+        string line = sr.ReadLine();
         stringBuilder.Append(s).Append('\n');
 
-        while (s != null)
-        {
-            s = sr.ReadLine();
-            stringBuilder.Append(s).Append('\n');
+        while (line != null) {
+            line = sr.ReadLine();
+            stringBuilder.Append(line).Append('\n');
         }
         return stringBuilder.ToString();
     }

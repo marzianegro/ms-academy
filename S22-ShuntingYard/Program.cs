@@ -7,29 +7,40 @@ class Program
     static void Main(string[] args)
     {
         string mathExpression = "10.22 + 32 / 4.65 * 5 ?? ="; 
-        StringSource stringSource = new(mathExpression); // Creating the char emitter
+
+        // Create a new StringSource object, which is responsible for emitting characters from the string
+        StringSource stringSource = new(mathExpression);
+        
+        // Create a new Filter object, which is responsible for filtering out unwanted characters
         Filter filter = new();
 
-        // There's no need for this ⭣ anymore, as we're now attaching the filter to stringSource
-        // stringSource.Attach(new ObserverPrinter<char>());
+        // Attach the filter to the string source, so that it receives the emitted characters
         stringSource.Attach(filter);
 
+        // Create a new Packager object, which is responsible for packaging the characters
+        // into OperandItem and OperatorItem objects
         Packager packager = new();
-        // There's no need for this ⭣ anymore, as we're now attaching the packager to filter
-        // filter.Attach(new ObserverPrinter<char>());
+        
+        // Attach the packager to the filter, so that it receives the filtered characters
         filter.Attach(packager);
 
+        // Create a new Logic object, which is responsible for handling the logic of the expression
         Logic logic = new();
-        // There's no need for this ⭣ anymore, as we're now attaching the logic to the packager
-        // packager.Attach(new ObserverPrinter<object>());
+        
+        // Attach the logic to the packager, so that it receives the packaged items
         packager.Attach(logic);
 
+        // Create a new CPU object, which is responsible for calculating the result of the expression
         CPU cpu = new();
-        // There's no need for this ⭣ anymore, as we're now attaching the cpu to the logic
-        // logic.Attach(new ObserverPrinter<object>()); // NOTES: Parsed expression results in RPN expression: 10.22 32 4.65 / 5 * +
+        
+        // Attach the CPU to the logic, so that it receives the logical items
         logic.Attach(cpu);
 
+        // Attach an ObserverPrinter to the CPU, so that it prints the result of the calculation
         cpu.Attach(new ObserverPrinter<string>());
+        
+        // Run the string source, which starts the process of emitting, filtering,
+        // packaging, handling logic, and calculating
         stringSource.Run();
     }
 }

@@ -1,36 +1,30 @@
 using System;
 
-namespace S22_csvPrinter;
+namespace S20_CSVPrinter;
 
-public class Param
-{
-    private readonly string _home = Environment.GetFolderPath(System.Environment.SpecialFolder.UserProfile);
-    private string _filename = "";
+public class ParamSave {
+	private readonly string _home = Environment.GetFolderPath(System.Environment.SpecialFolder.UserProfile);
+	private string _filename;
 
-    public Param()
-    {
-    }
+	public ParamSave() {}
 
-    public Param(string filename)
-    {
-        this._filename = filename;
-    }
+	public ParamSave(string filename) {
+		this._filename = filename;
+	}
 
-    public void Save(Dictionary<string, string> parameters)
-    {
+    public void Save(Dictionary<string, string> parameters) {
         string workdir = CustomizeWorkdir();
         CheckWorkdir(workdir);
 
-        string filename = @$"{workdir}{Path.DirectorySeparatorChar}{this._filename}";
-        StreamWriter sw = new(filename);
+        string filepath = Path.Combine(workdir, this._filename);
 
-        foreach (string key in parameters.Keys)
-        {
-            Console.WriteLine($"{key} - {parameters[key]}");
-            string outputString = $"{key} === {parameters[key]}";
-            sw.WriteLine(outputString);
+        using (StreamWriter sw = new(filepath)) {
+            foreach (string key in parameters.Keys) {
+                Console.WriteLine($"{key} - {parameters[key]}");
+                string outputString = $"{key} === {parameters[key]}";
+                sw.WriteLine(outputString);
+            }
         }
-        sw.Close();
     }
 
     public Dictionary<string, string> Read()
@@ -39,43 +33,50 @@ public class Param
         CheckWorkdir(workdir);
 
         Dictionary<string, string> dict = new();
-        string filename = @$"{workdir}{Path.DirectorySeparatorChar}{this._filename}";
+        string filepath = Path.Combine(workdir, this._filename);
 
-        StreamReader sr = new(filename);
-        string? s = sr.ReadLine();
-
-        while (s != null)
-        {
-            if (s.Length < 6 || s.StartsWith("#"))
-            {
-                s = sr.ReadLine();
-                continue;
+        using (StreamReader sr = new(filepath)) {
+            string? line = sr.ReadLine();
+            while (line != null) {
+                // Ignore lines that start with "#" or are shorter than 6 characters
+                if (line.Length < 6 || line.StartsWith("#")) {
+                    line = sr.ReadLine();
+                    continue;
+                }
+                // Split the line into a key and a value
+                // The key is everything before the first space
+                string key = s.Substring(0, s.IndexOf(" "));
+                // The value is everything after the first space and three equal signs
+                string value = s.Substring(s.IndexOf(" ") + 6);
+                dict.Add(key, value);
+                line = sr.ReadLine();
             }
-            string key = s.Substring(0, s.IndexOf(" "));
-            string value = s.Substring(s.IndexOf(" ") + 6);
-            dict.Add(key, value);
-            s = sr.ReadLine();
         }
-        sr.Close();
         return dict;
     }
 
-    private string CustomizeWorkdir()
-    {
-        string workdir = $@"{this._home}/Desktop/Academy/ms-academy/S20-CasualOrders";
+    private string CustomizeWorkdir() {
+        string rootDir = Path.Combine(_home, "Desktop");
+        string[] directories = Directory.GetDirectories(rootDir, "*", SearchOption.AllDirectories);
 
-        if (Directory.Exists(@$"{this._home}/Desktop/Academy/ms-academy/S20-CasualOrders"))
-        {
-            workdir = @$"{this._home}/Desktop/Academy/ms-academy/S20-CasualOrders";
+        // Loop through each directory
+        foreach (string dir in directories) {
+            // If the directory ends with "S19-InOutFiles", return it
+            if (dir.EndsWith("S19-InOutFiles")) {
+                return dir;
+            }
         }
-        return workdir;
+        // If "S19-InOutFiles" was not found, return the default working directory
+        return Path.Combine(rootDir, "Academy", "ms-academy", "S19-InOutFiles");
     }
 
-    private static void CheckWorkdir(string workdir)
-    {
-        if (!Directory.Exists(workdir))
-        {
+    // Define a method to check if the working directory exists, and create it if it doesn'ts
+    private void CheckWorkdir(string workdir) {
+        if (!Directory.Exists(workdir)) {
             Directory.CreateDirectory(workdir);
-        }
+			Console.WriteLine($"Created {workdir} directory\n");
+		} else {
+			Console.WriteLine($"Directory {workdir} already exists\n");
+		}
     }
 }
