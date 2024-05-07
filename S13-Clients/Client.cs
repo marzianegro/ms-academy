@@ -2,22 +2,23 @@
 using System;
 using System.Data;
 
-namespace S14_Clienti;
+namespace S13_Clients;
 
 /*
-	Entities must:
+	Entities should:
 	- have an ID,
-	- have access to the properties,
-	- not give code to execute (their only job is to carry data),
-	- have a default contstructor (if ORM),
-	- have ToString(),
-	- have Equals().
+	- provide access to their properties,
+	- not contain business logic (their primary job is to carry data),
+	- have a default constructor (if using an ORM like Entity Framework),
+	- override ToString(),
+	- override Equals().
 */
 
-// This class in an Entity; its only scope is to carry data, working as a buffer
-public class EntityClient
-{
-	public int ID { get; set;  } // The client's ID is unique and MUST NOT be modified, so there should be no need for a setter here. HOWEVER, without a setter it's not possible to initialize ID, so it is still needed here.
+// This class is an Entity; its primary role is to carry data, acting as a data container
+public class EntityClient {
+	// Properties of the client. These are all auto-implemented properties in C#.
+	public int ID { get; set;  } // The client's ID is unique and should not be modified after being set initially.
+	// The '?' after 'string' means these properties are nullable, i.e., they can hold null values.
 	public string? Nome { get; set; }
 	public string? Cognome { get; set; }
 	public string? Email { get; set; }
@@ -26,19 +27,16 @@ public class EntityClient
 	public string? Provincia { get; set; }
 	public string? CAP { get; set; }
 
-	public override bool Equals(object? obj)
-	{
+	public override bool Equals(object? obj) {
 		return obj is EntityClient client &&
 			   ID == client.ID;
 	}
 
-	public override int GetHashCode()
-	{
+	public override int GetHashCode() {
 		return HashCode.Combine(ID);
 	}
 
-	public override string? ToString()
-	{
+	public override string? ToString() {
 		return $"------------------------------\n" +
 				$"ID:\t\t{ID}\n" +
 				$"Nome:\t\t{Nome}\n" +
@@ -49,6 +47,5 @@ public class EntityClient
 				$"Provincia:\t{Provincia}\n" +
 				$"CAP:\t\t{CAP}\n" +
 				"------------------------------\n\n";
-		// return $"Cliente: ID = {ID}; Nome = {Nome}; Cognome = {Cognome}; Email = {Email}; Indirizzo = {Indirizzo}; Città = {Città}; Provincia = {Provincia}; CAP = {CAP};";
 	}
 }
