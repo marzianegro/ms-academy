@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = S11_UguaglianzeTraOggetti
-build_property.ProjectDir = /Users/marzianegro/Desktop/Academy/ms-academy/src/S11-UguaglianzeTraOggetti/S11-UguaglianzeTraOggetti/
+build_property.ProjectDir = /Users/marzianegro/Desktop/Academy/ms-academy/src/S10-ObjectsEquivalence/S10-ObjectsEquivalence/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

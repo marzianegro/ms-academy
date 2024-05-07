@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "S11-UguaglianzeTraOggetti/1.0.0": {
+      "S01-Language101/1.0.0": {
         "runtime": {
-          "S11-UguaglianzeTraOggetti.dll": {}
+          "S01-Language101.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "S11-UguaglianzeTraOggetti/1.0.0": {
+    "S01-Language101/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

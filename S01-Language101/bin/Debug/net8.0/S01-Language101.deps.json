@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "S07-Parametri-Reference/1.0.0": {
+      "S01-Language101/1.0.0": {
         "runtime": {
-          "S07-Parametri-Reference.dll": {}
+          "S01-Language101.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "S07-Parametri-Reference/1.0.0": {
+    "S01-Language101/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

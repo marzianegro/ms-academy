@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 25.0.1706.10
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S09-Liste", "S09-Liste\S09-Liste.csproj", "{3EA799EF-ACDE-4BAE-AC7F-3FFE69162F47}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S09-Lists", "S09-Lists\S09-Lists.csproj", "{3EA799EF-ACDE-4BAE-AC7F-3FFE69162F47}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

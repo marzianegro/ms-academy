@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/marzianegro/Desktop/Academy/ms-academy/src/S07-Parametri-Reference/S07-Parametri-Reference/S07-Parametri-Reference.csproj": {}
+    "/Users/marzianegro/Desktop/Academy/ms-academy/src/S07-ReferenceParameters/S07-ReferenceParameters/S07-ReferenceParameters.csproj": {}
   },
   "projects": {
-    "/Users/marzianegro/Desktop/Academy/ms-academy/src/S07-Parametri-Reference/S07-Parametri-Reference/S07-Parametri-Reference.csproj": {
+    "/Users/marzianegro/Desktop/Academy/ms-academy/src/S07-ReferenceParameters/S07-ReferenceParameters/S07-ReferenceParameters.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S07-Parametri-Reference/S07-Parametri-Reference/S07-Parametri-Reference.csproj",
-        "projectName": "S07-Parametri-Reference",
-        "projectPath": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S07-Parametri-Reference/S07-Parametri-Reference/S07-Parametri-Reference.csproj",
+        "projectUniqueName": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S07-ReferenceParameters/S07-ReferenceParameters/S07-ReferenceParameters.csproj",
+        "projectName": "S07-ReferenceParameters",
+        "projectPath": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S07-ReferenceParameters/S07-ReferenceParameters/S07-ReferenceParameters.csproj",
         "packagesPath": "/Users/marzianegro/.nuget/packages/",
-        "outputPath": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S07-Parametri-Reference/S07-Parametri-Reference/obj/",
+        "outputPath": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S07-ReferenceParameters/S07-ReferenceParameters/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/marzianegro/.nuget/NuGet/NuGet.Config"

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S01-BaseLinguaggio/S01-BaseLinguaggio/S01-BaseLinguaggio.csproj",
-      "projectName": "S01-BaseLinguaggio",
-      "projectPath": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S01-BaseLinguaggio/S01-BaseLinguaggio/S01-BaseLinguaggio.csproj",
+      "projectUniqueName": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S01-Language101/S01-Language101/S01-Language101.csproj",
+      "projectName": "S01-Language101",
+      "projectPath": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S01-Language101/S01-Language101/S01-Language101.csproj",
       "packagesPath": "/Users/marzianegro/.nuget/packages/",
-      "outputPath": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S01-BaseLinguaggio/S01-BaseLinguaggio/obj/",
+      "outputPath": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S01-Language101/S01-Language101/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/marzianegro/.nuget/NuGet/NuGet.Config"

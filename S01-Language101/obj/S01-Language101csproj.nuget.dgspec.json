@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/marzianegro/Desktop/Academy/ms-academy/src/S06-Polimorfismo/S06-Polimorfismo/S06-Polimorfismo.csproj": {}
+    "/Users/marzianegro/Desktop/Academy/ms-academy/src/S01-Language101/S01-Language101/S01-Language101.csproj": {}
   },
   "projects": {
-    "/Users/marzianegro/Desktop/Academy/ms-academy/src/S06-Polimorfismo/S06-Polimorfismo/S06-Polimorfismo.csproj": {
+    "/Users/marzianegro/Desktop/Academy/ms-academy/src/S01-Language101/S01-Language101/S01-Language101.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S06-Polimorfismo/S06-Polimorfismo/S06-Polimorfismo.csproj",
-        "projectName": "S06-Polimorfismo",
-        "projectPath": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S06-Polimorfismo/S06-Polimorfismo/S06-Polimorfismo.csproj",
+        "projectUniqueName": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S01-Language101/S01-Language101/S01-Language101.csproj",
+        "projectName": "S01-Language101",
+        "projectPath": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S01-Language101/S01-Language101/S01-Language101.csproj",
         "packagesPath": "/Users/marzianegro/.nuget/packages/",
-        "outputPath": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S06-Polimorfismo/S06-Polimorfismo/obj/",
+        "outputPath": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S01-Language101/S01-Language101/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/marzianegro/.nuget/NuGet/NuGet.Config"
@@ -32,6 +32,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {

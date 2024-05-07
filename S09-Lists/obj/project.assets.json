@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S09-Liste/S09-Liste/S09-Liste.csproj",
-      "projectName": "S09-Liste",
-      "projectPath": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S09-Liste/S09-Liste/S09-Liste.csproj",
+      "projectUniqueName": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S09-Lists/S09-Lists/S09-Lists.csproj",
+      "projectName": "S09-Lists",
+      "projectPath": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S09-Lists/S09-Lists/S09-Lists.csproj",
       "packagesPath": "/Users/marzianegro/.nuget/packages/",
-      "outputPath": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S09-Liste/S09-Liste/obj/",
+      "outputPath": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S09-Lists/S09-Lists/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/marzianegro/.nuget/NuGet/NuGet.Config"

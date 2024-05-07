@@ -6,12 +6,12 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "S06-Polimorfismo/1.0.0": {
+      "S06-Polymorphism/1.0.0": {
         "dependencies": {
           "S04-Geometry": "1.0.0.0"
         },
         "runtime": {
-          "S06-Polimorfismo.dll": {}
+          "S06-Polymorphism.dll": {}
         }
       },
       "S04-Geometry/1.0.0.0": {
@@ -25,7 +25,7 @@
     }
   },
   "libraries": {
-    "S06-Polimorfismo/1.0.0": {
+    "S06-Polymorphism/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

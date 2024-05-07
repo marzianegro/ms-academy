@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S06-Polimorfismo/S06-Polimorfismo/S06-Polimorfismo.csproj",
-      "projectName": "S06-Polimorfismo",
-      "projectPath": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S06-Polimorfismo/S06-Polimorfismo/S06-Polimorfismo.csproj",
+      "projectUniqueName": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S06-Polymorphism/S06-Polymorphism/S06-Polymorphism.csproj",
+      "projectName": "S06-Polymorphism",
+      "projectPath": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S06-Polymorphism/S06-Polymorphism/S06-Polymorphism.csproj",
       "packagesPath": "/Users/marzianegro/.nuget/packages/",
-      "outputPath": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S06-Polimorfismo/S06-Polimorfismo/obj/",
+      "outputPath": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S06-Polymorphism/S06-Polymorphism/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/marzianegro/.nuget/NuGet/NuGet.Config"

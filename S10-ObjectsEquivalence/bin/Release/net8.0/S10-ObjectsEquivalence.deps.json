@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "S01-BaseLinguaggio/1.0.0": {
+      "S10-ObjectsEquivalence/1.0.0": {
         "runtime": {
-          "S01-BaseLinguaggio.dll": {}
+          "S10-ObjectsEquivalence.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "S01-BaseLinguaggio/1.0.0": {
+    "S10-ObjectsEquivalence/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

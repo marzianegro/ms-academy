@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S11-UguaglianzeTraOggetti/S11-UguaglianzeTraOggetti/S11-UguaglianzeTraOggetti.csproj",
-      "projectName": "S11-UguaglianzeTraOggetti",
-      "projectPath": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S11-UguaglianzeTraOggetti/S11-UguaglianzeTraOggetti/S11-UguaglianzeTraOggetti.csproj",
+      "projectUniqueName": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S10-ObjectsEquivalence/S10-ObjectsEquivalence/S10-ObjectsEquivalence.csproj",
+      "projectName": "S10-ObjectsEquivalence",
+      "projectPath": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S10-ObjectsEquivalence/S10-ObjectsEquivalence/S10-ObjectsEquivalence.csproj",
       "packagesPath": "/Users/marzianegro/.nuget/packages/",
-      "outputPath": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S11-UguaglianzeTraOggetti/S11-UguaglianzeTraOggetti/obj/",
+      "outputPath": "/Users/marzianegro/Desktop/Academy/ms-academy/src/S10-ObjectsEquivalence/S10-ObjectsEquivalence/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/marzianegro/.nuget/NuGet/NuGet.Config"
