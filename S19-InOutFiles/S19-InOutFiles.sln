@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 25.0.1706.11
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S21-InOutFiles", "S21-InOutFiles.csproj", "{3B686125-2F04-414B-8C40-9DE9406B6F33}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S19-InOutFiles", "S19-InOutFiles.csproj", "{3B686125-2F04-414B-8C40-9DE9406B6F33}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

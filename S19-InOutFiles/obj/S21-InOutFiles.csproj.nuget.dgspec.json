@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/marzianegro/Desktop/Academy/ms-academy/S21-InOutFiles/S21-InOutFiles.csproj": {}
+    "/Users/marzianegro/Desktop/Academy/ms-academy/S19-InOutFiles/S19-InOutFiles.csproj": {}
   },
   "projects": {
-    "/Users/marzianegro/Desktop/Academy/ms-academy/S21-InOutFiles/S21-InOutFiles.csproj": {
+    "/Users/marzianegro/Desktop/Academy/ms-academy/S19-InOutFiles/S19-InOutFiles.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/marzianegro/Desktop/Academy/ms-academy/S21-InOutFiles/S21-InOutFiles.csproj",
-        "projectName": "S21-InOutFiles",
-        "projectPath": "/Users/marzianegro/Desktop/Academy/ms-academy/S21-InOutFiles/S21-InOutFiles.csproj",
+        "projectUniqueName": "/Users/marzianegro/Desktop/Academy/ms-academy/S19-InOutFiles/S19-InOutFiles.csproj",
+        "projectName": "S19-InOutFiles",
+        "projectPath": "/Users/marzianegro/Desktop/Academy/ms-academy/S19-InOutFiles/S19-InOutFiles.csproj",
         "packagesPath": "/Users/marzianegro/.nuget/packages/",
-        "outputPath": "/Users/marzianegro/Desktop/Academy/ms-academy/S21-InOutFiles/obj/",
+        "outputPath": "/Users/marzianegro/Desktop/Academy/ms-academy/S19-InOutFiles/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/marzianegro/.nuget/NuGet/NuGet.Config"
