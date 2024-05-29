@@ -28,8 +28,8 @@ for (int i = 0; i < a.Length; i++) {
 	Console.WriteLine(a[i]);
 }
 
-Console.WriteLine("\nIterating backward"); for (int i = a.Length - 1; i >= 0; i--)
-{
+Console.WriteLine("\nIterating backward");
+for (int i = a.Length - 1; i >= 0; i--) {
 	Console.WriteLine(a[i]);
 }
 
