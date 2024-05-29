@@ -60,8 +60,7 @@ public class Box {
 		/*
 		    Option 2
 			This is a more traditional way to write the Equals method.
-			It first checks if obj is null, and if it is, it returns true.
-			This is a mistake. If obj is null, it should return false because
+			It first checks if obj is null, and if it is, it returns false because
 			a non-null object is never equal to null. Then it checks if obj is
 			not a Box, and if it isn't, it returns false. Then it casts obj to
 			a Box and assigns it to the variable other. Then it checks if _value
