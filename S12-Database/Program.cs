@@ -35,11 +35,11 @@ class Program {
 		// Create a new SqlConnectionStringBuilder and provide some initial values.
 		SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder
 		{
-			// Set the properties. 
-			DataSource = serverName,   // Server name
-			InitialCatalog = databaseName,  // Database name
-			UserID = userName,  // Username
-			Password = password,  // Password
+			// Set the properties 
+			DataSource = serverName, // Server name
+			InitialCatalog = databaseName, // Database name
+			UserID = userName, // Username
+			Password = password, // Password
 			TrustServerCertificate = true
 		};
 
@@ -68,7 +68,7 @@ class Program {
 		connection.Close();
 		/*
 			Always ensure that your database connection is closed after you're done
-			with it. This is typically done in a finally block or using a using
+			with it. This is typically done in a finally block or using a 'using'
 			statement which automatically closes the connection even if an error occurs.
 		*/
 	}
