@@ -1,0 +1,5 @@
+/Users/marzianegro/Desktop/Academy/ms-academy/S01-Language101/obj/Release/net8.0/S01-Language101.GeneratedMSBuildEditorConfig.editorconfig
+/Users/marzianegro/Desktop/Academy/ms-academy/S01-Language101/obj/Release/net8.0/S01-Language101.AssemblyInfoInputs.cache
+/Users/marzianegro/Desktop/Academy/ms-academy/S01-Language101/obj/Release/net8.0/S01-Language101.AssemblyInfo.cs
+/Users/marzianegro/Desktop/Academy/ms-academy/S01-Language101/obj/Release/net8.0/S01-Language101.csproj.CoreCompileInputs.cache
+/Users/marzianegro/Desktop/Academy/ms-academy/S01-Language101/obj/Release/net8.0/S01-Language101.sourcelink.json

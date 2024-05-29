@@ -21,8 +21,10 @@ Console.WriteLine("This part goes on one line\nand this part goes on the next li
 // To include a backslash in the string, use \\
 Console.WriteLine("This text contains a \\");
 
-// Console.Error.WriteLine() writes the specified string value, followed by the current line terminator, to the standard error stream.
-Console.Error.WriteLine("\nWriting message on syserr\n"); // Error is an object, too; in this case, Console is using Error 
+// Console.Error.WriteLine() writes the specified string value, followed by the current
+// line terminator, to the standard error stream.
+Console.Error.WriteLine("\nWriting message on syserr\n"); // Error is an object, too;
+															// in this case, Console is using Error 
 
 // EXERCISE
 Console.WriteLine("Drawing *'s");
@@ -56,7 +58,8 @@ int sum = 10 + 32;
 */
 // Console.ReadLine() reads the next line of characters from the standard input stream
 Console.WriteLine(Console.ReadLine());
-// Console.ReadKey() obtains the next character or function key pressed by the user. The pressed key is displayed in the console window
+// Console.ReadKey() obtains the next character or function key pressed by the user.
+// The pressed key is displayed in the console window
 Console.ReadKey();
 
 Console.WriteLine("Using ReadLine");
@@ -65,12 +68,13 @@ Console.WriteLine(input);
 string tmp = input;
 Console.WriteLine(tmp);
 
-// The code above is giving 2 warnings (Converting null literal or possible null value to non-nullable type.), so this is a way to try and fix that
+// The code above is giving 2 warnings (Converting null literal or
+// possible null value to non-nullable type.), so this is a way to try and fix that
 #nullable enable
-Console.WriteLine("This is another very simple exercise");
-string? inputC = Console.ReadLine();
-string? inputD = inputC;
-Console.WriteLine(inputD);
+Console.WriteLine("Using ReadLine (with #nullable)");
+string? input_null = Console.ReadLine();
+string? tmp_null = input_null;
+Console.WriteLine(tmp_null);
 
 /*
 	TOPIC:
@@ -127,16 +131,17 @@ Console.WriteLine("'   Voilà   ' after trimming becomes: " + "START-" + "   Voi
 	TOPIC:
 	Interpolation and Verbatim (As Is)
 */
-// Interpolation is a way to construct a new String value from a mix of constants, variables, literals, and expressions by including their values inside a string literal.
+// Interpolation is a way to construct a new String value from a mix of constants,
+// variables, literals, and expressions by including their values inside a string literal.
 string strC = "Hmpf";
-int lenB = strC.Length;
-Console.WriteLine($"The string is \\{strC}\\, of length {lenB}");
+int lenC = strC.Length;
+Console.WriteLine($"The string is \\{strC}\\, of length {lenC}");
 
 // The @ character turns off escape sequences in a string literal. This is called a verbatim string
-Console.WriteLine(@"The string is \" + strC + @"\, of length " + lenB);
+Console.WriteLine(@"The string is \" + strC + @"\, of length " + lenC);
 
 // You can use both interpolation and verbatim in the same string.
-Console.WriteLine(@$"The string is \{strC}\, of length {lenB}");
+Console.WriteLine(@$"The string is \{strC}\, of length {lenC}");
 
 // EXERCISE
 Console.WriteLine("Drawing *'s using interpolation and verbatim (As Is)");

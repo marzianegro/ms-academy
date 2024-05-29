@@ -54,6 +54,13 @@ public class Program {
 
         for (int i = 0; i < n - 1; i++) {
             for (int j = 0; j < n - i - 1; j++) {
+            /*
+                With each iteration of the outer loop, the largest element
+                in the unsorted part of the array is bubbled up to its correct
+                position at the end of the array. Therefore, after each
+                iteration of the outer loop, we have one less element to
+                consider in the inner loop.
+            */
                 if (arrayToSort[j] > arrayToSort[j + 1]) {
                     // Using tuple deconstruction to swap the values in a more concise way
                     (arrayToSort[j], arrayToSort[j + 1]) = (arrayToSort[j + 1], arrayToSort[j]);

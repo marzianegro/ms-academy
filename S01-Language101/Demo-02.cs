@@ -32,7 +32,7 @@ Console.WriteLine($"Min value to be stored in a double is {Double.MinValue}");
 Console.WriteLine($"Max value to be stored in a double is {Double.MaxValue}\n");
 
 decimal decimalNumber = 100.88m; // decimal is a 128-bit data type
-// The letter M was chosen as the most visually distinct letter between the double an decimal keywords
+// The letter M was chosen as the most visually distinct letter between the double and decimal keywords
 Console.WriteLine($"Type of decimalNumber is: {decimalNumber.GetType()}");
 Console.WriteLine($"Min value to be stored in a decimal is {Decimal.MinValue}");
 Console.WriteLine($"Max value to be stored in a decimal is {Decimal.MaxValue}\n");
@@ -244,8 +244,7 @@ Console.WriteLine($"\nfinal j is: {j}");
 
 // EXERCISE
 toSum = 10;
-for (int i = 0; i < 5; i++)
-{
+for (int i = 0; i < 5; i++) {
 	toSum += 1;
 	Console.WriteLine($"toSum + 1 is: {toSum}");
 }
@@ -265,4 +264,3 @@ while (index < 50) {
 	toSum++;
 	index++;
 }
-

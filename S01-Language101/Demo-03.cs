@@ -27,7 +27,6 @@ while (num1++ < 51) {
 	Console.WriteLine((num1 % 3 == 0 && num1 % 5 == 0) ? "FizzBuzz" : (num1 % 3 == 0) ? "Fizz" : (num1 % 5 == 0) ? "Buzz" : num1);
 }
 
-// This is another way to implement FizzBuzz using continue and break.
 // This loop sums the multiples of 4 from 1 to 1000, but stops when the sum exceeds 100.
 int sum1 = 0;
 for (int i = 1; i < 1001; i++) {
@@ -42,15 +41,13 @@ for (int i = 1; i < 1001; i++) {
 }
 Console.WriteLine($"Sum is: {sum1}");
 
-// This is another way to implement FizzBuzz using switch/case
 // This loop does the same as the previous one, but uses a switch/case statement instead of an if/else statement.
 int sum2 = 0;
 for (int i = 1; i < 1001; i++) {
 	switch (i % 4) {
 		case 0:
 			sum2 += i;
-			if (sum2 > 100)
-			{
+			if (sum2 > 100) {
 				i = 1000; // This effectively ends the loop
 			}
 			break;
@@ -78,7 +75,8 @@ Console.WriteLine($"Result is: {res}");
 	TOPIC:
 	Class Random
 */
-// This loop generates 100 random numbers between 7890 and 9999 (exclusive), sums the ones that are multiples of 3, and prints the sum.
+// This loop generates 100 random numbers between 7890 and 9999 (exclusive),
+// sums the ones that are multiples of 3, and prints the sum.
 int sum3 = 0;
 for (int i = 0; i < 101; i++) {
 	int num2 = Random.Shared.Next(7890, 9999);  // 7890 is included in the range, but 9999 is not
