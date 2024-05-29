@@ -2,7 +2,7 @@
 
 namespace Geometry;
 
-// The GeometricShape class is an abstract base class for geometric shapes.
+// The GeometricShape class is an abstract base class for geometric shapes
 public abstract class GeometricShape {
 	/*
 		As these are abstract methods, they do not provide an implementation.
