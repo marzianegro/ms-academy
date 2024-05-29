@@ -25,16 +25,16 @@ class TryParams {
 
 		Console.WriteLine($"x is: {x}");
 		Increment(x); // x is passed by value, so the increment inside the method does not affect the original x
-		Console.WriteLine($"num has been incremented BUT passed by value; num now is: {x}");
+		Console.WriteLine($"num has been incremented BUT passed by value; num is now: {x}");
 
 		Console.WriteLine($"x is: {x}");
 		x = IncrementRet(x); // Here, the incremented value is returned and assigned back to x
-		Console.WriteLine($"num has been incremented BUT passed by value; num now is: {x}");
+		Console.WriteLine($"num has been incremented BUT passed by value; num is now: {x}");
 
 		Counter c = new();
 		Console.WriteLine($"Counter c is: {c}");
 		Increment(c); // c is passed by reference, so the increment inside the method does affect the original c
-		Console.WriteLine($"c.num has been incremented; c.num now is: {c}");
+		Console.WriteLine($"c.num has been incremented; c.num is now: {c}");
 	}
 
 	public static void Increment(int value) {
@@ -98,8 +98,8 @@ class PassParams {
 	}
 }
 
-class PuntoNelPiano {
-	public PuntoNelPiano(int x = 0, int y = 0) {
+class PointInPlane {
+	public PointInPlane(int x = 0, int y = 0) {
 		// Default parameters in the constructor can provide default values for the object's properties
 	}
 }
