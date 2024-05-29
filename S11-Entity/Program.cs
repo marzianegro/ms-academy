@@ -10,7 +10,7 @@ class Program {
         bool areEqual = client1.Equals(client2);
         Console.WriteLine($"Are client1 and client2 equal? {areEqual}\n");
 
-        // Test GetHashCode
+        // Test GetHashCode()
         int hash1 = client1.GetHashCode();
         int hash2 = client2.GetHashCode();
         Console.WriteLine($"Hash code for client1: {hash1}");
