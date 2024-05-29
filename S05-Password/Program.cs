@@ -1,9 +1,7 @@
 ﻿namespace S05_Password;
 
-class Program
-{
-	static void Main()
-	{
+class Program {
+	static void Main() {
 		Console.WriteLine("PASSWORD GENERATOR");
 		Console.WriteLine("----------");
 
