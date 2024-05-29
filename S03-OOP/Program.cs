@@ -34,10 +34,8 @@ using Geometry;
 	can be accessed from any code in the same assembly, but not from
 	another assembly.
 */
-class MyClass
-{
-	static void Main()
-	{
+class MyClass {
+	static void Main() {
 		Console.WriteLine("----------");
 		SayHello();
 
@@ -181,8 +179,7 @@ class InstanceVariableDemo {
 	// This is an instance variable, which means it belongs to instances of the class
 	int x = Random.Shared.Next();
 
-	public override string? ToString()
-	{
+	public override string? ToString() {
 		/*
 			The ToString method is used to create a string representation of an object.
 			Since when passed to WriteLine(), an instance is automatically converted to a

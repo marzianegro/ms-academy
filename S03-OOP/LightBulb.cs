@@ -1,6 +1,4 @@
-﻿////////// 19 MARZO 2024 //////////
-
-namespace S03_OOP;
+﻿namespace S03_OOP;
 
 public class LightBulb {
 	private bool _light = false;
