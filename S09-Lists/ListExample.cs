@@ -8,7 +8,6 @@ public class ListExample {
 	public static void Exec() {
 		// Creating a List object
 		List<string> stringList = new();
-		// Filling it up with objects
 		Console.WriteLine($"Number of elements in objArrayList is {stringList.Count}");
 
 		List<float> floatList = new();

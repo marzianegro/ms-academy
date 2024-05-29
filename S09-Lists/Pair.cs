@@ -4,9 +4,11 @@ namespace S09_Lists;
 
 public class Pair<T1, T2> {
 	/*
-		The readonly keyword is used to declare a field (also known as a member variable) that can only be assigned
-		a value during its declaration or within a constructor of the same class. Once the readonly field is
-		assigned a value, it cannot be modified elsewhere in the class or by other classes.
+		The readonly keyword is used to declare a field (also known as
+		a member variable) that can only be assigned a value during its
+		declaration or within a constructor of the same class. Once the
+		readonly field is assigned a value, it cannot be modified elsewhere
+		in the class or by other classes.
 	*/
 	private readonly T1 _firstItem;
 	private readonly T2 _secondItem;

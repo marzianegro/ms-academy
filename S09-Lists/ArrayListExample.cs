@@ -32,7 +32,7 @@ public class ArrayListExample {
 		// Changing the content of a slot in ArrayList
 		Console.WriteLine($"Element in objArrayList at [7] was: {objArrayList[7]}");
 		objArrayList[7] = "Hello World!";
-		Console.WriteLine($"It has been changed, and now is: {objArrayList[7]}");
+		Console.WriteLine($"It has been changed, and is now: {objArrayList[7]}");
 
 		Console.ForegroundColor = ConsoleColor.Red;
 		Console.WriteLine("\nEXERCISE");
