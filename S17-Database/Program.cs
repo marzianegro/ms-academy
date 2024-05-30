@@ -71,8 +71,8 @@ class Program {
 					}
 
 					However, in this specific case, it's not necessary to manually close
-					the connection in the finally block because you're using the using statement.
-					The using statement automatically calls Dispose on the SqlConnection
+					the connection in the finally block because you're using the 'using' statement.
+					The 'using' statement automatically calls Dispose on the SqlConnection
 					when the code exits the block, which closes the connection.
 				*/	
 			}
