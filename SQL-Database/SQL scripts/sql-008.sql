@@ -60,12 +60,12 @@ DELETE FROM prova3;
 SELECT 'Prima della fine della transazione', COUNT(*) FROM prova3;
 
 ROLLBACK; -- Chiude la transazione annullando le modifiche apportate
-SELECT 'Dopo la fine della transazione (Rollback)', COUNT(*) FROM prova3;
+SELECT 'Dopo la fine della transazione (ROLLBACK)', COUNT(*) FROM prova3;
 
 BEGIN TRANSACTION;
 DELETE FROM prova3;
 SELECT 'Prima della fine della transazione', COUNT(*) FROM prova3;
  
 COMMIT; -- Chiude la transazione confermando le modifiche apportate
-SELECT 'Dopo la fine della transazione (Commit)', COUNT(*) FROM prova3;
+SELECT 'Dopo la fine della transazione (COMMIT)', COUNT(*) FROM prova3;
 GO

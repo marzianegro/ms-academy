@@ -50,15 +50,16 @@ VALUES ('Steve', 85, 65000);
 -- GO
 
 
-
--- TASK #1
--- List father, mother, child, child's age
-	-- father
-		-- fc = 'father' in FatherChild
-	-- mother
-		-- mc = 'mother' in MotherChild
-	-- child
-		-- pc = Person
+/*
+	TASK #1
+	List father, mother, child, child's age
+	- father
+		- fc = 'father' in FatherChild
+	- mother
+		- mc = 'mother' in MotherChild
+	- child
+		- pc = Person
+*/
 SELECT
 	fc.father,
 	mc.mother,
@@ -70,16 +71,18 @@ INNER JOIN MotherChild mc
 	ON pc.name = mc.child
 GO
 
--- TASK #2
--- List father, father's age, mother, mother's age, child, child's age
-	-- father
-		-- fc = 'father' in FatherChild
-		-- pf = Person
-	-- mother
-		-- mc = 'mother' in MotherChild
-		-- pm = Person
-	-- child
-		-- pc = Person
+/*
+	TASK #2
+	List father, father's age, mother, mother's age, child, child's age
+	- father
+		- fc = 'father' in FatherChild
+		- pf = Person
+	- mother
+		- mc = 'mother' in MotherChild
+		- pm = Person
+	- child
+		- pc = Person
+*/
 SELECT
 	fc.father, pf.age AS father_age,
 	mc.mother, pm.age AS mother_age,
@@ -95,16 +98,18 @@ INNER JOIN Person pm
 	ON mc.mother = pm.name
 GO
 
--- TASK #3
--- List father, father's age, mother, mother's age, child, child's age, orphans
-    -- father
-        -- fc = 'father' in FatherChild
-        -- pf = Person
-    -- mother
-        -- mc = 'mother' in MotherChild
-        -- pm = Person
-    -- child
-        -- pc = Person
+/*
+	TASK #3
+	List father, father's age, mother, mother's age, child, child's age, orphans
+    - father
+        - fc = 'father' in FatherChild
+        - pf = Person
+    - mother
+        - mc = 'mother' in MotherChild
+        - pm = Person
+    - child
+        - pc = Person
+*/
 SELECT
     pc.name AS child, pc.age AS child_age,
     fc.father, pf.age AS father_age,

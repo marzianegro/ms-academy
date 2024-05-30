@@ -12,10 +12,12 @@ GO
 -- SELECT COUNT(*) FROM ordini2;
 -- GO
 
--- per importare da file bcp
--- bcp nome_tabella in file_di_input.bcp -k -w -S server_name - user_name -P password
--- esempio 
--- bcp ordini in ordini.bcp -k -w -S localhost -Ucorso -P@@C202403
+/*
+	Per importare da file bcp
+	bcp nome_tabella in file_di_input.bcp -k -w -S server_name - user_name -P password
+	Esempio:
+	bcp ordini in ordini.bcp -k -w -S localhost -Ucorso -P@@C202403
+*/
 
 SELECT * FROM clienti;
 GO
@@ -145,7 +147,9 @@ GROUP BY id_cliente, nome, cognome
 ORDER BY 4 DESC;
 GO
 
--- La query precedente è corretta nel 99.99% dei casi: cosa succederebbe se al quinto posto ci fosse un cliente con un totale di 2545090.00? Non possiamo permetterci di perdere il cliente!
+-- La query precedente è corretta nel 99.99% dei casi: cosa succederebbe se
+-- al quinto posto ci fosse un cliente con un totale di 2545090.00? Non
+-- possiamo permetterci di perdere il cliente!
 
 -- Dare un premio ai primi 3 clienti che hanno fatto il miglior ordinato nel 2021
 SELECT id_cliente, nome, cognome, SUM(valore) AS totale

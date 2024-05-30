@@ -24,16 +24,19 @@ JOIN ordini b -- Right table
 	ON a.id_cliente = b.id_cliente;
 GO
 
--- INNER JOIN gode della proprietà commutativa, dunque la query sottostante produce lo stesso risultato di quella sovrastante
+-- INNER JOIN gode della proprietà commutativa, dunque la
+-- query sottostante produce lo stesso risultato di quella sovrastante
 SELECT a.nome, a.cognome, b.data, b.valore
 FROM ordini b -- Left table
 INNER JOIN clienti a -- Right table
 	ON b.id_cliente = a.id_cliente;
 GO
 
--- Solo in questo caso, INNER JOIN può essere reso usando WHERE
-	-- È un metodo arretrato
-	-- È sempre meglio usare JOIN, operatore dell'algebra lineare
+/*
+	Solo in questo caso INNER JOIN può essere reso usando WHERE
+	- È un metodo arretrato
+	- È sempre meglio usare JOIN, operatore dell'algebra lineare
+*/
 SELECT a.nome, a.cognome, b.data, b.valore
 FROM clienti a, ordini b
 WHERE a.id_cliente = b.id_cliente;

@@ -1,7 +1,11 @@
 USE corsodb;
 GO
 
--- Create la VIEW della query seguente. Utilizzando MIN() e MAX(), prelevare la città metropolitana con il minimo e quella con il massimo numero di comuni
+/*
+	Creare la VIEW della query seguente. Utilizzando MIN() e MAX(),
+	prelevare la città metropolitana con il minimo e quella con il 
+	massimo numero di comuni
+*/
 DROP VIEW IF EXISTS viewProvince_cittàMetropolitane;
 GO
 

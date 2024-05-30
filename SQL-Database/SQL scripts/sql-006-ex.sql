@@ -2,9 +2,18 @@
 -- Fusione di 'comuni' e 'comuni_italiani'
 -- 
 
--- Task:
--- Un corrispondente del reparto marketing ha fornito un nuovo archivio comuni_italiani dei comuni italiani, con comune, relativa provincia, e relativa regione, contenente informazioni significative di interesse del reparto (e.g.,: area geografica, popolazione residente, etc.).
--- Il lavoro che ci viene richiesto è di creare una nuova TABLE o VIEW che fonda la table corrente comuni con la nuova comuni_italiani, per dar modo di realizzare nuove aggregazioni sui dati.
+/*
+	TASK
+	Un corrispondente del reparto marketing ha fornito un nuovo
+	archivio comuni_italiani dei comuni italiani, con comune,
+	relativa provincia, e relativa regione, contenente informazioni
+	significative di interesse del reparto (e.g.,: area geografica,
+	popolazione residente, etc.).
+	
+	Il lavoro che ci viene richiesto è di creare una nuova TABLE o
+	VIEW che fonda la table corrente comuni con la nuova comuni_italiani,
+	per dar modo di realizzare nuove aggregazioni sui dati.
+*/
 
 USE corsodb;
 GO

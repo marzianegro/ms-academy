@@ -33,7 +33,7 @@ INSERT INTO prova (nome, importo, codice)
 	VALUES ('Lampadario 42 posizioni', 48.50, 8);
 GO
 
--- Formato abbreviato, da non usare se non 'quick and dirty' (no in programmi e documenti ufficiali)
+-- Formato abbreviato, da non usare se non 'quick and dirty' (non in programmi e documenti ufficiali)
 INSERT INTO prova
 	VALUES(10, 'Variatore intensità 1KW' , 'VI1', 82.77);
 INSERT INTO prova
@@ -50,8 +50,9 @@ VALUES
 	(22, 'Interruttore differenziale C25' , 'ID', 28.10);
 GO
 
--- concat non funzionerà con classificazione, perché è di tipo char, non varchar; il risultato sarà '(No column name)'
-SELECT codice, nome, concat('[', classificazione, ']'), importo
+-- CONCAT non funzionerà con classificazione, perché è di tipo char, non varchar;
+-- il risultato sarà '(No column name)'
+SELECT codice, nome, CONCAT('[', classificazione, ']'), importo
 FROM prova;
 GO
 
@@ -59,8 +60,10 @@ GO
 -- Eliminare tuple/row/record
 -- È essenziale compilare correttamente la clausola WHERE
 /*
-DELETE FROM prova; -- DELETE non qualificata: elimina tutte le righe dalla table
-GO
+	La seguente DELETE non è qualificata, poiché elimina tutte le righe dalla table
+	
+	DELETE FROM prova;
+	GO
 */
 
 DELETE
@@ -77,14 +80,14 @@ GO
 -- È essenziale compilare correttamente la clausola WHERE
 -- UPDATE aggiorna il contenuto della table, ALTER ne aggiorna la struttura
 /*
-UPDATE
-prova
-SET nome = 'Lampadario 4 posizioni'; -- UPDATE non qualificata: modifica tutte le righe della tabella
-GO
+	La seguente UPDATE non è qualificata, poiché modifica tutte le righe della tabella
+
+	UPDATE prova
+	SET nome = 'Lampadario 4 posizioni';
+	GO
 */
 
-UPDATE
-prova
+UPDATE prova
 SET nome = 'Lampadario 4 posizioni'
 WHERE codice = 8;
 GO
@@ -93,8 +96,7 @@ SELECT codice, nome, classificazione, importo
 FROM prova;
 GO
 
-UPDATE
-prova
+UPDATE prova
 SET nome = 'Lampadario 4 posizioni', classificazione = 'L'
 WHERE codice = 8;
 GO
@@ -121,7 +123,10 @@ FROM prova;
 GO
 
 -- RENAME (relativa solo alla table in uscita, non all'originale)
-SELECT codice, nome AS 'prodotto', importo -- Lo standard è '', però qualche db consente anche "", e se la rinominazione è formata da una sola parola, si può anche fare senza apici (singoli/doppi)
+SELECT codice, nome AS 'prodotto', import
+-- Lo standard è '', però qualche db consente anche "", e se la 
+-- rinominazione è formata da una sola parola, si può anche fare
+-- senza apici (singoli/doppi)
 FROM prova;
 GO
 
@@ -136,7 +141,8 @@ GO
 
 -- SQL is case-insensitive, but words between [] become case-senstive
 
--- La convenzione sul naming delle colonne prevede l'utilizzo di _ in caso di nomi composti: e.g., nome_colonna
+-- La convenzione sul naming delle colonne prevede l'utilizzo di _ in caso di
+-- nomi composti: e.g., nome_colonna
 
 SELECT p.codice, p.nome AS 'prodotto', p.importo -- Elenco dei nomi delle colonne da proiettare
 FROM prova p -- Elenco delle tables con i relativi alias coinvolti nella query
