@@ -1,5 +1,6 @@
 ﻿/*
-    - Bubble sort is another sorting algorithm that works by repeatedly swapping elements to “bubble” larger elements to the end.
+    - Bubble sort is another sorting algorithm that works by repeatedly swapping
+        elements to “bubble” larger elements to the end.
     - The pseudocode for bubble sort is:
         Repeat n-1 times
             For i from 0 to n–2
@@ -7,7 +8,8 @@
                     Swap them
             If no swaps
                 Quit
-    - As we further sort the array, we know more and more of it becomes sorted, so we only need to look at the pairs of numbers that haven’t been sorted yet.
+    - As we further sort the array, we know more and more of it becomes sorted,
+        so we only need to look at the pairs of numbers that haven’t been sorted yet.
     - Analyzing bubble sort, the worst case is O(n^2). The best case is Ω(n).
 */
 
