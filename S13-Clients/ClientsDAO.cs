@@ -250,12 +250,12 @@ public class ClientsDAO : ADAO<EntityClient, int> {
 		}
 
         using SqlConnection connection = ConnectionManager.Instance.GetConnection() {
-			// If the client does not exist in the database, return false
+			// The client does not exist in the database
 			if (InternalFindByID(connection, client.ID) == null) {
 				return false;
 			}
 		}
-		// If the client exists in the database, return true
+		// The client does exist in the database
         return true;
     }
 }
