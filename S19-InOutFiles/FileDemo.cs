@@ -49,7 +49,7 @@ public class FileDemo {
 			while ((line = sr.ReadLine) != null) {
 				Console.WriteLine(s);
 			}
-			// No need to close StreamReader here as 'using' keyword takes care of it
+			// No need to close StreamReader here as the 'using' keyword takes care of it
 		} catch (Exception e) {
 			Console.WriteLine(e.Message);
 		}
