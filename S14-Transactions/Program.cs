@@ -3,7 +3,6 @@ using Microsoft.Data.SqlClient;
 
 namespace S14_Transactions;
 
-// ignore
 class Program {
 	static void Main() {
 		// -------
