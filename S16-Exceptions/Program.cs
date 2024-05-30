@@ -23,7 +23,7 @@ class Program {
     }
 
     public static void DoSomething() {
-		throw new MyException ("My application has blocked in DoSomething()");
+		throw new MyException("My application has blocked in DoSomething()");
 	}
 
     public static void ExecDivision(int x, int  y) {
