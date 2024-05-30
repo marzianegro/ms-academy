@@ -1,5 +1,5 @@
 # SQLCMD usage for MacOS
-# Inside of a docker container
+## Inside of a docker container
 
 1. Connect to the container and access the SO shell
 	1.1 Obtain the container's name through command

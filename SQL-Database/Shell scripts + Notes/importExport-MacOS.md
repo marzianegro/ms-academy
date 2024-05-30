@@ -1,4 +1,4 @@
-### Esportare dati su MacOS
+# Esportare dati su MacOS
 
 1. Controlliamo il nome del container:
 	`docker ps`
@@ -24,7 +24,7 @@
 	E copiamo il file dal container alla cartella desiderata:
 	`docker cp sql2022:/tmp/ordini_20240422.bcp .`
 
-### Importare dati su MacOS
+# Importare dati su MacOS
 
 1. Troviamo la posizione del file .bcp
 
